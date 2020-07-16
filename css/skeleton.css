@@ -144,10 +144,6 @@ img {
   background: url("../images/waterSpadeIconTEMP.jpg") top right no-repeat;
   background-size:contain;
 }
-svg {
-  display:block;
-  margin:auto;
-}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
