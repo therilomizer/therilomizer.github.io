@@ -219,18 +219,19 @@
       </div>
     </footer>
     <script>
+    var animationTarget = document.getElementById('lottie');
     var animation = bodymovin.loadAnimation({
-      container: document.getElementById('lottie'), // Required
+      container: animationTarget, // Required
       path: 'data.json', // Required
       renderer: 'svg', // Required
       loop: false, // Optional
       autoplay: false, // Optional
       name: "Hello World", // Name for future reference. Optional.
     });
-    animation.addEventListener("mouseenter", function() {
+    animationTarget.addEventListener("mouseenter", function() {
       animation.play();
     });
-    animation.addEventListener("mouseleave", function() {
+    animationTarget.addEventListener("mouseleave", function() {
       animation.stop();
     });
     </script>
