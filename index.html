@@ -229,11 +229,11 @@
       name: "Hello World", // Name for future reference. Optional.
     });
     animationTarget.addEventListener("mouseenter", function() {
-      animation.direction(1);
+      animation.setDirection(1);
       animation.play();
     });
     animationTarget.addEventListener("mouseleave", function() {
-      animation.dirction(-1);
+      animation.setDirection(-1);
       animation.play();
     });
     </script>
