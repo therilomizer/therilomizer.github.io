@@ -21,7 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <script src="js/lottie.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -108,8 +108,7 @@
         </div></div>
 
       <div class="container">
-        <div class="two columns offset-by-one lottie"></div>
-        <div class="eight columns">
+        <div class="ten columns offset-by-one">
       <h3>Numbers Attack!</h3>
       <p>Statistically speaking, you will see mostly number cards. When you flip a number card face-up, it activates an attack. When a number card attacks, compare its number value to the value of its opposing card (OC). If the OC is facedown, flip it face-up (this does not activate abilities).
       <ul>
@@ -219,13 +218,13 @@
       </div>
     </footer>
     <script>
-    var cardFan = document.getElementById('lottie')
-    var cardFanAnim = lottie.loadAnimation({
-      container: cardFan, // the dom element that will contain the animation
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'data.json' // the path to the animation json
+    var animation = bodymovin.loadAnimation({
+      container: document.getElementById('lottie'), // Required
+      path: 'data.json', // Required
+      renderer: 'svg/canvas/html', // Required
+      loop: true, // Optional
+      autoplay: true, // Optional
+      name: "Hello World", // Name for future reference. Optional.
     });
     </script>
 <!-- End Document
