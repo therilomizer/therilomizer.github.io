@@ -116,7 +116,14 @@
       <div class="container" style="text-align:center;"><div id="spade_fan" style="display:inline-block;max-width:300px;"> </div>
     <!-- Heart Card Fan Animation
     ========================================= -->
-      <div id="heart_fan" style="display:inline-block;max-width:300px;"> </div></div>
+      <div id="heart_fan" style="display:inline-block;max-width:300px;"> </div>
+      <!-- Club Card Fan Animation
+      ========================================= -->
+        <div id="club_fan" style="display:inline-block;max-width:300px;"> </div>
+        <!-- Diamond Card Fan Animation
+        ========================================= -->
+          <div id="diamond_fan" style="display:inline-block;max-width:300px;"> </div></div>
+
       <!-- Numbers Attack!
       ========================================= -->
       <div class="container">
@@ -235,6 +242,15 @@
     <!-- Lottie Animation Scripting
     ========================================= -->
     <script>
+      var play = function (FanAnim) {
+        FanAnim.setDirection(1);
+        FanAnim.play();
+      };
+      var rewind = function (FanAnim) {
+        FanAnim.setDirection(-1);
+        FanAnim.play();
+      }
+
       var spadeFan = document.getElementById('spade_fan');
       var spadeFanAnim = bodymovin.loadAnimation({
         container: spadeFan, // Required
@@ -269,6 +285,17 @@
         heartFanAnim.setDirection(-1);
         heartFanAnim.play();
       });
+      var clubFan = document.getElementById('club_fan');
+      var clubFanAnim = bodymovin.loadAnimation({
+        container: clubFan, // Required
+        path: 'clubFan.json', // Required
+        renderer: 'svg', // Required
+        loop: false, // Optional
+        autoplay: false, // Optional
+        rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+      });
+      clubFan.addEventListener("mouseenter", play(clubFanAnim));
+      clubFan.addEventListener("mouseleave", rewind(clubFanAnim));
     </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
