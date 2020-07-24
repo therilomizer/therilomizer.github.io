@@ -135,11 +135,14 @@ body {
 img {
   max-width: 100%;
   max-height: 100%;
-  display: block;}
+  display: block;
+}
+
 .bigHeader {
   background: url("../images/maleGamers.jpg") top center no-repeat;
   background-size:cover;
 }
+
 .cardHeader {
   background: url("../images/waterSpadeIconTEMP.jpg") top right no-repeat;
   background-size:contain;
@@ -147,6 +150,7 @@ img {
 
 .cardFan {
   display:inline-block;
+  width: 100%;
   max-width:200px;
 }
 
