@@ -242,15 +242,6 @@
     <!-- Lottie Animation Scripting
     ========================================= -->
     <script>
-      var play = function (FanAnim) {
-        FanAnim.setDirection(1);
-        FanAnim.play();
-      };
-      var rewind = function (FanAnim) {
-        FanAnim.setDirection(-1);
-        FanAnim.play();
-      }
-
       var spadeFan = document.getElementById('spade_fan');
       var spadeFanAnim = bodymovin.loadAnimation({
         container: spadeFan, // Required
@@ -294,8 +285,14 @@
         autoplay: false, // Optional
         rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
       });
-      clubFan.addEventListener("mouseenter", play(clubFanAnim));
-      clubFan.addEventListener("mouseleave", rewind(clubFanAnim));
+      clubFan.addEventListener("mouseenter", function() {
+        clubFanAnim.setDirection(1);
+        clubFanAnim.play();
+      });
+      clubFan.addEventListener("mouseleave", function() {
+        clubFanAnim.setDirection(-1);
+        clubFanAnim.play();
+      });
     </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
