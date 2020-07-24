@@ -1,7 +1,7 @@
 var spadeFan = document.getElementById('spade_fan');
 var spadeFanAnim = bodymovin.loadAnimation({
   container: spadeFan, // Required
-  path: 'spadeFan.json', // Required
+  path: 'js/spadeFan.json', // Required
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
@@ -20,7 +20,7 @@ spadeFan.addEventListener("mouseleave", function() {
 var heartFan = document.getElementById('heart_fan');
 var heartFanAnim = bodymovin.loadAnimation({
   container: heartFan, // Required
-  path: 'heartFan.json', // Required
+  path: 'js/heartFan.json', // Required
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
@@ -39,7 +39,7 @@ heartFan.addEventListener("mouseleave", function() {
 var clubFan = document.getElementById('club_fan');
 var clubFanAnim = bodymovin.loadAnimation({
   container: clubFan, // Required
-  path: 'clubFan.json', // Required
+  path: 'js/clubFan.json', // Required
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
@@ -58,7 +58,7 @@ clubFan.addEventListener("mouseleave", function() {
 var diamondFan = document.getElementById('diamond_fan');
 var diamondFanAnim = bodymovin.loadAnimation({
   container: diamondFan, // Required
-  path: 'diamondFan.json', // Required
+  path: 'js/diamondFan.json', // Required
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
