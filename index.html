@@ -113,7 +113,7 @@
         </div></div>
         <!-- Card Fan Animation
         ========================================= -->
-      <div class="container" style="text-align:center;"><div id="lottie" style="display:inline-block;max-width:300px;"> </div></div>
+      <div class="container" style="text-align:center;"><div id="spade_fan" style="display:inline-block;max-width:300px;"> </div></div>
       <!-- Numbers Attack!
       ========================================= -->
       <div class="container">
@@ -232,24 +232,23 @@
     <!-- Lottie Animation Scripting
     ========================================= -->
     <script>
-    var animationTarget = document.getElementById('lottie');
-    var animation = bodymovin.loadAnimation({
-      container: animationTarget, // Required
-      path: 'data.json', // Required
-      renderer: 'svg', // Required
-      loop: false, // Optional
-      autoplay: false, // Optional
-      name: "cardFan", // Name for future reference. Optional.
-      rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
-    });
-    animationTarget.addEventListener("mouseenter", function() {
-      animation.setDirection(1);
-      animation.play();
-    });
-    animationTarget.addEventListener("mouseleave", function() {
-      animation.setDirection(-1);
-      animation.play();
-    });
+      var spadeFan = document.getElementById('spade_fan');
+      var spadeFanAnim = bodymovin.loadAnimation({
+        container: animationTarget, // Required
+        path: 'spadeFan.json', // Required
+        renderer: 'svg', // Required
+        loop: false, // Optional
+        autoplay: false, // Optional
+        rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+      });
+      spadeFan.addEventListener("mouseenter", function() {
+        spadeFanAnim.setDirection(1);
+        spadeFanAnim.play();
+      });
+      spadeFan.addEventListener("mouseleave", function() {
+        spadeFanAnim.setDirection(-1);
+        spadeFanAnim.play();
+      });
     </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
