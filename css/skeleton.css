@@ -145,6 +145,11 @@ img {
   background-size:contain;
 }
 
+.cardFan {
+  display:inline-block;
+  max-width:200px;
+}
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
