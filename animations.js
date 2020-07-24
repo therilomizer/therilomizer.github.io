@@ -55,3 +55,22 @@ clubFan.addEventListener("mouseleave", function() {
   clubFanAnim.setSpeed(1.5);
   clubFanAnim.play();
 });
+var diamondFan = document.getElementById('diamond_fan');
+var diamondFanAnim = bodymovin.loadAnimation({
+  container: diamondFan, // Required
+  path: 'diamondFan.json', // Required
+  renderer: 'svg', // Required
+  loop: false, // Optional
+  autoplay: false, // Optional
+  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+});
+diamondFan.addEventListener("mouseenter", function() {
+  diamondFanAnim.setDirection(1);
+  diamondFanAnim.setSpeed(1);
+  diamondFanAnim.play();
+});
+diamondFan.addEventListener("mouseleave", function() {
+  diamondFanAnim.setDirection(-1);
+  diamondFanAnim.setSpeed(1.5);
+  diamondFanAnim.play();
+});
