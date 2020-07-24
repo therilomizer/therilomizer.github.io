@@ -111,20 +111,6 @@
         <div class="two columns">
           <img class="scale-with-grid" src="images/maleGamers.jpg" alt="This image should show cards moving around the board." />
         </div></div>
-      <div class="container" style="text-align:center;">
-        <!-- Spade Card Fan Animation
-        =========================================
-        <div id="spade_fan" style="display:inline-block;max-width:200px;"> </div>
-        <!- Heart Card Fan Animation
-        ========================================= --
-        <div id="heart_fan" style="display:inline-block;max-width:200px;"> </div>
-        <!- Club Card Fan Animation
-        ========================================= --
-        <div id="club_fan" style="display:inline-block;max-width:200px;"> </div>
-        <!- Diamond Card Fan Animation
-        ========================================= --
-        <div id="diamond_fan" style="display:inline-block;max-width:200px;"> </div> -->
-      </div>
 
       <!-- Numbers Attack!
       ========================================= -->
@@ -139,6 +125,7 @@
       </ul>
       (Example: if you flip over a 6 of Diamonds on your top right corner, the opposing card is the opponent's top left corner (from their point of view). Let's say it's a 4 of Spades. You win the attack and capture the 4 of Spades)
       </p></div></div>
+
       <!-- Suit Abilities
       ========================================= -->
       <div class="container">
@@ -148,29 +135,33 @@
         </div>
           <div class="row">
             <div class="one-quarter column">
-            <div id="spade_fan" style="display:inline-block;max-width:200px;"> </div></div>
+            </div>
             <div class="one-quarter column">
-            <div id="heart_fan" style="display:inline-block;max-width:200px;"> </div></div>
+            </div>
             <div class="one-quarter column">
-            <div id="club_fan" style="display:inline-block;max-width:200px;"> </div></div>
+            </div>
             <div class="one-quarter column">
-            <div id="diamond_fan" style="display:inline-block;max-width:200px;"> </div></div>
+            </div>
           </div>
           <div class="row">
             <div class="one-quarter column">
+              <div id="heart_fan" style="display:inline-block;max-width:200px;"> </div>
               <header class="cardHeader"><h4>Hearts</h4></header>
               <section><p>when a Heart number card attacks, it can add the value of one of your own adjacent face-up Heart number cards to its own value until the attack is finished.
               </p></section></div>
             <div class="one-quarter column">
+              <div id="diamond_fan" style="display:inline-block;max-width:200px;"> </div>
               <header class="cardHeader"><h4>Diamonds</h4></header>
               <section><p>When you count out capture piles at the end of the game, Diamonds count for double (this includes Diamond face cards as well).
               </p></section></div>
             <div class="one-quarter column">
+              <div id="club_fan" style="display:inline-block;max-width:200px;"> </div>
               <header class="cardHeader"><h4>Clubs</h4></header>
               <section><p>When a Club number card attacks, you may choose to attack any card in its own column instead of its opposing card.
               <br>(Example. The 9 of Clubs in your left middle space can hit any one of your opponent's right top, middle, or lower card.)
               </p></section></div>
             <div class="one-quarter column">
+              <div id="spade_fan" style="display:inline-block;max-width:200px;"> </div>
               <header class="cardHeader"><h4>Spades</h4></header>
               <section><p>You may capture one of your own Spade cards on your turn as long as it's face-up. This does not count as your action for the turn.
               </p></section></div>
