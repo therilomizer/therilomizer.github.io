@@ -111,9 +111,12 @@
         <div class="two columns">
           <img class="scale-with-grid" src="images/maleGamers.jpg" alt="This image should show cards moving around the board." />
         </div></div>
-        <!-- Card Fan Animation
-        ========================================= -->
+    <!-- Spade Card Fan Animation
+    ========================================= -->
       <div class="container" style="text-align:center;"><div id="spade_fan" style="display:inline-block;max-width:300px;"> </div></div>
+    <!-- Heart Card Fan Animation
+    ========================================= -->
+      <div class="container" style="text-align:center;"><div id="heart_fan" style="display:inline-block;max-width:300px;"> </div></div>
       <!-- Numbers Attack!
       ========================================= -->
       <div class="container">
@@ -248,6 +251,23 @@
       spadeFan.addEventListener("mouseleave", function() {
         spadeFanAnim.setDirection(-1);
         spadeFanAnim.play();
+      });
+      var heartFan = document.getElementById('heart_fan');
+      var heartFanAnim = bodymovin.loadAnimation({
+        container: heartFan, // Required
+        path: 'heartFan.json', // Required
+        renderer: 'svg', // Required
+        loop: false, // Optional
+        autoplay: false, // Optional
+        rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+      });
+      heartFan.addEventListener("mouseenter", function() {
+        heartFanAnim.setDirection(1);
+        heartFanAnim.play();
+      });
+      heartFan.addEventListener("mouseleave", function() {
+        heartFanAnim.setDirection(-1);
+        heartFanAnim.play();
       });
     </script>
 <!-- End Document
