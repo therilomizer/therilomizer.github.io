@@ -74,7 +74,7 @@ diamondFan.addEventListener("mouseleave", function() {
   diamondFanAnim.setSpeed(1.5);
   diamondFanAnim.play();
 });
-var cardRipple = document.getElementById('diamond_fan');
+var cardRipple = document.getElementById('card_ripple');
 var cardRippleAnim = bodymovin.loadAnimation({
   container: cardRipple, // Required
   path: 'js/cardRipple.json', // Required
