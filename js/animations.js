@@ -84,5 +84,5 @@ var cardRippleAnim = bodymovin.loadAnimation({
   rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
 cardRipple.addEventListener("mouseenter", function() {
-  cardRippleAnim.play();
+  cardRippleAnim.goToAndPlay(0);
 });
