@@ -74,3 +74,15 @@ diamondFan.addEventListener("mouseleave", function() {
   diamondFanAnim.setSpeed(1.5);
   diamondFanAnim.play();
 });
+var cardRipple = document.getElementById('diamond_fan');
+var cardRippleAnim = bodymovin.loadAnimation({
+  container: cardRipple, // Required
+  path: 'js/cardRipple.json', // Required
+  renderer: 'svg', // Required
+  loop: false, // Optional
+  autoplay: false, // Optional
+  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+});
+cardRipple.addEventListener("mouseover", function() {
+  diamondFanAnim.play();
+});
