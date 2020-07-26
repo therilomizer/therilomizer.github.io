@@ -79,7 +79,7 @@ var cardRippleAnim = bodymovin.loadAnimation({
   container: cardRipple, // Required
   path: 'js/cardRipple.json', // Required
   renderer: 'svg', // Required
-  loop: false, // Optional
+  loop: true, // Optional
   autoplay: false, // Optional
   rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
