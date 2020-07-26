@@ -80,9 +80,9 @@ var cardRippleAnim = bodymovin.loadAnimation({
   path: 'js/cardRipple.json', // Required
   renderer: 'svg', // Required
   loop: true, // Optional
-  autoplay: false, // Optional
+  autoplay: true, // Optional
   rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
-cardRipple.addEventListener("mouseenter", function() {
-  cardRippleAnim.goToAndPlay(0);
-});
+// cardRipple.addEventListener("mouseenter", function() {
+//  cardRippleAnim.goToAndPlay(0);
+// });
