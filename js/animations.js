@@ -84,5 +84,5 @@ var cardRippleAnim = bodymovin.loadAnimation({
   rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
 cardRipple.addEventListener("mouseover", function() {
-  diamondFanAnim.play();
+  cardRippleAnim.play();
 });
