@@ -96,5 +96,5 @@ cardRipple.addEventListener("mouseenter", function() {
   cardRippleAnim.goToAndPlay(0);
 });
 cardFlip.addEventListener("mouseenter", function() {
-  card.classList.toggle('is-flipped');
+  cardFlip.classList.toggle('is-flipped');
 });
