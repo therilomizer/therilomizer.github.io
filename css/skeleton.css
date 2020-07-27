@@ -156,11 +156,11 @@ img {
   backface-visibility: hidden;
 }
 .card__face--front {
-  background-image: "./images/diamond10_forCardspin.png";
+  background-image: url("./images/diamond10_forCardspin.png");
 }
 
 .card__face--back {
-  background-image: "./images/cardBack_forCardSpin.png";
+  background-image: url("./images/cardBack_forCardSpin.png");
   transform: rotateY( 180deg );
 }
 .card.is-flipped {
