@@ -1,7 +1,44 @@
-var spadeFan = document.getElementById('spade_fan');
+var spadeFan = document.getElementById('spade_fan'),
+    heartFan = document.getElementById('heart_fan'),
+    clubFan = document.getElementById('club_fan'),
+    diamondFan = document.getElementById('diamond_fan'),
+    cardRipple = document.getElementById('card_ripple');
+
 var spadeFanAnim = bodymovin.loadAnimation({
   container: spadeFan, // Required
   path: 'js/spadeFan.json', // Required
+  renderer: 'svg', // Required
+  loop: false, // Optional
+  autoplay: false, // Optional
+  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+});
+var heartFanAnim = bodymovin.loadAnimation({
+  container: heartFan, // Required
+  path: 'js/heartFan.json', // Required
+  renderer: 'svg', // Required
+  loop: false, // Optional
+  autoplay: false, // Optional
+  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+});
+var clubFanAnim = bodymovin.loadAnimation({
+  container: clubFan, // Required
+  path: 'js/clubFan.json', // Required
+  renderer: 'svg', // Required
+  loop: false, // Optional
+  autoplay: false, // Optional
+  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+});
+var diamondFanAnim = bodymovin.loadAnimation({
+  container: diamondFan, // Required
+  path: 'js/diamondFan.json', // Required
+  renderer: 'svg', // Required
+  loop: false, // Optional
+  autoplay: false, // Optional
+  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+});
+var cardRippleAnim = bodymovin.loadAnimation({
+  container: cardRipple, // Required
+  path: 'js/cardRipple.json', // Required
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
@@ -17,15 +54,6 @@ spadeFan.addEventListener("mouseleave", function() {
   spadeFanAnim.setSpeed(1.5);
   spadeFanAnim.play();
 });
-var heartFan = document.getElementById('heart_fan');
-var heartFanAnim = bodymovin.loadAnimation({
-  container: heartFan, // Required
-  path: 'js/heartFan.json', // Required
-  renderer: 'svg', // Required
-  loop: false, // Optional
-  autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
-});
 heartFan.addEventListener("mouseenter", function() {
   heartFanAnim.setDirection(1);
   heartFanAnim.setSpeed(1);
@@ -35,15 +63,6 @@ heartFan.addEventListener("mouseleave", function() {
   heartFanAnim.setDirection(-1);
   heartFanAnim.setSpeed(1.5);
   heartFanAnim.play();
-});
-var clubFan = document.getElementById('club_fan');
-var clubFanAnim = bodymovin.loadAnimation({
-  container: clubFan, // Required
-  path: 'js/clubFan.json', // Required
-  renderer: 'svg', // Required
-  loop: false, // Optional
-  autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
 clubFan.addEventListener("mouseenter", function() {
   clubFanAnim.setDirection(1);
@@ -55,15 +74,6 @@ clubFan.addEventListener("mouseleave", function() {
   clubFanAnim.setSpeed(1.5);
   clubFanAnim.play();
 });
-var diamondFan = document.getElementById('diamond_fan');
-var diamondFanAnim = bodymovin.loadAnimation({
-  container: diamondFan, // Required
-  path: 'js/diamondFan.json', // Required
-  renderer: 'svg', // Required
-  loop: false, // Optional
-  autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
-});
 diamondFan.addEventListener("mouseenter", function() {
   diamondFanAnim.setDirection(1);
   diamondFanAnim.setSpeed(1);
@@ -73,15 +83,6 @@ diamondFan.addEventListener("mouseleave", function() {
   diamondFanAnim.setDirection(-1);
   diamondFanAnim.setSpeed(1.5);
   diamondFanAnim.play();
-});
-var cardRipple = document.getElementById('card_ripple');
-var cardRippleAnim = bodymovin.loadAnimation({
-  container: cardRipple, // Required
-  path: 'js/cardRipple.json', // Required
-  renderer: 'svg', // Required
-  loop: false, // Optional
-  autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
 cardRipple.addEventListener("mouseenter", function() {
   cardRippleAnim.goToAndPlay(0);
