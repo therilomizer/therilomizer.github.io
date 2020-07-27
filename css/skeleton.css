@@ -139,7 +139,7 @@ img {
 }
 .scene {
   width: 300px;
-  height: 260px;
+  height: 300px;
   perspective: 600px;
 }
 .card {
