@@ -1,8 +1,12 @@
+// Declare animations in DOM
+
 var spadeFan = document.getElementById('spade_fan'),
     heartFan = document.getElementById('heart_fan'),
     clubFan = document.getElementById('club_fan'),
     diamondFan = document.getElementById('diamond_fan'),
     cardRipple = document.getElementById('card_ripple');
+
+// Initialize animation functions
 
 var spadeFanAnim = bodymovin.loadAnimation({
   container: spadeFan, // Required
@@ -44,6 +48,9 @@ var cardRippleAnim = bodymovin.loadAnimation({
   autoplay: false, // Optional
   rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
+
+// Describe animation activation events
+
 spadeFan.addEventListener("mouseenter", function() {
   spadeFanAnim.setDirection(1);
   spadeFanAnim.setSpeed(1);
