@@ -4,7 +4,8 @@ var spadeFan = document.getElementById('spade_fan'),
     heartFan = document.getElementById('heart_fan'),
     clubFan = document.getElementById('club_fan'),
     diamondFan = document.getElementById('diamond_fan'),
-    cardRipple = document.getElementById('card_ripple');
+    cardRipple = document.getElementById('card_ripple'),
+    cardFlip = document.querySelector('.card');
 
 // Initialize animation functions
 
@@ -93,4 +94,7 @@ diamondFan.addEventListener("mouseleave", function() {
 });
 cardRipple.addEventListener("mouseenter", function() {
   cardRippleAnim.goToAndPlay(0);
-  });
+});
+card.addEventListener("mouseenter", function() {
+  card.classList.toggle('is-flipped');
+});
