@@ -155,14 +155,16 @@ img {
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-size: contain;
 }
 .card__face--front {
   background: url('images/diamond10ForCardSpin.png');
+  background-size: contain;
+  transform: rotateY(180deg);
 }
 
 .card__face--back {
   background: url('images/cardBackForCardSpin.png');
+  background-size: contain;
   transform: rotateY(180deg);
 }
 .card.is-flipped {
