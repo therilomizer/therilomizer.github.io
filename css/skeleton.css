@@ -167,7 +167,7 @@ img {
 .card__face--back {
   background: url('images/cardBackForCardSpin.png');
   background-size: contain;
-  animation-name: cardFlip;
+  animation-name: cardFlip2;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
