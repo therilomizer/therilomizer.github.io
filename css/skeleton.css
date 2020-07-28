@@ -173,12 +173,16 @@ img {
 }
 
 @keyframes cardFlip {
-  from {transform:rotateY(0deg)}
-  to {transform:rotateY(180deg)}
+  from {transform:rotateY(0deg);
+        z-index: 10}
+  to {transform:rotateY(180deg);
+      z-index: 1}
 }
 @keyframes cardFlip2 {
-  from {transform:rotateY(180deg)}
-  to {transform:rotateY(360deg)}
+  from {transform:rotateY(180deg);
+        z-index:1}
+  to {transform:rotateY(360deg);
+      z-index:10}
 }
 
 /* Typography
