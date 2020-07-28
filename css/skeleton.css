@@ -159,6 +159,9 @@ img {
 .card__face--front {
   background: url('images/diamond10ForCardSpin.png');
   background-size: contain;
+  animation-name: cardFlip;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .card__face--back {
@@ -168,6 +171,11 @@ img {
 }
 .card.is-flipped {
   transform: rotateY(180deg);
+}
+
+@keyframes cardFlip {
+  from {transform:rotateY(0deg)}
+  to {transform:rotateY(180deg)}
 }
 
 /* Typography
