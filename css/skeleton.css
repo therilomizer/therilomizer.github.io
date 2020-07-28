@@ -159,7 +159,6 @@ img {
 .card__face--front {
   background: url('images/diamond10ForCardSpin.png');
   background-size: contain;
-  transform: rotateY(180deg);
 }
 
 .card__face--back {
