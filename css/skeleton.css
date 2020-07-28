@@ -155,6 +155,7 @@ img {
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  background-size: contain;
 }
 .card__face--front {
   background: url('images/diamond10ForCardSpin.png');
