@@ -95,6 +95,6 @@ diamondFan.addEventListener("mouseleave", function() {
 cardRipple.addEventListener("mouseenter", function() {
   cardRippleAnim.goToAndPlay(0);
 });
-cardFlip.addEventListener("mouseenter", function() {
+cardFlip.addEventListener("click", function() {
   cardFlip.classList.toggle('is-flipped');
 });
