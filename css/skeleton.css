@@ -162,7 +162,7 @@ img {
 }
 
 .card__face--back {
-  background: url('images/diamond10ForCardSpin.png');
+  background: url('images/cardBackForCardSpin.png');
   transform: rotateY(180deg);
 }
 .card.is-flipped {
