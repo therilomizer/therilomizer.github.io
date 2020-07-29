@@ -46,7 +46,7 @@ var cardRippleAnim = bodymovin.loadAnimation({
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+  rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}
 });
 
 // Initialize animation playback styles
