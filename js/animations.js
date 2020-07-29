@@ -6,18 +6,6 @@ var spadeFan = document.getElementById('spade_fan'),
     diamondFan = document.getElementById('diamond_fan'),
     cardRipple = document.getElementById('card_ripple');
 
-function playForward(animName) {
-  animName.setDirection(1);
-  animName.setSpeed(1);
-  animName.play();
-}
-
-function playBackward(animName) {
-  animName.setDirection(-1);
-  animName.setSpeed(1.5);
-  animName.play();
-}
-
 // Initialize animation functions
 
 var spadeFanAnim = bodymovin.loadAnimation({
@@ -61,50 +49,29 @@ var cardRippleAnim = bodymovin.loadAnimation({
   rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
 });
 
-// Describe animation activation events
+// Initialize animation playback styles
+
+function playForward(animName) {
+  animName.setDirection(1);
+  animName.setSpeed(1);
+  animName.play();
+}
+
+function playBackward(animName) {
+  animName.setDirection(-1);
+  animName.setSpeed(1.5);
+  animName.play();
+}
+
+// Describe animation event listeners
 
 spadeFan.addEventListener("mouseenter", function(){playForward(spadeFanAnim)});
+spadeFan.addEventListener("mouseleave", function(){playBackward(spadeFanAnim)});
+heartFan.addEventListener("mouseenter", function(){playForward(heartFanAnim)});
+heartFan.addEventListener("mouseleave", function(){playBackward(heartFanAnim)});
+clubFan.addEventListener("mouseenter", function(){playForward(clubFanAnim)});
+clubFan.addEventListener("mouseleave", function(){playBackward(clubFanAnim)});
+diamondFan.addEventListener("mouseenter", function(){playForward(diamondFanAnim)});
+diamondFan.addEventListener("mouseleave", function(){playBackward(diamondFanAnim)});
 
-// spadeFan.addEventListener("mouseenter", function() {
-//  spadeFanAnim.setDirection(1);
-//  spadeFanAnim.setSpeed(1);
-//  spadeFanAnim.play();
-// });
-spadeFan.addEventListener("mouseleave", function() {
-  spadeFanAnim.setDirection(-1);
-  spadeFanAnim.setSpeed(1.5);
-  spadeFanAnim.play();
-});
-heartFan.addEventListener("mouseenter", function() {
-  heartFanAnim.setDirection(1);
-  heartFanAnim.setSpeed(1);
-  heartFanAnim.play();
-});
-heartFan.addEventListener("mouseleave", function() {
-  heartFanAnim.setDirection(-1);
-  heartFanAnim.setSpeed(1.5);
-  heartFanAnim.play();
-});
-clubFan.addEventListener("mouseenter", function() {
-  clubFanAnim.setDirection(1);
-  clubFanAnim.setSpeed(1);
-  clubFanAnim.play();
-});
-clubFan.addEventListener("mouseleave", function() {
-  clubFanAnim.setDirection(-1);
-  clubFanAnim.setSpeed(1.5);
-  clubFanAnim.play();
-});
-diamondFan.addEventListener("mouseenter", function() {
-  diamondFanAnim.setDirection(1);
-  diamondFanAnim.setSpeed(1);
-  diamondFanAnim.play();
-});
-diamondFan.addEventListener("mouseleave", function() {
-  diamondFanAnim.setDirection(-1);
-  diamondFanAnim.setSpeed(1.5);
-  diamondFanAnim.play();
-});
-cardRipple.addEventListener("mouseenter", function() {
-  cardRippleAnim.goToAndPlay(0);
-});
+cardRipple.addEventListener("mouseenter", function() {cardRippleAnim.goToAndPlay(0)});
