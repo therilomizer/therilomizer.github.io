@@ -159,7 +159,7 @@ img {
   background: url('http://www.doomcrop.com/images/diamond10.png') no-repeat;
   background-size: contain;
   animation-name: cardFlip;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -168,19 +168,9 @@ img {
   background: url('http://www.doomcrop.com/images/cardBack.png') no-repeat;
   background-size: contain;
   animation-name: cardFlip2;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-
-.card__float {
-  position:absolute;
-  bottom:0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
 }
 
 @keyframes cardFlip {
