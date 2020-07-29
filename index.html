@@ -71,8 +71,8 @@
         <div class="two-thirds column">
           <p>Your cards represent soldiers and leaders in the midst of a civil conflict. Old alliances have broken down, and even families fight amongst themselves, but you have risen above the fray to control one side in the epic battle. Strategy and luck will serve you well.
           </p></div></div></div>
-  <!-- Setup
-  ========================================= -->
+<!-- Setup
+========================================= -->
       <div class="container"><h3>Setup</h3>
         <div class="row">
         <div class="two-thirds column">
@@ -86,8 +86,8 @@
         <div class="one-third column">
           <div id="card_ripple"> </div>
         </div></div></div>
-  <!-- Definitions
-  ========================================= -->
+<!-- Definitions
+========================================= -->
       <div class="container"><h3>Definitions</h3>
         <div class="row">
           <div class="one-third column">
@@ -97,8 +97,8 @@
             <p><strong>Capture</strong> -  When you capture a card, remove it from the board and place it in your capture pile, face-up. The player who now has an empty space on their board should immediately replace the captured card with a facedown card from the draw pile. Captured cards cannot interact with the board or leave the capture pile until they are counted out at the end of the game.
             <br><br><strong>Opposing Card</strong> - Every card on your side of the board has an opposing card under your opponent's control. Cards are opposed to each other if they are in the same column and the same row position (front, middle, back).
           </p></div></div></div>
-  <!-- Flow of the Game
-  ========================================= -->
+<!-- Flow of the Game
+========================================= -->
       <div class="container"><h3>Flow of the Game</h3>
         <div class="row">
           <div class="two-thirds column">
@@ -112,8 +112,8 @@
             <img class="scale-with-grid" src="images/maleGamers.jpg" alt="This image should show cards moving around the board." />
           </div></div></div>
 
-  <!-- Numbers Attack!
-  ========================================= -->
+<!-- Numbers Attack!
+========================================= -->
       <div class="container"><h3>Numbers Attack!</h3>
         <div class="row">
           <div class="twelve columns">
@@ -126,8 +126,8 @@
             <em>(Example: if you flip over a 6 of Diamonds on your top right corner, the opposing card is the opponent's top left corner (from their point of view). Let's say it's a 4 of Spades. You win the attack and capture the 4 of Spades)</em>
           </p></div></div></div>
 
-  <!-- Suit Abilities
-  ========================================= -->
+<!-- Suit Abilities
+========================================= -->
       <div class="container"><h3>Suit Abilities</h3>
         <div class="twelve columns">
           <p>Number cards also have special abilities depending upon their suit.
@@ -139,24 +139,24 @@
               <section><p>When a Heart number card attacks, it can add the value of one of your own adjacent face-up Heart number cards to its own value until the attack is finished.
               </p></section></div>
             <div class="one-quarter column">
-              <div id="diamond_fan" style="max-width:240px;"> </div>
+              <div id="diamond_fan"> </div>
               <header class="cardHeader"><h4>Diamonds</h4></header>
               <section><p>When you count out capture piles at the end of the game, Diamonds count for double (this includes Diamond face cards as well).
               </p></section></div>
             <div class="one-quarter column">
-              <div id="club_fan" style="max-width:240px;"> </div>
+              <div id="club_fan"> </div>
               <header class="cardHeader"><h4>Clubs</h4></header>
               <section><p>When a Club number card attacks, you may choose to attack any card in its own column instead of its opposing card.
               <br><br><em>(Example. The 9 of Clubs in your left middle space can hit any one of your opponent's right top, middle, or lower card.)</em>
               </p></section></div>
             <div class="one-quarter column">
-              <div id="spade_fan" style="max-width:240px;"> </div>
+              <div id="spade_fan"> </div>
               <header class="cardHeader"><h4>Spades</h4></header>
               <section><p>You may capture one of your own Spade cards on your turn as long as it's face-up. This does not count as your action for the turn.
               </p></section></div>
           </div></div>
-  <!-- Face Card Abilities
-  ========================================= -->
+<!-- Face Card Abilities
+========================================= -->
       <div class="container"><h3>Face Card Abilities</h3>
         <div class="row">
           <div class="twelve columns">
@@ -167,8 +167,8 @@
               <li>When you flip over a <strong>King</strong>, flip all of your number cards face-up, then each of your number cards attacks its opposing card.</li>
               <li>When you flip over an <strong>Ace</strong>, instantly capture any card on the board (does not need to be face-up).</li>
             </ul></p></div></div></div>
-  <!-- Ending the Game
-  ========================================= -->
+<!-- Ending the Game
+========================================= -->
       <div class="container"><h3>Ending the Game</h3>
         <div class="row">
           <div class="two-thirds column">
@@ -208,29 +208,33 @@
 =========================================== -->
     <footer>
       <div class="container">
-        <div class="eight columns">
-          <nav>
-            <button type="button"><a href="#">About</a></button>
-            <button type="button"><a href="#">Contact</a></button>
-            <button type="button"><a href="#">Privacy Policy</a></button>
-            <button type="button"><a href="#">Terms</a></button>
-          </nav>
-        </div>
+        <div class="row">
+          <div class="eight columns">
+            <nav>
+              <button type="button"><a href="#">About</a></button>
+              <button type="button"><a href="#">Contact</a></button>
+              <button type="button"><a href="#">Privacy Policy</a></button>
+              <button type="button"><a href="#">Terms</a></button>
+            </nav>
+          </div>
 
-        <div class="two columns">
-          <img src="images/favicon.png" />
-          <img src="images/favicon.png" alt="Poop" />
-        </div>
+          <div class="two columns">
+            <div class="scene">
+              <div class="card">
+                <div class="card__face card__face--front"> </div>
+                <div class="card__face card__face--back"> </div>
+              </div></div></div>
+          </div>
 
-        <div class="two columns">
-          <p>&copy; 2020. Riley Adamson. All Rights Reserved.</p>
+          <div class="two columns">
+            <p>&copy; 2020. Riley Adamson. All Rights Reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
 <!-- Lottie Animation Scripting
 ========================================= -->
 <script src="js/animations.js"></script>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
 </body>
 </html>
