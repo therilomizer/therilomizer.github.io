@@ -7,6 +7,18 @@ var spadeFan = document.getElementById('spade_fan'),
     cardRipple = document.getElementById('card_ripple'),
     cardFlip = document.querySelector('.card');
 
+function playForward(animName) {
+  animName.setDirection(1);
+  animName.setSpeed(1);
+  animName.play();
+}
+
+function playBackward(animName) {
+  animName.setDirection(-1);
+  animName.setSpeed(1.5);
+  animName.play();
+}
+
 // Initialize animation functions
 
 var spadeFanAnim = bodymovin.loadAnimation({
@@ -52,11 +64,8 @@ var cardRippleAnim = bodymovin.loadAnimation({
 
 // Describe animation activation events
 
-spadeFan.addEventListener("mouseenter", function() {
-  spadeFanAnim.setDirection(1);
-  spadeFanAnim.setSpeed(1);
-  spadeFanAnim.play();
-});
+spadeFan.addEventListener("mouseenter", playForward(spadeFanAnim));
+
 spadeFan.addEventListener("mouseleave", function() {
   spadeFanAnim.setDirection(-1);
   spadeFanAnim.setSpeed(1.5);
