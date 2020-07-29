@@ -1,16 +1,21 @@
 // Fill variables with animation targets in DOM
 
-var spadeFan = document.getElementById('spade_fan'),
-    heartFan = document.getElementById('heart_fan'),
-    clubFan = document.getElementById('club_fan'),
-    diamondFan = document.getElementById('diamond_fan'),
+var spadeFan = {name:"spadeFan", target:document.getElementById('spade_fan')},
+    heartFan = {name:"heartFan", target:document.getElementById('heart_fan'),
+    clubFan = {name:"clubFan", target:document.getElementById('club_fan'),
+    diamondFan = {name:"diamondFan", target:document.getElementById('diamond_fan'),
     cardRipple = document.getElementById('card_ripple');
+
+var str1 = "js/",
+    str2 = ".json";
+
+
 
 // Initialize animation functions
 
 function animInitLoader(targetName){
   bodymovin.loadAnimation({
-    container: targetName,
+    container: targetName.target,
     path: 'js/' + targetName.name + '.json',
     renderer: 'svg',
     loop: false,
