@@ -14,7 +14,7 @@ var spadeFanAnim = bodymovin.loadAnimation({
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+  rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}
 });
 var heartFanAnim = bodymovin.loadAnimation({
   container: heartFan, // Required
@@ -22,7 +22,7 @@ var heartFanAnim = bodymovin.loadAnimation({
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+  rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}
 });
 var clubFanAnim = bodymovin.loadAnimation({
   container: clubFan, // Required
@@ -30,7 +30,7 @@ var clubFanAnim = bodymovin.loadAnimation({
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+  rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}
 });
 var diamondFanAnim = bodymovin.loadAnimation({
   container: diamondFan, // Required
@@ -38,7 +38,7 @@ var diamondFanAnim = bodymovin.loadAnimation({
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMaxYMax slice' ,}
+  rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}
 });
 var cardRippleAnim = bodymovin.loadAnimation({
   container: cardRipple, // Required
