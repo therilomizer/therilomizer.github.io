@@ -174,7 +174,6 @@ img {
 }
 
 .card__float {
-  background: url('http://www.doomcrop.com/images/cardFloatShadow.png');
   position:relative;
   margin:auto;
 }
