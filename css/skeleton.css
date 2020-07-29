@@ -159,6 +159,7 @@ img {
 .card__face--front {
   background: url('images/diamond10ForCardSpin.png');
   background-size: contain;
+  transform: rotateX(-30deg);
   animation-name: cardFlip;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -168,6 +169,7 @@ img {
 .card__face--back {
   background: url('images/cardBackForCardSpin.png');
   background-size: contain;
+  transform: rotateX(-30deg);
   animation-name: cardFlip2;
   animation-duration: 4s;
   animation-iteration-count: infinite;
