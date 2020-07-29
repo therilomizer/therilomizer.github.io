@@ -140,7 +140,7 @@ img {
 .scene {
   width: 300px;
   height: 300px;
-  perspective: 600px;
+  perspective: 60px;
   margin:auto;
 }
 .footer__scene {
