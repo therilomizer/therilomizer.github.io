@@ -53,13 +53,13 @@ var cardRippleAnim = bodymovin.loadAnimation({
 
 function playForward(animName) {
   animName.setDirection(1);
-  animName.setSpeed(1);
+  animName.setSpeed(1.3);
   animName.play();
 }
 
 function playBackward(animName) {
   animName.setDirection(-1);
-  animName.setSpeed(1.5);
+  animName.setSpeed(2);
   animName.play();
 }
 
@@ -74,4 +74,4 @@ clubFan.addEventListener("mouseleave", function(){playBackward(clubFanAnim)});
 diamondFan.addEventListener("mouseenter", function(){playForward(diamondFanAnim)});
 diamondFan.addEventListener("mouseleave", function(){playBackward(diamondFanAnim)});
 
-cardRipple.addEventListener("mouseenter", function() {cardRippleAnim.goToAndPlay(0)});
+cardRipple.addEventListener("mouseenter", function(){cardRippleAnim.goToAndPlay(0)});
