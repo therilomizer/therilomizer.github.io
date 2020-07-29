@@ -11,7 +11,7 @@ var spadeFan = document.getElementById('spade_fan'),
 function animInitLoader(targetName){
   bodymovin.loadAnimation({
     container: targetName,
-    path: 'js/' + targetName + '.json',
+    path: 'js/' + targetName.name + '.json',
     renderer: 'svg',
     loop: false,
     autoplay: false,
