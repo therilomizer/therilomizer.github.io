@@ -397,7 +397,7 @@ td:last-child {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
-  margin-bottom: 1rem; }
+  margin: auto 1rem 1rem 1rem; }
 input,
 textarea,
 select,
