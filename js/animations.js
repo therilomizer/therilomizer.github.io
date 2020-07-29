@@ -87,4 +87,4 @@ clubFan.target.addEventListener("mouseleave", function(){playBackward(clubFanAni
 diamondFan.target.addEventListener("mouseenter", function(){playForward(diamondFanAnim)});
 diamondFan.target.addEventListener("mouseleave", function(){playBackward(diamondFanAnim)});
 
-cardRipple.addEventListener("mouseenter", function(){cardRippleAnim.goToAndPlay(0)});
+cardRipple.target.addEventListener("mouseenter", function(){cardRippleAnim.goToAndPlay(0)});
