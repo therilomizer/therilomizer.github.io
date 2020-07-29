@@ -158,7 +158,7 @@ img {
   background: url('http://www.doomcrop.com/images/diamond10.png');
   background-size: contain;
   animation-name: cardFlip;
-  animation-duration: 10s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -167,7 +167,7 @@ img {
   background: url('http://www.doomcrop.com/images/cardBack.png');
   background-size: contain;
   animation-name: cardFlip2;
-  animation-duration: 10s;
+  animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
