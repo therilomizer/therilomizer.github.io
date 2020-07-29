@@ -146,8 +146,6 @@ img {
   width: 100%;
   height: 100%;
   position: relative;
-  transition: transform 1s;
-  transform-style: preserve-3d;
 }
 .card__face {
   position: absolute;
@@ -157,23 +155,27 @@ img {
   backface-visibility: hidden;
 }
 .card__face--front {
-  background: url('images/diamond10ForCardSpin.png');
+  background: url('http://www.doomcrop.com/images/diamond10.png');
   background-size: contain;
-  transform: rotateX(-30deg);
   animation-name: cardFlip;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 .card__face--back {
-  background: url('images/cardBackForCardSpin.png');
+  background: url('http://www.doomcrop.com/images/cardBack.png');
   background-size: contain;
-  transform: rotateX(-30deg);
   animation-name: cardFlip2;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.card__float {
+  background: url('http://www.doomcrop.com/images/cardFloatShadow.png');
+  position: absolute;
+  width: 300px;
 }
 
 @keyframes cardFlip {
