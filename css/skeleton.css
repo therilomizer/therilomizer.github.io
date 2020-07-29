@@ -174,7 +174,8 @@ img {
 }
 
 .card__float {
-  position:relative;
+  position:absolute;
+  bottom:0;
   margin:auto;
 }
 
