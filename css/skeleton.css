@@ -175,9 +175,8 @@ img {
 
 .card__float {
   background: url('http://www.doomcrop.com/images/cardFloatShadow.png');
-  position: absolute;
-  height: 50px;
-  width: 200px;
+  position:relative;
+  margin:auto;
 }
 
 @keyframes cardFlip {
