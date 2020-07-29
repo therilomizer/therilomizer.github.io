@@ -1,29 +1,13 @@
 // Fill variables with animation targets in DOM
 
-var spadeFan = {name:"spadeFan", target:document.getElementById('spade_fan')},
-    heartFan = {name:"heartFan", target:document.getElementById('heart_fan')},
-    clubFan = {name:"clubFan", target:document.getElementById('club_fan')},
-    diamondFan = {name:"diamondFan", target:document.getElementById('diamond_fan')},
-    cardRipple = {name:"cardRipple", target:document.getElementById('card_ripple')};
+var spadeFan = document.getElementById('spade_fan'),
+    heartFan = document.getElementById('heart_fan'),
+    clubFan = document.getElementById('club_fan'),
+    diamondFan = document.getElementById('diamond_fan'),
+    cardRipple = document.getElementById('card_ripple');
 
 // Initialize animation functions
 
-function animInitLoader(targetName){
-  bodymovin.loadAnimation({
-    container: targetName.target,
-    path: 'js/' + targetName.name + '.json',
-    renderer: 'svg',
-    loop: false,
-    autoplay: false,
-    rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}})};
-
-var spadeFanAnim = animInitLoader(spadeFan);
-var heartFanAnim = animInitLoader(heartFan);
-var clubFanAnim = animInitLoader(clubFan);
-var diamondFanAnim = animInitLoader(diamondFan);
-var cardRippleAnim = animInitLoader(cardRipple);
-
-/*
 var spadeFanAnim = bodymovin.loadAnimation({
   container: spadeFan, // Required
   path: 'js/spadeFan.json', // Required
@@ -62,7 +46,7 @@ var cardRippleAnim = bodymovin.loadAnimation({
   renderer: 'svg', // Required
   loop: false, // Optional
   autoplay: false, // Optional
-  rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}}); */
+  rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}});
 
 // Initialize animation playback styles
 
@@ -78,13 +62,13 @@ function playBackward(animName) {
 
 // Describe animation triggers & playback styles
 
-spadeFan.target.addEventListener("mouseenter", function(){playForward(spadeFanAnim)});
-spadeFan.target.addEventListener("mouseleave", function(){playBackward(spadeFanAnim)});
-heartFan.target.addEventListener("mouseenter", function(){playForward(heartFanAnim)});
-heartFan.target.addEventListener("mouseleave", function(){playBackward(heartFanAnim)});
-clubFan.target.addEventListener("mouseenter", function(){playForward(clubFanAnim)});
-clubFan.target.addEventListener("mouseleave", function(){playBackward(clubFanAnim)});
-diamondFan.target.addEventListener("mouseenter", function(){playForward(diamondFanAnim)});
-diamondFan.target.addEventListener("mouseleave", function(){playBackward(diamondFanAnim)});
+spadeFan.addEventListener("mouseenter", function(){playForward(spadeFanAnim)});
+spadeFan.addEventListener("mouseleave", function(){playBackward(spadeFanAnim)});
+heartFan.addEventListener("mouseenter", function(){playForward(heartFanAnim)});
+heartFan.addEventListener("mouseleave", function(){playBackward(heartFanAnim)});
+clubFan.addEventListener("mouseenter", function(){playForward(clubFanAnim)});
+clubFan.addEventListener("mouseleave", function(){playBackward(clubFanAnim)});
+diamondFan.addEventListener("mouseenter", function(){playForward(diamondFanAnim)});
+diamondFan.addEventListener("mouseleave", function(){playBackward(diamondFanAnim)});
 
-cardRipple.target.addEventListener("mouseenter", function(){cardRippleAnim.goToAndPlay(0)});
+cardRipple.addEventListener("mouseenter", function(){cardRippleAnim.goToAndPlay(0)});
