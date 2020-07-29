@@ -1,9 +1,9 @@
 // Fill variables with animation targets in DOM
 
 var spadeFan = {name:"spadeFan", target:document.getElementById('spade_fan')},
-    heartFan = {name:"heartFan", target:document.getElementById('heart_fan'),
-    clubFan = {name:"clubFan", target:document.getElementById('club_fan'),
-    diamondFan = {name:"diamondFan", target:document.getElementById('diamond_fan'),
+    heartFan = {name:"heartFan", target:document.getElementById('heart_fan')},
+    clubFan = {name:"clubFan", target:document.getElementById('club_fan')},
+    diamondFan = {name:"diamondFan", target:document.getElementById('diamond_fan')},
     cardRipple = document.getElementById('card_ripple');
 
 var str1 = "js/",
