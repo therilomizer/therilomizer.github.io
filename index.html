@@ -64,17 +64,21 @@
 <!-- Breathing room -->
   <div class="container"><br></div>
 
-<!-- Center section -->
   <main role="main">
+
+<!-- Video section (hidden at load) -->
     <section id="video">
       Video placeholder zone <!-- ###### Expertly edited video goes here -->
     </section>
 
+<!-- About section (hidden at load) -->
     <section id="about">
       About placeholder zone <!-- ###### Expertly written bio goes here -->
     </section>
 
+<!-- Rules section -->
     <section id="rules" class="active">
+
 <!-- Theme of the Game -->
       <div class="container"><h3>Theme of the Game</h3>
         <div class="row">
@@ -270,10 +274,10 @@
 
 <!-- Button Link Scripting -->
 <script>
-  var videoSection = document.querySelector('section.video'),
-      rulesSection = document.querySelector('section.rules'),
-      optionalSection = document.querySelector('section.optional'),
-      aboutSection = document.querySelector('section.about'),
+  var videoSection = document.querySelector('section#video'),
+      rulesSection = document.querySelector('section#rules'),
+      optionalSection = document.querySelector('section#optional'),
+      aboutSection = document.querySelector('section#about'),
       videoLink = document.getElementById('videoLink'),
       rulesLink = document.getElementById('rulesLink'),
       optionalLink = document.getElementById('optionalLink'),
