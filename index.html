@@ -274,38 +274,38 @@
 
 <!-- Button Link Scripting -->
 <script>
-  const videoSection = document.getElementById('video'),
-        rulesSection = document.getElementById('rules'),
-        optionalSection = document.getElementById('optional'),
-        aboutSection = document.getElementById('about'),
-        videoLink = document.getElementById('videoLink'),
-        rulesLink = document.getElementById('rulesLink'),
-        optionalLink = document.getElementById('optionalLink'),
-        aboutLink = document.getElementById('aboutLink');
+  var videoSection = document.getElementById('video'),
+      rulesSection = document.getElementById('rules'),
+      optionalSection = document.getElementById('optional'),
+      aboutSection = document.getElementById('about'),
+      videoLink = document.getElementById('videoLink'),
+      rulesLink = document.getElementById('rulesLink'),
+      optionalLink = document.getElementById('optionalLink'),
+      aboutLink = document.getElementById('aboutLink');
 
   videoLink.onclick = function(){
-    var activeSection = document.querySelector('active');
+    var activeSection = document.querySelector('.active');
     if (videoSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       videoSection.classList.toggle("active");
     } else {void(0);};};
 
   rulesLink.onclick = function(){
-    var activeSection = document.querySelector('active');
+    var activeSection = document.querySelector('.active');
     if (rulesSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       rulesSection.classList.toggle("active");
     } else {void(0);};};
 
   optionalLink.onclick = function(){
-    var activeSection = document.querySelector('active');
+    var activeSection = document.querySelector('.active');
     if (optionalSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       optionalSection.classList.toggle("active");
     } else {void(0);};};
 
   aboutLink.onclick = function(){
-    var activeSection = document.querySelector('active');
+    var activeSection = document.querySelector('.active');
     if (aboutSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       aboutSection.classList.toggle("active");
