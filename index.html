@@ -117,20 +117,19 @@
             <p><strong>Capture</strong> -
               When you Capture a card, place it in your Capture Pile, face-up.
               The player whose card was Captured should immediately replace it with a
-              facedown card from the top of the Draw Pile.<br><br>
-              Captured cards do not leave the Capture Pile
-              until they are counted out at the end of the game.<br><br>
+              facedown card from the top of the Draw Pile.<br>
+              <em>Captured cards do not leave the Capture Pile
+              until they are counted out at the end of the game.</em></p>
           </div><div class="one-half column">
-            <strong>Opposing Card</strong> -
-              Each card on your side of the board is opposed to one card under
-              your opponent's control. Cards oppose each other if they have
-              equivalent row height (front, middle, back),
-              and the same vertical alignment (right, middle, left).
+            <p><strong>Opposing Card</strong> -
+              Each card grid is opposed to one card under your opponent's control.
+              Cards oppose each other if they have equivalent row height
+              (front, middle, back), and the same vertical alignment (right, middle, left).
           </p></div></div>
         <div class="row"><div class="one-half column">
-            <img class="scale-with-grid" src="images/maleGamers.jpg" alt="Placeholder for the Capture animation." />
+            <img src="images/maleGamers.jpg" alt="Placeholder for the Capture animation." />
           </div><div class="one-half column">
-            <img class="scale-with-grid" src="images/maleGamers.jpg" alt="Placeholder for the Opposing Card animation." />
+            <img src="images/maleGamers.jpg" alt="Placeholder for the Opposing Card animation." />
           </div></div></div>
 
 <!-- Flow of the Game -->
@@ -278,53 +277,11 @@
         </div></div></div>
   </footer>
 
-<!-- Lottie Animation Scripting
-========================================= -->
+<!-- Lottie Animation Scripting -->
 <script src="js/animations.js"></script>
 
 <!-- Button Link Scripting -->
-<script>
-  var videoSection = document.getElementById('video'),
-      rulesSection = document.getElementById('rules'),
-      optionalSection = document.getElementById('optional'),
-      aboutSection = document.getElementById('about'),
-      videoLink = document.getElementsByClassName('videoLink'),
-      rulesLink = document.getElementsByClassName('rulesLink'),
-      optionalLink = document.getElementsByClassName('optionalLink'),
-      aboutLink = document.getElementsByClassName('aboutLink');
-
-for (var i=0; i < videoLink.length; i++) {
-  videoLink[i].onclick = function(){
-    var activeSection = document.querySelector('.active');
-    if (videoSection.classList.contains("active") === false) {
-      activeSection.classList.toggle("active");
-      videoSection.classList.toggle("active");
-    } else {void(0);};};};
-
-for (var i=0; i < rulesLink.length; i++) {
-  rulesLink[i].onclick = function(){
-    var activeSection = document.querySelector('.active');
-    if (rulesSection.classList.contains("active") === false) {
-      activeSection.classList.toggle("active");
-      rulesSection.classList.toggle("active");
-    } else {void(0);};};};
-
-for (var i=0; i < optionalLink.length; i++) {
-  optionalLink[i].onclick = function(){
-    var activeSection = document.querySelector('.active');
-    if (optionalSection.classList.contains("active") === false) {
-      activeSection.classList.toggle("active");
-      optionalSection.classList.toggle("active");
-    } else {void(0);};};};
-
-for (var i=0; i < aboutLink.length; i++) {
-  aboutLink[i].onclick = function(){
-    var activeSection = document.querySelector('.active');
-    if (aboutSection.classList.contains("active") === false) {
-      activeSection.classList.toggle("active");
-      aboutSection.classList.toggle("active");
-    } else {void(0);};};};
-</script>
+<script src="js/linkButtons.js"></script>
 
 </body>
 </html>
