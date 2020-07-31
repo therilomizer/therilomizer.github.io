@@ -82,21 +82,35 @@
       <div class="container"><h3>Theme of the Game</h3>
         <div class="row">
         <div class="one-third column">
-          <img class="scale-with-grid" src="images/maleGamers.jpg" alt="This image should show the board layout" />
+          <img src="images/maleGamers.jpg" alt="This image should relate to the theme." />
         </div>
         <div class="two-thirds column">
-          <p>Your cards represent soldiers and leaders in the midst of a civil conflict. Old alliances have broken down, and even families fight amongst themselves, but you have risen above the fray to control one side in the epic battle. Strategy and luck will serve you well.
+          <p>It's harvest time in the ancient city. But something horrible has
+            happened to the crop. Whoever eats it... changes. Their bodies show nothing,
+            and they retain their intelligence. It's their souls that get twisted.
+            Workers turn against thier families. New alliances fracture the old.
+            Now, at the outset of civil war, you must lead a coalition of the
+            doomed. Deploy your followers. With strategy and luck, gain control
+            of the city. Your doom is nigh - march out and face it!
           </p></div></div></div>
 
 <!-- Setup -->
       <div class="container"><h3>Setup</h3>
         <div class="row">
         <div class="two-thirds column">
-          <p>The standard 2-player Doomcrop game uses one deck of playing cards with the Jokers removed.
-          <br><br>Shuffle the deck and deal 10 cards to each player, facedown.
-          <br><br>Look at your cards and choose one to discard. Arrange your remaining cards into a 3-by-3 grid. You may look at your own facedown cards at any time.
-          <br><br>Place the rest of the shuffled deck facedown between the two grids. This is the <em>shared</em> <strong>Draw Pile.</strong>
-          <br><br>Take the card you discarded and place it face-up, separate from your opponent's face-up card. This is your <em>individual</em> <strong>Capture Pile.</strong>
+          <p>The standard 2-player Doomcrop game uses one deck of playing cards
+            with the Jokers removed.<br><br>
+
+            Shuffle the deck and deal 10 cards to each player, facedown.<br><br>
+
+            Look at your cards and choose one to discard. Arrange your remaining
+            cards into a 3-by-3 grid. You may look at your own facedown cards at any time.<br><br>
+
+            Take the card you discarded and place it face-up, separate from your
+            opponent's face-up card. This is your <em>individual</em> <strong>Capture Pile.</strong><br><br>
+
+            Place the rest of the shuffled deck facedown between players.
+            This is the <em>shared</em> <strong>Draw Pile.</strong>
         </p></div>
         <div class="one-third column">
           <div id="card_ripple"> </div>
@@ -113,24 +127,21 @@
 
 <!-- Definitions -->
       <div class="container"><h3>Definitions</h3>
-        <div class="row"><div class="one-half column">
+        <div class="row"><div class="eight columns offset-by-two">
             <p><strong>Capture</strong> -
               When you Capture a card, place it in your Capture Pile, face-up.
               The player whose card was Captured should immediately replace it with a
               facedown card from the top of the Draw Pile.<br>
               <em>Captured cards do not leave the Capture Pile
-              until they are counted out at the end of the game.</em></p>
-          </div><div class="one-half column">
+              until they are counted out at the end of the game.</em></p><br>
+            <img src="images/maleGamers.jpg" alt="Placeholder for the Capture animation." />
+          </div><div class="row"><div class="eight columns offset-by-two">
             <p><strong>Opposing Card</strong> -
               Each card grid is opposed to one card under your opponent's control.
               Cards oppose each other if they have equivalent row height
-              (front, middle, back), and the same vertical alignment (right, middle, left).
-          </p></div></div>
-        <div class="row"><div class="one-half column">
-            <img src="images/maleGamers.jpg" alt="Placeholder for the Capture animation." />
-          </div><div class="one-half column">
+              (front, middle, back), and the same vertical alignment (right, middle, left).</p><br>
             <img src="images/maleGamers.jpg" alt="Placeholder for the Opposing Card animation." />
-          </div></div></div>
+        </div></div></div></div>
 
 <!-- Flow of the Game -->
       <div class="container"><h3>Flow of the Game</h3>
@@ -139,12 +150,15 @@
             <p>On your turn, you may take one of the following actions:</p>
               <ol>
                 <li>Swap the places of any two of your own facedown cards.</li>
-                <li>Turn one of your face-up number cards facedown (face cards cannot be turned facedown).</li>
-                <li>Flip one of your cards face-up and activate its ability (face-up cards cannot be activated).</li>
+                <li>Turn one of your face-up number cards facedown (face cards
+                  cannot be turned facedown).</li>
+                <li>Flip one of your cards face-up and activate its ability
+                  (face-up cards cannot be activated).</li>
               </ol><br>
-            <p>After you have resolved your action and replaced any Captured cards, pass the turn to your opponent.</p></div>
+            <p>After you have resolved your action and replaced any Captured
+              cards, pass the turn to your opponent.</p></div>
           <div class="one-third column">
-            <img class="scale-with-grid" src="images/maleGamers.jpg" alt="This image should show cards moving around the board." />
+            <img src="images/maleGamers.jpg" alt="This image should show cards moving around the board." />
           </div></div></div>
 
 <!-- Numbers Attack! -->
@@ -153,14 +167,17 @@
           <div class="twelve columns">
             <p>Statistically speaking, the deck will contain mostly Number cards.
               When you flip a Number face-up, it attacks its Opposing Card!
-              If the Opposing Card is facedown, flip it face-up (this flip does not activate abilities).</p>
+              If the Opposing Card is facedown, flip it face-up (this flip does
+              not activate abilities).</p>
             <ul>
-              <li>If the Opposing Card is lower than your attacking Number (or if it's a tie), you capture the Opposing Card.</li>
-              <li>If the Opposing Card is higher than your attacking Number, your opponent captures your Number.</li>
+              <li>If the Opposing Card is lower than your attacking Number
+                (or if it's a tie), you capture the Opposing Card.</li>
+              <li>If the Opposing Card is higher than your attacking Number,
+                your opponent captures your Number.</li>
               <br>
               <li>Face cards can only be captured by a Number of 8, 9, or 10. </li>
-              <li>If a Number between 2 to 7 attacks a Face, capture neither card. Both cards remain face-up.</li>
-            </ul>
+              <li>If a Number between 2 to 7 attacks a Face, capture neither card.
+                Both cards remain face-up.</li></ul>
           </div></div></div>
 
 <!-- Suit Abilities -->
@@ -234,25 +251,42 @@
               capture pile runs out.
             </p></div>
           <div class="one-third column">
-            <img class="scale-with-grid" src="images/maleGamers.jpg" alt="This image should depict counting the capture piles" />
+            <img src="images/maleGamers.jpg" alt="This image should depict counting the capture piles" />
           </div></div></div>
     </section>
 
 <!-- Optional Rules -->
-    <section id="optional">
-      <div class="container"><h3>Optional Rules</h3>
+    <section class="container" id="optional">
+      <h3>Optional Rules</h3>
+        <div class='row'>
+          <div class="twelve columns">
+            <h4>Playing with Multiple Decks</h4>
+            <p>Doomcrop can be played with more than one deck of cards.</p>
+            <ul>
+              <li>Players may shuffle multiple decks together to form the Draw Pile.
+              This is workable even if the decks' back-face art doesn't match.</li>
+              <li>If players want their own individual Draw Piles, rather than
+              sharing one, these can be dealt out evenly from the Draw Pile at the
+              start of the game.</li>
+              <li>Players may use multiple decks to form individual draw piles, but
+              each player must have an equal amount of cards at the start of the
+              game.</li></ul>
+          </div></div>
+          <div class="twelve columns">
+            <h4>Playing with 3+ Players</h4>
           <div class="twelve columns">
             <h4>Playing with Jokers</h4>
-            <p>Unlike the other face cards, the Joker can be captured by any number card.
-            <br>When you flip a Joker face-up, or when you capture a Joker, roll a 6-sided die and obey the table below.
+            <p>Unlike the other face cards, the Joker can be captured by any number card.</p>
+            <br>When you flip a Joker face-up, or when you capture a Joker,
+            roll a 6-sided die and obey the table below.
             <br><ol>
               <li>Players swap sides of the board.</li>
               <li>Players swap capture piles.</li>
               <li>Each player captures all of their own cards and deals a new 3-by-3 square.</li>
               <li>All face cards are activated, including face-up ones.</li>
-              <li>Each player shuffles their own cards together and deals their 3-by-3 square randomly.</li>
-              <li>For the rest of the game, play with the top card of the draw pile face-up</li>
-            </ol></p></div></div>
+              <li>Each player shuffles their own cards together and deals their 3-by-3 square randomly, facedown.</li>
+              <li>For the rest of the game, play with the top card of the draw pile face-up.</li></ol>
+          </div>
     </section>
   </main>
 

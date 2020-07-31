@@ -1,3 +1,5 @@
+//Fill variables with section and button targets
+
 var videoSection = document.getElementById('video'),
     rulesSection = document.getElementById('rules'),
     optionalSection = document.getElementById('optional'),
@@ -6,6 +8,8 @@ var videoSection = document.getElementById('video'),
     rulesLink = document.getElementsByClassName('rulesLink'),
     optionalLink = document.getElementsByClassName('optionalLink'),
     aboutLink = document.getElementsByClassName('aboutLink');
+
+//Tell the links to toggle the active section
 
 for (var i=0; i < videoLink.length; i++) {
   videoLink[i].onclick = function(){
