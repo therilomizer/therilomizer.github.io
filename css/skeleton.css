@@ -138,9 +138,8 @@ img {
   display: block;
 }
 
-.hidden {
-  display:none;
-}
+section {display:none;}
+section.active {display:initial;}
 
 .scene {
   width: 300px;

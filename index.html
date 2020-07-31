@@ -66,15 +66,15 @@
 
 <!-- Center section -->
   <main role="main">
-    <section id="video" class="hidden">
+    <section id="video">
       Video placeholder zone <!-- ###### Expertly edited video goes here -->
     </section>
 
-    <section id="about" class="hidden">
+    <section id="about">
       About placeholder zone <!-- ###### Expertly written bio goes here -->
     </section>
 
-    <section id="rules">
+    <section id="rules" class="active">
 <!-- Theme of the Game -->
       <div class="container"><h3>Theme of the Game</h3>
         <div class="row">
@@ -219,7 +219,7 @@
     <div class="container"><br></div>
 
 <!-- Optional Rules -->
-    <section id="optional" class="hidden">
+    <section id="optional">
       <div class="container"><h3>Optional Rules</h3>
           <div class="twelve columns">
             <h4>Playing with Jokers</h4>
@@ -280,29 +280,32 @@
       aboutLink = document.getElementById('aboutLink');
 
   videoLink.onclick = function(){
-    optionalSection.classList.add("hidden");
-    aboutSection.classList.add("hidden");
-    rulesSection.classList.add("hidden");
-    videoSection.classList.remove("hidden");
-  };
+    var activeSection = document.querySelector('active');
+    if (videoSection.classList.contains("active") === false) {
+      activeSection.classList.toggle("active");
+      videoSection.classList.toggle("active");
+    } else {void(0);};};
+
   rulesLink.onclick = function(){
-    videoSection.classList.add("hidden");
-    optionalSection.classList.add("hidden");
-    aboutSection.classList.add("hidden");
-    rulesSection.classList.remove("hidden");
-  };
+    var activeSection = document.querySelector('active');
+    if (rulesSection.classList.contains("active") === false) {
+      activeSection.classList.toggle("active");
+      rulesSection.classList.toggle("active");
+    } else {void(0);};};
+
   optionalLink.onclick = function(){
-    videoSection.classList.add("hidden");
-    aboutSection.classList.add("hidden");
-    rulesSection.classList.add("hidden");
-    optionalSection.classList.remove("hidden");
-  };
+    var activeSection = document.querySelector('active');
+    if (optionalSection.classList.contains("active") === false) {
+      activeSection.classList.toggle("active");
+      optionalSection.classList.toggle("active");
+    } else {void(0);};};
+
   aboutLink.onclick = function(){
-    videoSection.classList.add("hidden");
-    rulesSection.classList.add("hidden");
-    optionalSection.classList.add("hidden");
-    aboutSection.classList.remove("hidden");
-  };
+    var activeSection = document.querySelector('active');
+    if (aboutSection.classList.contains("active") === false) {
+      activeSection.classList.toggle("active");
+      aboutSection.classList.toggle("active");
+    } else {void(0);};};
 </script>
 
 </body>
