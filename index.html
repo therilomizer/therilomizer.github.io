@@ -50,16 +50,14 @@
   </header>
 
 <!-- Nav Buttons -->
-  <nav>
-    <div class="container">
-      <div class="row">
-        <div class="twelve columns" style="text-align:center;">
-          <button class="button" id="videoLink">Video</button>
-          <button class="button" id="rulesLink">Rules</button>
-          <button class="button" id="optionalLink">Optional Rules</button>
-          <button class="button" id="aboutLink">About the Author</button>
-        </div></div></div>
-  </nav>
+  <nav class="container">
+    <div class="row">
+      <div class="twelve columns" style="text-align:center;">
+        <button class="button videoLink">Video</button>
+        <button class="button rulesLink">Rules</button>
+        <button class="button optionalLink">Optional Rules</button>
+        <button class="button aboutLink">About</button>
+      </div></div></nav>
 
 <!-- Breathing room -->
   <div class="container"><br></div>
@@ -247,14 +245,12 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="eight columns">
-            <nav>
-              <button type="button"><a href="#">About</a></button>
-              <button type="button"><a href="#">Contact</a></button>
-              <button type="button"><a href="#">Privacy Policy</a></button>
-              <button type="button"><a href="#">Terms</a></button>
-            </nav>
-          </div>
+          <nav class="eight columns" style="text-align:center;">
+            <button class="button videoLink">Video</button>
+            <button class="button rulesLink">Rules</button>
+            <button class="button optionalLink">Optional Rules</button>
+            <button class="button aboutLink">About</button>
+          </nav>
           <div class="one column">
             <div class="footer__scene">
               <div class="card">
@@ -263,9 +259,7 @@
               </div></div></div>
           <div class="three columns">
             <p>&copy; 2020. Riley Adamson. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
+          </div></div></div>
     </footer>
 
 <!-- Lottie Animation Scripting
@@ -278,38 +272,42 @@
       rulesSection = document.getElementById('rules'),
       optionalSection = document.getElementById('optional'),
       aboutSection = document.getElementById('about'),
-      videoLink = document.getElementById('videoLink'),
-      rulesLink = document.getElementById('rulesLink'),
-      optionalLink = document.getElementById('optionalLink'),
-      aboutLink = document.getElementById('aboutLink');
+      videoLink = document.getElementsByClassName('videoLink'),
+      rulesLink = document.getElementsByClassName('rulesLink'),
+      optionalLink = document.getElementsByClassName('optionalLink'),
+      aboutLink = document.getElementsByClassName('aboutLink');
 
-  videoLink.onclick = function(){
+for (var i=0; i < videoLink.length; i++) {
+  videoLink[i].onclick = function(){
     var activeSection = document.querySelector('.active');
     if (videoSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       videoSection.classList.toggle("active");
-    } else {void(0);};};
+    } else {void(0);};};};
 
-  rulesLink.onclick = function(){
+for (var i=0; i < rulesLink.length; i++) {
+  rulesLink[i].onclick = function(){
     var activeSection = document.querySelector('.active');
     if (rulesSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       rulesSection.classList.toggle("active");
-    } else {void(0);};};
+    } else {void(0);};};};
 
-  optionalLink.onclick = function(){
+for (var i=0; i < optionalLink.length; i++) {
+  optionalLink[i].onclick = function(){
     var activeSection = document.querySelector('.active');
     if (optionalSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       optionalSection.classList.toggle("active");
-    } else {void(0);};};
+    } else {void(0);};};};
 
-  aboutLink.onclick = function(){
+for (var i=0; i < aboutLink.length; i++) {
+  aboutLink[i].onclick = function(){
     var activeSection = document.querySelector('.active');
     if (aboutSection.classList.contains("active") === false) {
       activeSection.classList.toggle("active");
       aboutSection.classList.toggle("active");
-    } else {void(0);};};
+    } else {void(0);};};};
 </script>
 
 </body>
