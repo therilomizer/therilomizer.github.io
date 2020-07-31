@@ -67,12 +67,16 @@
 
 <!-- Video section (hidden at load) -->
     <section id="video">
+      <div class="container">
       Video placeholder zone <!-- ###### Expertly edited video goes here -->
+      </div>
     </section>
 
 <!-- About section (hidden at load) -->
     <section id="about">
+      <div class="container">
       About placeholder zone <!-- ###### Expertly written bio goes here -->
+      </div>
     </section>
 
 <!-- Rules section -->
@@ -127,7 +131,8 @@
 
 <!-- Definitions -->
       <div class="container"><h3>Definitions</h3>
-        <div class="row"><div class="ten columns offset-by-one">
+        <div class="row">
+        <div class="ten columns offset-by-one">
             <p><strong>Capture</strong> -
               When you Capture a card, place it in your Capture Pile, face-up.
               The player whose card was Captured should immediately replace it with a
@@ -135,31 +140,33 @@
               <em>Captured cards do not leave the Capture Pile
               until they are counted out at the end of the game.</em></p><br>
             <img src="images/maleGamers.jpg" alt="Placeholder for the Capture animation." />
-          </div><br><div class="row"><div class="ten columns offset-by-one">
-            <p><strong>Opposing Card</strong> -
-              Each card grid is opposed to one card under your opponent's control.
-              Cards oppose each other if they have equivalent row height
-              (front, middle, back), and the same vertical alignment (right, middle, left).</p><br>
-            <img src="images/maleGamers.jpg" alt="Placeholder for the Opposing Card animation." />
-        </div></div></div></div>
+          </div></div>
+        <div class="row">
+        <div class="ten columns offset-by-one">
+          <br><p><strong>Opposing Card</strong> -
+            Each card grid is opposed to one card under your opponent's control.
+            Cards oppose each other if they have equivalent row height
+            (front, middle, back), and the same vertical alignment (right, middle, left).</p><br>
+          <img src="images/maleGamers.jpg" alt="Placeholder for the Opposing Card animation." />
+        </div></div></div>
 
 <!-- Flow of the Game -->
       <div class="container"><h3>Flow of the Game</h3>
         <div class="row">
-          <div class="two-thirds column">
-            <p>On your turn, you may take one of the following actions:</p>
-              <ol>
-                <li>Swap the places of any two of your own facedown cards.</li>
-                <li>Turn one of your face-up number cards facedown (face cards
-                  cannot be turned facedown).</li>
-                <li>Flip one of your cards face-up and activate its ability
-                  (face-up cards cannot be activated).</li>
-              </ol><br>
-            <p>After you have resolved your action and replaced any Captured
-              cards, pass the turn to your opponent.</p></div>
-          <div class="one-third column">
-            <img src="images/maleGamers.jpg" alt="This image should show cards moving around the board." />
-          </div></div></div>
+        <div class="two-thirds column">
+          <p>On your turn, you may take one of the following actions:</p>
+            <ol>
+              <li>Swap the places of any two of your own facedown cards.</li>
+              <li>Turn one of your face-up number cards facedown (face cards
+                cannot be turned facedown).</li>
+              <li>Flip one of your cards face-up and activate its ability
+                (face-up cards cannot be activated).</li>
+            </ol><br>
+          <p>After you have resolved your action and replaced any Captured
+            cards, pass the turn to your opponent.</p></div>
+        <div class="one-third column">
+          <img src="images/maleGamers.jpg" alt="This image should show cards moving around the board." />
+        </div></div></div>
 
 <!-- Numbers Attack! -->
       <div class="container"><h3>Numbers Attack!</h3>
@@ -182,111 +189,115 @@
 
 <!-- Suit Abilities -->
       <div class="container"><h3>Suit Abilities</h3>
+        <div class="row">
         <div class="twelve columns">
           <p>Number cards also have special abilities depending upon their suit.</p>
-        </div>
-          <div class="row">
-            <div class="one-quarter column">
-              <div id="heart_fan"> </div>
-              <header class="cardHeader"><h4>Hearts</h4></header>
-              <p>When a Heart number card attacks, it can add the value
-                of one of your own adjacent face-up Heart number cards to its
-                own value until the attack is finished.
-              </p></div>
-            <div class="one-quarter column">
-              <div id="diamond_fan"> </div>
-              <header class="cardHeader"><h4>Diamonds</h4></header>
-              <p>When you count out capture piles at the end of the game,
-                Diamonds count for double (this includes Diamond face cards as well).
-              </p></div>
-            <div class="one-quarter column">
-              <div id="club_fan"> </div>
-              <header class="cardHeader"><h4>Clubs</h4></header>
-              <p>When a Club number card attacks, you may choose to attack any
-                card in its own column instead of its opposing card.<br><br>
-              <em>(Example. The 9 of Clubs in your left middle space can hit any
-                one of your opponent's right top, middle, or lower card.)</em>
-              </p></div>
-            <div class="one-quarter column">
-              <div id="spade_fan"> </div>
-              <header class="cardHeader"><h4>Spades</h4></header>
-              <p>You may capture one of your own Spade cards on your turn as
-                long as it's face-up. This does not count as your action for the turn.
-              </p></div>
-          </div></div>
+        </div></div>
+        <div class="row">
+        <div class="one-quarter column">
+          <div id="heart_fan"> </div>
+          <header class="cardHeader"><h4>Hearts</h4></header>
+          <p>When a Heart number card attacks, it can add the value
+            of one of your own adjacent face-up Heart number cards to its
+            own value until the attack is finished.
+          </p></div>
+        <div class="one-quarter column">
+          <div id="diamond_fan"> </div>
+          <header class="cardHeader"><h4>Diamonds</h4></header>
+          <p>When you count out capture piles at the end of the game,
+            Diamonds count for double (this includes Diamond face cards as well).
+          </p></div>
+        <div class="one-quarter column">
+          <div id="club_fan"> </div>
+          <header class="cardHeader"><h4>Clubs</h4></header>
+          <p>When a Club number card attacks, you may choose to attack any
+            card in its own column instead of its opposing card.<br><br>
+          <em>(Example. The 9 of Clubs in your left middle space can hit any
+            one of your opponent's right top, middle, or lower card.)</em>
+          </p></div>
+        <div class="one-quarter column">
+          <div id="spade_fan"> </div>
+          <header class="cardHeader"><h4>Spades</h4></header>
+          <p>You may capture one of your own Spade cards on your turn as
+            long as it's face-up. This does not count as your action for the turn.
+          </p></div>
+      </div></div>
 
 <!-- Face Card Abilities -->
       <div class="container"><h3>Face Card Abilities</h3>
         <div class="row">
-          <div class="twelve columns">
-            <p>Each type of face card has a unique ability that is activated
-              when flipped face-up.</p>
-            <ul>
-              <li>When you flip over a <strong>Jack</strong>, swap the positions
-                of any of your cards, as many times as you like until satisfied.
-                You may not turn any cards face-up or face-down during this process.</li>
-              <li>When you flip over a <strong>Queen</strong>, turn any amount
-                of your other cards facedown.</li>
-              <li>When you flip over a <strong>King</strong>, flip all of your
-                number cards face-up, then each of your number cards attacks its
-                opposing card.</li>
-              <li>When you flip over an <strong>Ace</strong>, instantly capture
-                any card on the board (does not need to be face-up).</li>
-            </ul></div></div></div>
+        <div class="twelve columns">
+          <p>Each type of face card has a unique ability that is activated
+            when flipped face-up.</p>
+          <ul>
+            <li>When you flip over a <strong>Jack</strong>, swap the positions
+              of any of your cards, as many times as you like until satisfied.
+              You may not turn any cards face-up or face-down during this process.</li>
+            <li>When you flip over a <strong>Queen</strong>, turn any amount
+              of your other cards facedown.</li>
+            <li>When you flip over a <strong>King</strong>, flip all of your
+              number cards face-up, then each of your number cards attacks its
+              opposing card.</li>
+            <li>When you flip over an <strong>Ace</strong>, instantly capture
+              any card on the board (does not need to be face-up).</li>
+          </ul></div></div></div>
 
 <!-- Ending the Game -->
       <div class="container"><h3>Ending the Game</h3>
         <div class="row">
-          <div class="two-thirds column">
-            <p>When the draw pile runs out, continue taking turns until both
-              players agree there are no more actions worth taking.
-              Leave the remaining cards on the board and count out your capture pile.
-              The winner is the player with more cards in their capture pile,
-              including doubled Diamonds.<br><br>
+        <div class="two-thirds column">
+          <p>When the draw pile runs out, continue taking turns until both
+            players agree there are no more actions worth taking.
+            Leave the remaining cards on the board and count out your capture pile.
+            The winner is the player with more cards in their capture pile,
+            including doubled Diamonds.<br><br>
 
-              In the event that capture piles are tied, or both players want to
-              continue the game, shuffle your capture pile and your remaining
-              cards together - this is now your individual draw pile.
-              Deal yourself a new 3-by-3 grid and continue playing until one
-              capture pile runs out.
-            </p></div>
-          <div class="one-third column">
-            <img src="images/maleGamers.jpg" alt="This image should depict counting the capture piles" />
-          </div></div></div>
-    </section>
+            In the event that capture piles are tied, or both players want to
+            continue the game, shuffle your capture pile and your remaining
+            cards together - this is now your individual draw pile.
+            Deal yourself a new 3-by-3 grid and continue playing until one
+            capture pile runs out.
+          </p></div>
+        <div class="one-third column">
+          <img src="images/maleGamers.jpg" alt="This image should depict counting the capture piles" />
+        </div></div></div>
+
+    </section><!-- Rules Section ends here -->
 
 <!-- Optional Rules -->
-    <section class="container" id="optional">
-      <h3>Optional Rules</h3>
+    <section id="optional">
+      <div class="container">
         <div class='row'>
-          <div class="twelve columns">
-            <h4>Playing with Multiple Decks</h4>
-            <p>Doomcrop can be played with more than one deck of cards.</p>
-            <ul>
-              <li>Players may shuffle multiple decks together to form the Draw Pile.
-              This is workable even if the decks' back-face art doesn't match.</li>
-              <li>If players want their own individual Draw Piles, rather than
-              sharing one, these can be dealt out evenly from the Draw Pile at the
-              start of the game.</li>
-              <li>Players may use multiple decks to form individual draw piles, but
-              each player must have an equal amount of cards at the start of the
-              game.</li></ul>
-          </div></div>
-          <div class="twelve columns">
-            <h4>Playing with 3+ Players</h4>
-          <div class="twelve columns">
-            <h4>Playing with Jokers</h4>
-            <p>Unlike the other face cards, the Joker can be captured by any number card.</p>
-            <br>When you flip a Joker face-up, or when you capture a Joker,
-            roll a 6-sided die and obey the table below.
-            <br><ol>
-              <li>Players swap sides of the board.</li>
-              <li>Players swap capture piles.</li>
-              <li>Each player captures all of their own cards and deals a new 3-by-3 square.</li>
-              <li>All face cards are activated, including face-up ones.</li>
-              <li>Each player shuffles their own cards together and deals their 3-by-3 square randomly, facedown.</li>
-              <li>For the rest of the game, play with the top card of the draw pile face-up.</li></ol>
-          </div>
+        <div class="twelve columns">
+          <h4>Playing with Multiple Decks</h4>
+          <p>Doomcrop can be played with more than one deck of cards.</p>
+          <ul>
+            <li>Players may shuffle multiple decks together to form the Draw Pile.
+            This is workable even if the decks' back-face art doesn't match.</li>
+            <li>If players want their own individual Draw Piles, rather than
+            sharing one, these can be dealt out evenly from the Draw Pile at the
+            start of the game.</li>
+            <li>Players may use multiple decks to form individual draw piles, but
+            each player must have an equal amount of cards at the start of the
+            game.</li></ul>
+        </div></div>
+        <div class='row'>
+        <div class="twelve columns">
+          <h4>Playing with 3+ Players</h4></div></div>
+        <div class='row'>
+        <div class="twelve columns">
+          <h4>Playing with Jokers</h4>
+          <p>Unlike the other face cards, the Joker can be captured by any number card.</p>
+          <br>When you flip a Joker face-up, or when you capture a Joker,
+          roll a 6-sided die and obey the table below.
+          <br><ol>
+            <li>Players swap sides of the board.</li>
+            <li>Players swap capture piles.</li>
+            <li>Each player captures all of their own cards and deals a new 3-by-3 square.</li>
+            <li>All face cards are activated, including face-up ones.</li>
+            <li>Each player shuffles their own cards together and deals their 3-by-3 square randomly, facedown.</li>
+            <li>For the rest of the game, play with the top card of the draw pile face-up.</li></ol>
+      </div></div></div>
     </section>
   </main>
 
@@ -294,21 +305,21 @@
   <footer>
     <div class="container">
       <div class="row">
-        <nav class="eight columns" style="text-align:center;">
-          <button class="button videoLink">Video</button>
-          <button class="button rulesLink">Rules</button>
-          <button class="button optionalLink">Optional Rules</button>
-          <button class="button aboutLink">About</button>
-        </nav>
-        <div class="one column">
-          <div class="footer__scene">
-            <div class="card">
-              <div class="card__face card__face--front"> </div>
-              <div class="card__face card__face--back"> </div>
-            </div></div></div>
-        <div class="three columns">
-          <p>&copy; 2020. Riley Adamson. All Rights Reserved.</p>
-        </div></div></div>
+      <nav class="eight columns" style="text-align:center;">
+        <button class="button videoLink">Video</button>
+        <button class="button rulesLink">Rules</button>
+        <button class="button optionalLink">Optional Rules</button>
+        <button class="button aboutLink">About</button>
+      </nav>
+      <div class="one column">
+        <div class="footer__scene">
+          <div class="card">
+            <div class="card__face card__face--front"> </div>
+            <div class="card__face card__face--back"> </div>
+          </div></div></div>
+      <div class="three columns">
+        <p>&copy; 2020. Riley Adamson. All Rights Reserved.</p>
+      </div></div></div>
   </footer>
 
 <!-- Lottie Animation Scripting -->
