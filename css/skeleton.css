@@ -134,9 +134,14 @@ body {
   background-color:#E5EAF5 }
 img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
   display: block;
 }
+
+.hidden {
+  display:none;
+}
+
 .scene {
   width: 300px;
   height: 300px;
