@@ -48,7 +48,10 @@ var cardRippleAnim = bodymovin.loadAnimation({
   autoplay: false, // Optional
   rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}});
 
-cardRipple.firstChild.classList.add("animation");
+// Center animations in DIVs
+
+var cardRippleAnimSVG = cardRipple.firstChild;
+cardRippleAnimSVG.classList.add("animation");
 
 // Initialize animation playback styles
 
