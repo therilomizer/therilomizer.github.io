@@ -48,6 +48,8 @@ var cardRippleAnim = bodymovin.loadAnimation({
   autoplay: false, // Optional
   rendererSettings: {preserveAspectRatio: 'xMidYMid slice' ,}});
 
+cardRipple.firstChild.classList.add("animation");
+
 // Initialize animation playback styles
 
 function playForward(animName) {

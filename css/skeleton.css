@@ -141,6 +141,11 @@ img {
 section {display:none;}
 section.active {display:initial;}
 
+.animation{
+  display:flex;
+  justify-content:center;
+}
+
 .scene {
   width: 300px;
   height: 300px;
