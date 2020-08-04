@@ -131,14 +131,8 @@ body {
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
-  background : -moz-radial-gradient(53.08% 50%, ellipse farthest-corner, rgba(255, 210, 138, 1) 0%, rgba(249, 205, 135, 1) 12.24%, rgba(233, 192, 126, 1) 28.32%, rgba(205, 169, 110, 1) 46.55%, rgba(168, 138, 89, 1) 66.35%, rgba(119, 98, 63, 1) 87.18%, rgba(86, 71, 44, 1) 100%);
-	background : -webkit-radial-gradient(53.08% 50%, ellipse farthest-corner, rgba(255, 210, 138, 1) 0%, rgba(249, 205, 135, 1) 12.24%, rgba(233, 192, 126, 1) 28.32%, rgba(205, 169, 110, 1) 46.55%, rgba(168, 138, 89, 1) 66.35%, rgba(119, 98, 63, 1) 87.18%, rgba(86, 71, 44, 1) 100%);
-	background : -webkit-gradient(radial,53.08% 50% ,0 , 53.08% 50%, 1150.03 ,color-stop(0,rgba(255, 210, 138, 1) ),color-stop(0.1224,rgba(249, 205, 135, 1) ),color-stop(0.2832,rgba(233, 192, 126, 1) ),color-stop(0.4655,rgba(205, 169, 110, 1) ),color-stop(0.6635,rgba(168, 138, 89, 1) ),color-stop(0.8718,rgba(119, 98, 63, 1) ),color-stop(1,rgba(86, 71, 44, 1) ));
-	background : -o-radial-gradient(53.08% 50%, ellipse farthest-corner, rgba(255, 210, 138, 1) 0%, rgba(249, 205, 135, 1) 12.24%, rgba(233, 192, 126, 1) 28.32%, rgba(205, 169, 110, 1) 46.55%, rgba(168, 138, 89, 1) 66.35%, rgba(119, 98, 63, 1) 87.18%, rgba(86, 71, 44, 1) 100%);
-	background : -ms-radial-gradient(53.08% 50%, ellipse farthest-corner, rgba(255, 210, 138, 1) 0%, rgba(249, 205, 135, 1) 12.24%, rgba(233, 192, 126, 1) 28.32%, rgba(205, 169, 110, 1) 46.55%, rgba(168, 138, 89, 1) 66.35%, rgba(119, 98, 63, 1) 87.18%, rgba(86, 71, 44, 1) 100%);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Stlye=2);"
-	background : radial-gradient(53.08% 50%, ellipse farthest-corner, rgba(255, 210, 138, 1) 0%, rgba(249, 205, 135, 1) 12.24%, rgba(233, 192, 126, 1) 28.32%, rgba(205, 169, 110, 1) 46.55%, rgba(168, 138, 89, 1) 66.35%, rgba(119, 98, 63, 1) 87.18%, rgba(86, 71, 44, 1) 100%);
-	filter: progid:DXImageTransform.Microsoft.Alpha(Stlye=2); }
+  background-image:url(/images/doomcropBackground.svg/);
+}
 img {
   max-width: 100%;
   max-height: auto;
