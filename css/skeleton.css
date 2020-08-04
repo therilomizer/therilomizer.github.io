@@ -132,6 +132,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
   background-image: url('http://www.doomcrop.com/images/doomcropBackground.svg');
+  background-size:cover;
 }
 img {
   max-width: 100%;
