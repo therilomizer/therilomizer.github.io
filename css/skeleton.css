@@ -145,7 +145,7 @@ section.active {display:initial;}
   backface-visibility: hidden;
 }
 .card__face--front {
-  background: url('http://www.doomcrop.com/images/diamond10.png') no-repeat;
+  background: url('http://www.doomcrop.com/images/aceSpades.png') no-repeat;
   background-size: contain;
   animation-name: cardFlip;
   animation-duration: 5s;
