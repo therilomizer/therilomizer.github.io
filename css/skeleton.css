@@ -154,7 +154,7 @@ section.active {display:initial;}
 }
 
 .card__face--back {
-  background: url('http://www.doomcrop.com/images/cardBack2.png') no-repeat;
+  background: url('http://www.doomcrop.com/images/cardBack.png') no-repeat;
   background-size: contain;
   animation-name: cardFlip2;
   animation-duration: 5s;

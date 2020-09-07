@@ -53,9 +53,9 @@
   <nav class="container">
     <div class="row">
       <div class="twelve columns" style="text-align:center;">
-        <button class="button videoLink">Video</button>
         <button class="button rulesLink">Rules</button>
         <button class="button optionalLink">Optional Rules</button>
+        <button class="button videoLink">Video</button>
         <button class="button aboutLink">About</button>
       </div></div></nav>
 
@@ -68,54 +68,89 @@
 <!-- Video section (hidden at load) -->
     <section id="video">
       <div class="container">
-      Video placeholder zone <!-- ###### Expertly edited video goes here -->
+        <h1>Coming Later</h1>
+        <img src="./images/underConstruction.gif" style="margin-left:auto;margin-right:auto;">
+        <!-- ###### Expertly edited video goes here -->
       </div>
     </section>
 
 <!-- About section (hidden at load) -->
     <section id="about">
       <div class="container">
-      About placeholder zone <!-- ###### Expertly written bio goes here -->
-      </div>
+        <img src="./images/riley.jpg" style="margin-left:auto;margin-right:auto;border-radius:50%;max-width:400px;">
+        <div class="row">
+          <div class="eight columns offset-by-two" style="text-align:center">
+            <a href="https://www.instagram.com/rileyadammmson/">@rileyadammmson</a><br>
+            <p style="text-align:left">Greetings traveler! Doomcrop was designed by Riley Adamson.
+              That's me :) I work as an Assistant Editor in Los Angeles.
+              I contributed to such shows as <em>I Think You Should Leave</em> on Netflix,
+              and <em>The Eric Andre Show</em> on Adult Swim. I made this website to
+              practice frontend coding & graphic design, and to get my cool game idea out into the
+              world. I designed everything in After Effects and converted the animations
+              to SVG with <a href="https://airbnb.design/lottie/">Lottie</a>.
+              Feel free to DM me if you want to discuss the game or the site.
+              Thanks for visiting!
+            </p></div></div>
+        <div class="row">
+          <div class="eight columns offset-by-two">
+            <h5>Doomcrop To-Do List</h5>
+              <ul>
+                <li>Replace all placeholder images with designed ones</li>
+                <li>Thorough testing of game rules</li>
+                <li>Video explaining the rules of the game</li>
+                <li>Interactive web-based Doomcrop vs. AI and other players</li>
+                <li>Employ better designers to make the cards look good</li>
+                <li>Sell custom decks with rules packed-in</li>
+              </ul>
+          </div></div></div>
     </section>
 
 <!-- Rules section -->
     <section id="rules" class="active">
 
-<!-- Theme of the Game -->
-      <div class="container"><h3>Theme of the Game</h3>
+<!-- What is the Meaning of This? -->
+      <div class="container"><h3>What is the Meaning of This?</h3>
         <div class="row">
         <div class="one-third column" style="display:flex;justify-content:center;">
-          <div id="card_ripple" style="max-width:18rem;"> </div>
+          <div id="card_ripple" style="max-width:22rem;"> </div>
         </div>
         <div class="two-thirds column">
-          <p>It's harvest time in the ancient city, and all is not well. Something
-            horrible has happened to the crop. Whoever eats it becomes corrupted.
-            Their bodies don't change, and they retain their intelligence...
-            but it's their <em>souls</em> that get twisted.<br><br>
+          <p>Doomcrop is a game for 2+ players that can be played with a regular deck
+            of playing cards. All that is required is enough table space to lay out
+            around 20 cards.
+            <br><br>
 
-            Workers turn against their families. New alliances fracture the old.
-            Now, at the outset of civil war, <strong>you</strong> must lead a
-            coalition of the doomed. <br><br>
+            Although luck is a component of play, sound strategy is a necessity.
+            You must think of yourself as the commander of a ramshackle army,
+            giving orders while a battle rages. Your number cards will engage your
+            opponents in combat, while your face cards will use their courtly
+            powers to influence the tides of war.
+            <br><br>
 
-            Deploy your followers. With strategy and luck, gain control of the
-            city. Doom is coming - it's time to march out and face it.
-          </p></div></div></div>
+            Your goal is capture your opponent's cards, while protecting your own
+            cards from capture. Whosoever has captured the most cards by the time
+            the Draw Pile runs out, wins!
+        </p></div></div></div>
 
-<!-- Setup -->
-      <div class="container"><h3>Setup</h3>
+<!-- Game Setup -->
+      <div class="container"><h3>Game Setup</h3>
         <div class="row">
         <div class="twelve columns">
           <p>The standard 2-player Doomcrop game uses one deck of playing cards
-            with the Jokers removed.<br><br>
+            with the Jokers removed.<br><em>(Please see the Optional Rules section
+            to play with more players, more decks, or more Jokers.)</em>
+            <br><br>
 
-            Shuffle the deck and deal 10 cards to each player, facedown.<br><br>
+            Shuffle the deck and deal 10 cards to each player, facedown.
+            <br><br>
 
             Look at your cards and choose one to discard. Arrange your remaining
-            cards into a 3-by-3 grid. You may look at your own facedown cards at any time.<br><br>
+            cards into a 3-by-3 grid. You may look at your own facedown cards at any time.
+            <br><br>
 
             Take the card you discarded and place it face-up, separate from your
-            opponent's face-up card. This is your <em>individual</em> <strong>Capture Pile.</strong><br><br>
+            opponent's face-up card. This is your <em>individual</em> <strong>Discard Pile.</strong>
+            <br><br>
 
             Place the rest of the shuffled deck facedown between players.
             This is the <em>shared</em> <strong>Draw Pile.</strong>
@@ -125,30 +160,21 @@
           <img src="images/layoutGuide.png" alt="Layout Guide" />
         </div></div></div>
 
-<!-- Your Objective -->
-      <div class="container"><h3>Your Objective</h3>
-        <div class="row">
-        <div class="twelve columns">
-          <p>Capture as many of your opponent's cards as you can.
-            Whoever has the most cards in their Capture Pile
-            by the time the Draw Pile runs out, wins.
-          </p></div></div></div>
-
 <!-- Definitions -->
       <div class="container"><h3>Definitions</h3>
-        <div class="row"><div class="two columns"> </div>
+        <div class="row">
         <div class="six columns">
             <p><strong>Capture</strong> -
-              When you Capture a card, place it in your Capture Pile, face-up.
-              The player whose card was Captured should immediately replace it with a
+              When you capture a card, place it in your Discard Pile, face-up.
+              The player whose card was captured should immediately replace it with a
               facedown card from the top of the Draw Pile.<br><br>
-              <em>Captured cards do not leave the Capture Pile
+              <em>Captured cards do not leave the Discard Pile
               until they are counted out at the end of the game.</em></p><br></div>
         <div class="four columns" style="display:flex;justify-content:center;">
             <img src="images/maleGamers.jpg" alt="Placeholder for the Capture animation." />
           </div></div>
         <div class="row">
-        <div class="ten columns offset-by-one">
+        <div class="ten columns">
           <br><p><strong>Opposing Card</strong> -
             Each card grid is opposed to one card under your opponent's control.
             Cards oppose each other if they have equivalent row height
@@ -156,7 +182,6 @@
             <br><br>
             Imagine a line running horizontally between the top row of your grid,
             your opponent's top row. This is called the <em>axis of opposition.</em>
-
           </p></div>
         <div class="row">
         <div class="ten columns offset-by-one" style="display:flex;justify-content:center;">
@@ -207,29 +232,36 @@
         </div></div>
         <div class="row">
         <div class="one-quarter column">
+          <h5>Hearts</h5>
+          <p>Heart number cards are like tradesmen and warriors who share a
+            powerful bond.</p>
           <div id="heart_fan"> </div>
-          <h4>Hearts</h4>
-          <p>When a Heart number card attacks, it can add the value
-            of one of your own adjacent face-up Heart number cards to its
-            own value until the attack is finished.
+          <p>When a Heart attacks, it can add the value of one adjacent face-up
+            Heart number to its own value until the end of the turn.
           </p></div>
         <div class="one-quarter column">
+          <h5>Diamonds</h5>
+          <p>Diamond number cards are like merchants and thieves using the chaos
+            to gather wealth.</p>
           <div id="diamond_fan"> </div>
-          <h4>Diamonds</h4>
-          <p>When you count out capture piles at the end of the game,
-            Diamonds count for double (this includes Diamond face cards as well).
+          <p>When you count out Discard Piles at the end of the game, each
+            Diamond counts as two cards.
           </p></div>
         <div class="one-quarter column">
+          <h5>Clubs</h5>
+          <p>Club number cards are like archers and bottle-throwers, attacking
+            from a distance.</p>
           <div id="club_fan"> </div>
-          <h4>Clubs</h4>
           <p>When a Club number card attacks, you may choose to attack any
             card in its own column instead of its opposing card.<br><br>
           <em>(Example. The 9 of Clubs in your left middle space can hit any
             one of your opponent's right top, middle, or lower card.)</em>
           </p></div>
         <div class="one-quarter column">
+          <h5>Spades</h5>
+          <p>Spade number cards are like zealous fanatics, willing to die for
+            the cause.</p>
           <div id="spade_fan"> </div>
-          <h4>Spades</h4>
           <p>You may capture one of your own Spade cards on your turn as
             long as it's face-up. This does not count as your action for the turn.
           </p></div>
@@ -241,18 +273,30 @@
         <div class="twelve columns">
           <p>Each type of face card has a unique ability that is activated
             when flipped face-up.</p>
-          <ul>
-            <li>When you flip over a <strong>Jack</strong>, swap the positions
-              of any of your cards, as many times as you like until satisfied.
-              You may not turn any cards face-up or face-down during this process.</li>
-            <li>When you flip over a <strong>Queen</strong>, turn any amount
-              of your other cards facedown.</li>
-            <li>When you flip over a <strong>King</strong>, flip all of your
-              number cards face-up, then each of your number cards attacks its
-              opposing card.</li>
-            <li>When you flip over an <strong>Ace</strong>, instantly capture
-              any card on the board (does not need to be face-up).</li>
-          </ul></div></div></div>
+        </div></div>
+        <div class="row">
+        <div class="one-quarter column">
+          <img src="./images/jackClubs.png">
+          <p>When you flip over a <strong>Jack</strong>, swap the positions
+            of any of your cards, as many times as you like until satisfied.
+            You may not turn any cards face-up or face-down during this process.
+          </p></div>
+        <div class="one-quarter column">
+          <img src="./images/queenHearts.png">
+          <p>When you flip over a <strong>Queen</strong>, turn any amount
+            of your other cards facedown.</p>
+          </div>
+        <div class="one-quarter column">
+          <img src="./images/kingDiamonds.png">
+          <p>When you flip over a <strong>King</strong>, flip all of your
+            number cards face-up, then each of your number cards attacks its
+            opposing card.</p>
+          </div>
+        <div class="one-quarter column">
+          <img src="./images/aceSpades.png">
+          <p>When you flip over an <strong>Ace</strong>, instantly capture
+              any card on the board (does not need to be face-up).</p>
+        </div></div></div>
 
 <!-- Ending the Game -->
       <div class="container"><h3>Ending the Game</h3>
@@ -260,19 +304,19 @@
         <div class="two-thirds column">
           <p>When the draw pile runs out, continue taking turns until both
             players agree there are no more actions worth taking.
-            Leave the remaining cards on the board and count out your capture pile.
-            The winner is the player with more cards in their capture pile,
+            Leave the remaining cards on the board and count out your Discard Pile.
+            The winner is the player with more cards in their Discard Pile,
             including doubled Diamonds.<br><br>
 
-            In the event that capture piles are tied, or both players want to
-            continue the game, shuffle your capture pile and your remaining
+            In the event that Discard Piles are tied, or both players want to
+            continue the game, shuffle your Discard Pile and your remaining
             cards together - this is now your individual draw pile.
             Deal yourself a new 3-by-3 grid and continue playing until one
-            capture pile runs out.
+            Discard Pile runs out.
           </p><div class="remark" style="text-align:center;">
           <h3>Congratulations<br>You played Doomcrop</h3></div></div>
         <div class="one-third column">
-          <img src="images/maleGamers.jpg" alt="This image should depict counting the capture piles" />
+          <img src="images/maleGamers.jpg" alt="This image should depict counting the Discard Piles" />
         </div></div></div>
 
     </section><!-- Rules Section ends here -->
@@ -319,7 +363,7 @@
           roll a 6-sided die and obey the table below.</p>
           <ol>
             <li>Players swap sides of the board.</li>
-            <li>Players swap capture piles.</li>
+            <li>Players swap Discard Piles.</li>
             <li>Each player captures all of their own cards and deals a new 3-by-3 square.</li>
             <li>All face cards are activated, including face-up ones.</li>
             <li>Each player shuffles their own cards together and deals their 3-by-3 square randomly, facedown.</li>
@@ -332,20 +376,21 @@
   <footer>
     <div class="container">
       <div class="row">
-      <nav class="eight columns" style="text-align:center;">
+      <nav class="eight columns offset-by-two" style="text-align:center;">
         <button class="button videoLink">Video</button>
         <button class="button rulesLink">Rules</button>
         <button class="button optionalLink">Optional Rules</button>
         <button class="button aboutLink">About</button>
-      </nav>
-      <div class="one column">
+      </nav></div>
+      <div class="row">
+      <div class="one column offset-by-four">
         <div class="footer__scene">
           <div class="card">
             <div class="card__face card__face--front"> </div>
             <div class="card__face card__face--back"> </div>
           </div></div></div>
       <div class="three columns">
-        <p>&copy; 2020. Riley Adamson. All Rights Reserved.</p>
+        <p style="line-height: 1;">&copy; 2020. Riley Adamson. All Rights Reserved.</p>
       </div></div></div>
   </footer>
 
