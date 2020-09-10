@@ -112,16 +112,21 @@
             <br><br>
 
             Take the 10th card and start your Discard pile, face-up. It should be
-            <u>separate</u> from your opponent's Discard pile.
+            <u>separate</u> from your opponent's Discard pile. Cards in your Discard pile
+            cannot return to play, so choose your 10th card carefully.
             <br><br>
 
             Place the rest of the shuffled deck facedown between players.
             This is the <em>shared</em> <strong>Draw pile.</strong>
+            <br><br>
 
-            On your turn, flip one of your cards face-up. Attack if it's a Number, or
-            activate the ability if it's a Face card. Any card you capture should be
-            immediately replaced from the top of the Draw pile, facedown. After captured
-            cards have been replaced (if any), pass the turn.
+            On your turn, flip one of your cards face-up. If it's a Number, you attack.
+            If it's a Face card, you activate its ability. If you capture a card,
+            put it in your Discard pile face-up and immediately replace it with a facedown card
+            from the top of the Draw pile.
+            <br><br>
+
+            After all captured cards have been replaced, pass the turn to your opponent.
         </p></div></div>
         <div class="row">
         <div class="ten columns offset-by-one">
@@ -131,17 +136,6 @@
 <!-- Definitions -->
       <div id="definitions" class="container"><h3>Definitions</h3>
         <div class="row">
-        <div class="six columns">
-            <p><strong>Capture</strong> -
-              When you capture a card, place it in your Discard pile, face-up.
-              The player whose card was captured should immediately replace it with a
-              facedown card from the top of the Draw pile.<br><br>
-              <em>Captured cards do not leave the Discard pile
-              until they are counted out at the end of the game.</em></p><br></div>
-        <div class="four columns" style="display:flex;justify-content:center;">
-            <img src="images/maleGamers.jpg" alt="Placeholder for the Capture animation." />
-          </div></div>
-        <div class="row">
         <div class="ten columns">
           <br><p><strong>Opposing Card</strong> -
             Each card in your grid has its opposite in your opponent's grid.
@@ -149,19 +143,28 @@
             (front, middle, back), and they are vertically aligned (left, middle, right).
           </p></div>
         <div class="row">
-        <div id="oppoAnimation" class="ten columns offset-by-one" style="display:flex;justify-content:center;">
-          <img src="images/oppoIllustration/lowerRes/oppoIllustration_00000.png" alt="The line of opposition and example opposed cards." />
-        </div></div></div></div>
+        </div></div></div>
 
 <!-- Numbers Attack! -->
       <div id="numbers" class="container"><h3>Numbers Attack!</h3>
         <div class="row">
-          <div class="twelve columns">
+          <div class="eight columns">
             <p>Statistically speaking, the majority of your deck is Number cards.
-              Think of them as your rank-and-file troops. All they know is combat.
-            <br><br>
-
-            Flip a Number card face-up to attack its Opposing card.
+              Think of them as your rank-and-file troops. All they know is combat.</p>
+            </div>
+          <div class ="four columns" style="background: rgba(white, 0.5);">
+            <h4>Opposing Cards</h4>
+            <p>Each card in your grid has its opposite in your opponent's grid.
+            Cards oppose each other if they have equivalent row height
+            (front, middle, or back), and they are vertically aligned on your
+            left, middle, or right.
+          </p>
+          <div id="oppoAnimation" style="display:flex;justify-content:center;">
+            <img src="images/oppoIllustration/lowerRes/oppoIllustration_00000.png" alt="The line of opposition and example opposed cards." />
+          </div></div></div>
+          <div class="row">
+            <div class="twelve columns">
+            <p>Flip a Number card face-up to attack its Opposing card.
               If the Opposing card is facedown, flip it face-up.
               <br>If the Opposing card is a Number:</p>
             <ul>
