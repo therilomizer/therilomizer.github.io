@@ -88,7 +88,7 @@ const topOuter = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/o
 const oppoIllusDiv = document.getElementById("oppoIllusDiv"),
       oppoIllus = document.getElementById("oppoIllus");
 var x = 0, y = 0;
-var width = oppoIllus.width, height = oppoIllus.height, twoSixths = 2*(height/6),
+var width = oppoIllus.clientWidth, height = oppoIllus.clientHeight, twoSixths = 2*(height/6),
     threeSixths = 3*(height/6), fourSixths = 4*(height/6), fiveSixths = 5*(height/6),
     oneSeventh = (width/7), twoSevenths = 2*(width/7), threeSevenths = 3*(width/7),
     fourSevenths = 4*(width/7), fiveSevenths = 5*(width/7), sixSevenths = 6*(width/7);
