@@ -149,8 +149,8 @@ function mouseLocator(x, y) {
         oppoIllusDiv.innerHTML = defaultImage;
       }
 }
-oppoIllusDiv.addEventListener("mousemove", function(event){
-  console.log(x, y, width, height);
+oppoIllus.addEventListener("mousemove", function(event){
+  console.log(event.offsetX, event.offsetY, width, height);
   mouseLocator(event.offsetX, event.offsetY);
 });
 //Get mouseX offset & mouseY offset
