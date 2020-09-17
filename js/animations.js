@@ -95,58 +95,58 @@ var width = oppoIllus.width, height = oppoIllus.height, twoSixths = 2*(height/6)
 function mouseLocator(x, y) {
   if (y >= twoSixths && y <= fiveSixths && x <= threeSevenths) {
     if (x <= oneSeventh) {
-      if (y <= threeSixths && oppoIllus.outerHTML != topOuter) {
-        oppoIllus.outerHTML = topOuter;
-      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midOuter) {
-        oppoIllus.outerHTML = midOuter;
-      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomOuter) {
-        oppoIllus.outerHTML = bottomOuter;
+      if (y <= threeSixths && oppoIllusDiv.innerHTML != topOuter) {
+        oppoIllusDiv.innerHTML = topOuter;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllusDiv.innerHTML != midOuter) {
+        oppoIllusDiv.innerHTML = midOuter;
+      } else if (y >= fourSixths && oppoIllusDiv.innerHTML != bottomOuter) {
+        oppoIllusDiv.innerHTML = bottomOuter;
       }
     } else if (x >= oneSeventh && x <= twoSevenths) {
-      if (y <= threeSixths && oppoIllus.outerHTML != topMiddle) {
-        oppoIllus.outerHTML = topMiddle;
-      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midMiddle) {
-        oppoIllus.outerHTML = midMiddle;
-      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomMiddle) {
-        oppoIllus.outerHTML = bottomMiddle;
+      if (y <= threeSixths && oppoIllusDiv.innerHTML != topMiddle) {
+        oppoIllusDiv.innerHTML = topMiddle;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllusDiv.innerHTML != midMiddle) {
+        oppoIllusDiv.innerHTML = midMiddle;
+      } else if (y >= fourSixths && oppoIllusDiv.innerHTML != bottomMiddle) {
+        oppoIllusDiv.innerHTML = bottomMiddle;
       }
     } else if (x >= twoSevenths) {
-      if (y <= threeSixths && oppoIllus.outerHTML != topInner) {
-        oppoIllus.outerHTML = topInner;
-      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midInner) {
-        oppoIllus.outerHTML = midInner;
-      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomInner) {
-        oppoIllus.outerHTML = bottomInner;
+      if (y <= threeSixths && oppoIllusDiv.innerHTML != topInner) {
+        oppoIllusDiv.innerHTML = topInner;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllusDiv.innerHTML != midInner) {
+        oppoIllusDiv.innerHTML = midInner;
+      } else if (y >= fourSixths && oppoIllusDiv.innerHTML != bottomInner) {
+        oppoIllusDiv.innerHTML = bottomInner;
       }
     }
   } else if (y >= twoSixths && y <= fiveSixths && x >= fourSevenths) {
     if (x >= sixSevenths) {
-      if (y <= threeSixths && oppoIllus.outerHTML != topOuter) {
-        oppoIllus.outerHTML = topOuter;
-      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midOuter) {
-        oppoIllus.outerHTML = midOuter;
-      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomOuter) {
-        oppoIllus.outerHTML = bottomOuter;
+      if (y <= threeSixths && oppoIllusDiv.innerHTML != topOuter) {
+        oppoIllusDiv.innerHTML = topOuter;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllusDiv.innerHTML != midOuter) {
+        oppoIllusDiv.innerHTML = midOuter;
+      } else if (y >= fourSixths && oppoIllusDiv.innerHTML != bottomOuter) {
+        oppoIllusDiv.innerHTML = bottomOuter;
       }
     } else if (x <= sixSevenths && x >= fiveSevenths) {
-      if (y <= threeSixths && oppoIllus.outerHTML != topMiddle) {
-        oppoIllus.outerHTML = topMiddle;
-      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midMiddle) {
-        oppoIllus.outerHTML = midMiddle;
-      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomMiddle) {
-        oppoIllus.outerHTML = bottomMiddle;
+      if (y <= threeSixths && oppoIllusDiv.innerHTML != topMiddle) {
+        oppoIllusDiv.innerHTML = topMiddle;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllusDiv.innerHTML != midMiddle) {
+        oppoIllusDiv.innerHTML = midMiddle;
+      } else if (y >= fourSixths && oppoIllusDiv.innerHTML != bottomMiddle) {
+        oppoIllusDiv.innerHTML = bottomMiddle;
       }
     } else if (x <= fiveSevenths) {
-      if (y <= threeSixths && oppoIllus.outerHTML != topInner) {
-        oppoIllus.outerHTML = topInner;
-      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midInner) {
-        oppoIllus.outerHTML = midInner;
-      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomInner) {
-        oppoIllus.outerHTML = bottomInner;
+      if (y <= threeSixths && oppoIllusDiv.innerHTML != topInner) {
+        oppoIllusDiv.innerHTML = topInner;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllusDiv.innerHTML != midInner) {
+        oppoIllusDiv.innerHTML = midInner;
+      } else if (y >= fourSixths && oppoIllusDiv.innerHTML != bottomInner) {
+        oppoIllusDiv.innerHTML = bottomInner;
       }
     }
-  } else if (oppoIllus.outerHTML != defaultImage) {
-        oppoIllus.outerHTML = defaultImage;
+  } else if (oppoIllusDiv.innerHTML != defaultImage) {
+        oppoIllusDiv.innerHTML = defaultImage;
       }
 }
 oppoIllusDiv.addEventListener("mousemove", function(event){
