@@ -73,9 +73,7 @@ diamondFan.addEventListener("mouseleave", function(){playBackward(diamondFanAnim
 
 cardRipple.addEventListener("mouseenter", function(){cardRippleAnim.goToAndPlay(0)});
 
-const topOuter = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00009.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
+const topOuter = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00009.png\" alt=\"The line of opposition and example opposed cards.\" />",
       midOuter = "<img id=\"oppoIllus\"
                     src=\"images/oppoIllustration/lowerRes/oppoIllustration_00008.png\"
                     alt=\"The line of opposition and example opposed cards.\" />",
