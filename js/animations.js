@@ -151,7 +151,7 @@ function mouseLocator(x, y) {
 }
 oppoIllusDiv.addEventListener("mousemove", function(event){
   mouseLocator(event.offsetX, event.offsetY);
-};
+});
 //Get mouseX offset & mouseY offset
 //If offsets fall in certain percentages of the rendered divs
 //Switch the illustration to show the result of where the mouse position is
