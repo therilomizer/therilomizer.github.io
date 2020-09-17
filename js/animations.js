@@ -87,69 +87,71 @@ const topOuter = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/o
 //When mouseover on the oppoIllustration
 const oppoIllusDiv = document.getElementById("oppoIllusDiv"),
       oppoIllus = document.getElementById("oppoIllus");
+var x = 0, y = 0;
+var width = oppoIllus.width, height = oppoIllus.height, twoSixths = 2(height/6),
+    threeSixths = 3(height/6), fourSixths = 4(height/6), fiveSixths = 5(height/6),
+    oneSeventh = (width/7), twoSevenths = 2(width/7), threeSevenths = 3(width/7),
+    fourSevenths = 4(width/7), fiveSevenths = 5(width/7), sixSevenths = 6(width/7);
+const mouseLocator = function (x, y) {
+  if (y >= twoSixths && y <= fiveSixths && x <= threeSevenths) {
+    if (x <= oneSeventh) {
+      if (y <= threeSixths && oppoIllus.outerHTML != topOuter) {
+        oppoIllus.outerHTML = topOuter;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midOuter) {
+        oppoIllus.outerHTML = midOuter;
+      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomOuter) {
+        oppoIllus.outerHTML = bottomOuter;
+      }
+    } else if (x >= oneSeventh && x <= twoSevenths) {
+      if (y <= threeSixths && oppoIllus.outerHTML != topMiddle) {
+        oppoIllus.outerHTML = topMiddle;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midMiddle) {
+        oppoIllus.outerHTML = midMiddle;
+      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomMiddle) {
+        oppoIllus.outerHTML = bottomMiddle;
+      }
+    } else if (x >= twoSevenths) {
+      if (y <= threeSixths && oppoIllus.outerHTML != topInner) {
+        oppoIllus.outerHTML = topInner;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midInner) {
+        oppoIllus.outerHTML = midInner;
+      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomInner) {
+        oppoIllus.outerHTML = bottomInner;
+      }
+    }
+  } else if (y >= twoSixths && y <= fiveSixths && x >= fourSevenths) {
+    if (x >= sixSevenths) {
+      if (y <= threeSixths && oppoIllus.outerHTML != topOuter) {
+        oppoIllus.outerHTML = topOuter;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midOuter) {
+        oppoIllus.outerHTML = midOuter;
+      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomOuter) {
+        oppoIllus.outerHTML = bottomOuter;
+      }
+    } else if (x <= sixSevenths && x >= fiveSevenths) {
+      if (y <= threeSixths && oppoIllus.outerHTML != topMiddle) {
+        oppoIllus.outerHTML = topMiddle;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midMiddle) {
+        oppoIllus.outerHTML = midMiddle;
+      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomMiddle) {
+        oppoIllus.outerHTML = bottomMiddle;
+      }
+    } else if (x <= fiveSevenths) {
+      if (y <= threeSixths && oppoIllus.outerHTML != topInner) {
+        oppoIllus.outerHTML = topInner;
+      } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midInner) {
+        oppoIllus.outerHTML = midInner;
+      } else if (y >= fourSixths && oppoIllus.outerHTML != bottomInner) {
+        oppoIllus.outerHTML = bottomInner;
+      }
+    }
+  } else if (oppoIllus.outerHTML != defaultImage) {
+        oppoIllus.outerHTML = defaultImage;
+      }
+}
 oppoIllusDiv.addEventListener("mousemove", function(event){
-  var x = event.offsetX, y = event.offsetY;
-  var width = oppoIllus.width, height = oppoIllus.height, twoSixths = 2(height/6),
-  threeSixths = 3(height/6), fourSixths = 4(height/6), fiveSixths = 5(height/6),
-  oneSeventh = (width/7), twoSevenths = 2(width/7), threeSevenths = 3(width/7),
-  fourSevenths = 4(width/7), fiveSevenths = 5(width/7), sixSevenths = 6(width/7);
-  function (x, y) {
-    if (y >= twoSixths && y <= fiveSixths && x <= threeSevenths) {
-      if (x <= oneSeventh) {
-        if (y <= threeSixths && oppoIllus.outerHTML != topOuter) {
-          oppoIllus.outerHTML = topOuter;
-        } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midOuter) {
-          oppoIllus.outerHTML = midOuter;
-        } else if (y >= fourSixths && oppoIllus.outerHTML != bottomOuter) {
-          oppoIllus.outerHTML = bottomOuter;
-        }
-      } else if (x >= oneSeventh && x <= twoSevenths) {
-        if (y <= threeSixths && oppoIllus.outerHTML != topMiddle) {
-          oppoIllus.outerHTML = topMiddle;
-        } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midMiddle) {
-          oppoIllus.outerHTML = midMiddle;
-        } else if (y >= fourSixths && oppoIllus.outerHTML != bottomMiddle) {
-          oppoIllus.outerHTML = bottomMiddle;
-        }
-      } else if (x >= twoSevenths) {
-        if (y <= threeSixths && oppoIllus.outerHTML != topInner) {
-          oppoIllus.outerHTML = topInner;
-        } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midInner) {
-          oppoIllus.outerHTML = midInner;
-        } else if (y >= fourSixths && oppoIllus.outerHTML != bottomInner) {
-          oppoIllus.outerHTML = bottomInner;
-        }
-      }
-    } else if (y >= twoSixths && y <= fiveSixths && x >= fourSevenths) {
-      if (x >= sixSevenths) {
-        if (y <= threeSixths && oppoIllus.outerHTML != topOuter) {
-          oppoIllus.outerHTML = topOuter;
-        } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midOuter) {
-          oppoIllus.outerHTML = midOuter;
-        } else if (y >= fourSixths && oppoIllus.outerHTML != bottomOuter) {
-          oppoIllus.outerHTML = bottomOuter;
-        }
-      } else if (x <= sixSevenths && x >= fiveSevenths) {
-        if (y <= threeSixths && oppoIllus.outerHTML != topMiddle) {
-          oppoIllus.outerHTML = topMiddle;
-        } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midMiddle) {
-          oppoIllus.outerHTML = midMiddle;
-        } else if (y >= fourSixths && oppoIllus.outerHTML != bottomMiddle) {
-          oppoIllus.outerHTML = bottomMiddle;
-        }
-      } else if (x <= fiveSevenths) {
-        if (y <= threeSixths && oppoIllus.outerHTML != topInner) {
-          oppoIllus.outerHTML = topInner;
-        } else if (y >= threeSixths && y <= fourSixths && oppoIllus.outerHTML != midInner) {
-          oppoIllus.outerHTML = midInner;
-        } else if (y >= fourSixths && oppoIllus.outerHTML != bottomInner) {
-          oppoIllus.outerHTML = bottomInner;
-        }
-      }
-    } else if (oppoIllus.outerHTML != defaultImage) {
-          oppoIllus.outerHTML = defaultImage;
-        }
-  }
+  x = event.offsetX, y = event.offsetY;
+  mouseLocator(x,y);
 };
 //Get mouseX offset & mouseY offset
 //If offsets fall in certain percentages of the rendered divs
