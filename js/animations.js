@@ -93,7 +93,6 @@ var width = oppoIllus.width, height = oppoIllus.height, twoSixths = 2*(height/6)
     oneSeventh = (width/7), twoSevenths = 2*(width/7), threeSevenths = 3*(width/7),
     fourSevenths = 4*(width/7), fiveSevenths = 5*(width/7), sixSevenths = 6*(width/7);
 function mouseLocator(x, y) {
-  console.log(x, y, width, height)
   if (y >= twoSixths && y <= fiveSixths && x <= threeSevenths) {
     if (x <= oneSeventh) {
       if (y <= threeSixths && oppoIllusDiv.innerHTML != topOuter) {
@@ -151,6 +150,7 @@ function mouseLocator(x, y) {
       }
 }
 oppoIllusDiv.addEventListener("mousemove", function(event){
+  console.log(x, y, width, height);
   mouseLocator(event.offsetX, event.offsetY);
 });
 //Get mouseX offset & mouseY offset
