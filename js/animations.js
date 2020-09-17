@@ -74,33 +74,15 @@ diamondFan.addEventListener("mouseleave", function(){playBackward(diamondFanAnim
 cardRipple.addEventListener("mouseenter", function(){cardRippleAnim.goToAndPlay(0)});
 
 const topOuter = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00009.png\" alt=\"The line of opposition and example opposed cards.\" />",
-      midOuter = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00008.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      bottomOuter = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00007.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      topMiddle = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00006.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      midMiddle = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00005.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      bottomMiddle = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00004.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      topInner = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00003.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      midInner = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00002.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      bottomInner = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00001.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />",
-      defaultImage = "<img id=\"oppoIllus\"
-                    src=\"images/oppoIllustration/lowerRes/oppoIllustration_00000.png\"
-                    alt=\"The line of opposition and example opposed cards.\" />";
+      midOuter = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00008.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      bottomOuter = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00007.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      topMiddle = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00006.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      midMiddle = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00005.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      bottomMiddle = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00004.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      topInner = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00003.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      midInner = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00002.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      bottomInner = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00001.png\" alt=\"The line of opposition and example opposed cards.\" />",
+      defaultImage = "<img id=\"oppoIllus\" src=\"images/oppoIllustration/lowerRes/oppoIllustration_00000.png\" alt=\"The line of opposition and example opposed cards.\" />";
 
 //When mouseover on the oppoIllustration
 const oppoIllusDiv = document.getElementById("oppoIllusDiv"),
