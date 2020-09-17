@@ -142,10 +142,13 @@
           <div class="twelve columns">
             <h4>Opposition</h4>
             <p>Each card in your grid has its opposite in your opponent's grid.
-            Cards oppose each other if they have equivalent row height
-            (front, middle, or back), and they are vertically aligned on your
-            left, middle, or right. Generally, Number cards can only attack their
-            Opposing card.
+            To oppose each other, the two cards must be equally close to the Line of Opposition
+            between the two grids, and they must be directly aligned with each other.
+            Each card is the mirror of its opposite.
+            <br><br>
+
+            Most Number cards may only attack their Opposing card. Clubs Numbers
+            have extended range (see below).
           </p></div></div>
 
         <div class="row">
@@ -162,12 +165,13 @@
                <br><br>
 
               Flip a Number card face-up to attack its Opposing card.
-              If the Opposing card is facedown, flip it face-up. If the Opposing
-              card is a Number and:</p>
+              If its Opposing card is facedown, flip it face-up as well. <br>
+              <u>If the Opposing card is a Number and:</u></p>
             <ul>
-              <li>you have the <u>higher</u> Number, capture the Opposing card.</li>
-              <li>you have the <u>lower</u> NUmber, the opponent captures your card.</li></ul>
-            <p>If it's a Face Card, it loses its chance to use its special ability.
+              <li>you have the <u>higher</u> Number, you capture the Opposing card!</li>
+              <li>you have the <u>lower</u> Number, the opponent captures your card.</li></ul>
+            <p>If the Opposing card is revealed to be a Face Card, it may not use
+              its special ability (unless it can be turned facedown again).
               However, <strong>Face cards can only be captured by Numbers 2 or 10.</strong>
               If a Number between 3 to 9 attacks a Face, neither card is captured.
               Both cards remain face-up.</p>
@@ -190,32 +194,28 @@
           <div class="one-half column">
             <h5>Spades</h5>
             <p class="fan-text">Spades number cards are like zealous fanatics, willing to die for
-              their cause. Once per turn, in addition to the card you flip, you may
-              capture any <strong>Spades card</strong> in your grid, face-up or facedown.</p>
+              their cause. Once per turn, in addition to the card you flip, <strong>you may
+              capture any Spades card in your grid</strong>, face-up or facedown.</p>
             <div id="spade_fan"> </div></div>
           <div class="one-half column">
             <h5>Diamonds</h5>
             <p class="fan-text">Diamonds are like merchants and thieves, using the chaos
-              to gather wealth. When you count out Discard piles at the end of the game, each
-              <strong>Diamonds card</strong> counts as two cards.</p>
+              to gather wealth. <strong>When you count out Discard piles at the end of the game, each
+              Diamonds card counts as two cards.</strong> <em>This does not apply to Face cards.</em></p>
             <div id="diamond_fan"> </div></div></div>
 
         <div class="row">
           <div class="one-half column">
             <h5>Clubs</h5>
             <p class="fan-text">Clubs are like archers and bottle-throwers, attacking
-              from a distance. When a <strong>Clubs card</strong> attacks, you may choose to attack any
-                card in its own column instead of its Opposing card.</p>
-            <div id="club_fan"> </div>
-            <p class="fan-text"><em>Example: a 9 of Clubs can hit the front, middle,
-              or back card that opposes it, no matter where it sits in your grid.
-              It can't hit cards to the left or right from the one it opposes.</em></p></div>
+              from a distance. <strong>When a Clubs card attacks, you may choose to attack any
+                card it is directly aligned with, instead of its Opposing card.</strong></p>
+            <div id="club_fan"> </div></div>
           <div class="one-half column">
             <h5>Hearts</h5>
-            <p class="fan-text">Hearts are like warriors who share a powerful bond. When a
-              <strong>Hearts card</strong> attacks, it can combine one adjacent
-              face-up Hearts' value with its own. When your opponent attacks one of your face-up
-              Hearts, you may <u>immediately</u> flip an adjacent facedown Hearts card and combine their values.</p>
+            <p class="fan-text">Hearts are like warriors who share a powerful bond. <strong>When a
+              Hearts card attacks, it can combine one adjacent
+              face-up Hearts' value with its own.</strong></p>
             <div id="heart_fan"> </div></div>
       </div></div>
 
@@ -231,7 +231,7 @@
         <div class="one-half column">
           <h5>The Jack</h5>
           <img src="./images/jackClubs.png">
-          <p>When you flip a <strong>Jack</strong>, you get three chances to swap
+          <p><strong>When you flip a Jack</strong>, you get three chances to swap
             the positions of any two of your own cards. You may make fewer swaps,
             swap any card up to three times, and/or swap the Jack. You may not turn any
             cards face-up or facedown during this process.
@@ -239,7 +239,7 @@
         <div class="one-half column">
           <h5>The Queen</h5>
           <img src="./images/queenHearts.png">
-          <p>When you flip a <strong>Queen</strong>, turn two of your cards
+          <p><strong>When you flip a Queen</strong>, turn two of your cards
             facedown. This may include the Queen.</p>
           </div></div>
 
@@ -247,7 +247,7 @@
         <div class="one-half column">
           <h5>The King</h5>
           <img src="./images/kingDiamonds.png">
-          <p>When you flip a <strong>King</strong>, flip all of your
+          <p><strong>When you flip a King</strong>, flip all of your
             Number cards face-up. Then, each card you flipped attacks its
             Opposing card. <u>The King attacks as a <strong>7</strong>.</u> Number cards
             that were already face-up do not attack.</p>
@@ -255,14 +255,14 @@
         <div class="one-half column">
           <h5>The Ace</h5>
           <img src="./images/aceSpades.png">
-          <p>When you flip an <strong>Ace</strong>, instantly capture
+          <p><strong>When you flip an Ace</strong>, instantly capture
               any face-up or facedown card in play, and the Ace.</p>
         </div></div></div>
 
 <!-- Ending the Game -->
       <div id="ending" class="container"><h3>Ending the Game</h3>
         <div class="row">
-        <div class="two-thirds column">
+        <div class="twelve columns">
           <p>When the Draw pile runs out, continue taking turns until both
             players agree there are no more actions worth taking.
             Leave your remaining cards in the grid and count out your Discard pile.
@@ -274,11 +274,13 @@
             continue the game, shuffle your Discard pile and your remaining
             cards together - this is your new individual Draw pile.
             Deal yourself a new 3-by-3 grid and continue playing until one
-            player's Draw pile runs out.</p></div>
-        <div class="one-third column">
+            player's Draw pile runs out.</p></div></div>
+
+        <div class="row">
+          <div class="eight columns offset-by-two">
           <img src="images/oppoIllustration/lowerRes/maleGamers_00000.png"
-                alt="The gamers enjoyed the game" />
-        </div></div>
+                alt="The gamers enjoyed the game" /></div></div>
+
         <div class="row">
           <div class="remark" style="text-align:center;">
           <h3>Congratulations<br>You played Doomcrop</h3></div></div>
@@ -299,7 +301,8 @@
     <section id="about">
       <div class="container">
         <p style="text-align:center">Greetings traveler</p>
-        <img src="./images/riley.jpg" style="margin-left:auto;margin-right:auto;border-radius:50%;max-width:400px;">
+        <div style="display:flex;justify-content:center;align-items:center;">
+        <img src="./images/riley.jpg" style="border-radius:50%;max-width:275px;" /></div>
         <div class="row">
           <div class="eight columns offset-by-two">
             <p style="text-align:center"><a href="https://www.instagram.com/rileyadammmson/">
@@ -321,9 +324,22 @@
                 <li>Video explaining the rules of the game</li>
                 <li>Interactive web-based Doomcrop vs. AI and other players</li>
                 <li>Employ artists to make the cards look better</li>
-                <li>Sell custom decks with rules packed-in</li>
+                <li>Sell custom art decks with rules packed-in</li>
               </ul>
-          </div></div></div>
+          </div></div>
+
+        <div class="row">
+          <div class="eight columns offset-by-two">
+            <h4>You Can Support Doomcrop</h4>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_donations" />
+              <input type="hidden" name="business" value="KU8DJK9FPQRCN" />
+              <input type="hidden" name="item_name" value="support Doomcrop" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </div></div></div>
     </section>
 
 <!-- Optional Rules (hidden at load) -->
