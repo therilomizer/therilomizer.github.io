@@ -92,7 +92,7 @@ var width = oppoIllus.width, height = oppoIllus.height, twoSixths = 2(height/6),
     threeSixths = 3(height/6), fourSixths = 4(height/6), fiveSixths = 5(height/6),
     oneSeventh = (width/7), twoSevenths = 2(width/7), threeSevenths = 3(width/7),
     fourSevenths = 4(width/7), fiveSevenths = 5(width/7), sixSevenths = 6(width/7);
-const mouseLocator = function (x, y) {
+function mouseLocator(x, y) {
   if (y >= twoSixths && y <= fiveSixths && x <= threeSevenths) {
     if (x <= oneSeventh) {
       if (y <= threeSixths && oppoIllus.outerHTML != topOuter) {
@@ -150,8 +150,7 @@ const mouseLocator = function (x, y) {
       }
 }
 oppoIllusDiv.addEventListener("mousemove", function(event){
-  x = event.offsetX, y = event.offsetY;
-  mouseLocator(x,y);
+  mouseLocator(event.offsetX, event.offsetY);
 };
 //Get mouseX offset & mouseY offset
 //If offsets fall in certain percentages of the rendered divs
