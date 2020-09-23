@@ -4,7 +4,7 @@
 let masterDeck, player1Deck, player2Deck, suit, val, cardX, cardY, gameIsOver, player1CardSlot, win, run, runSpoons, backOfCard, blankCard,
     masterDeckCardSlot, player2CardSlot, player1CardsInPlay, player2CardsInPlay, cardSpriteSheet;
 
-// 
+//
 
 let valueDict = {
   2: 2,
