@@ -100,15 +100,16 @@
         <div class="row">
         <div class="twelve columns">
           <p>The standard 2-player Doomcrop game uses one deck of playing cards
-            with the Jokers removed.<br><em>(Please see the Optional Rules section
+            with the Jokers removed.
+            <br><em>(Please see the Optional Rules section
             to play with more players, more decks, or more Jokers.)</em>
             <br><br>
 
             Shuffle the deck and deal 10 cards to each player, facedown.
             <br><br>
 
-            Look at your cards and choose one to discard. Arrange your remaining
-            cards into a 3-by-3 grid. You may look at your own facedown cards at any time.
+            Look at your cards arrange 9 of them into a 3-by-3 grid.
+            <strong><u>You may look at your own facedown cards at any time.</u></strong>
             <br><br>
 
             Take the 10th card and start your Discard pile, face-up. It should be
@@ -118,6 +119,12 @@
 
             Place the rest of the shuffled deck facedown between players.
             This is the <em>shared</em> <strong>Draw pile.</strong></p></div></div>
+            <br><br>
+
+            Whichever player discarded the card with the lowest value goes first.
+            For this, Face cards have a higher value than all Numbers, and Diamond
+            Numbers are more valuable than equal Numbers that are non-Diamonds.
+            In the case of a tie, flip a coin.
 
         <div class="row">
         <div class="ten columns offset-by-one"><div style="display:flex;justify-content:center;align-items:center;">
@@ -160,7 +167,7 @@
         <div class="row">
           <div class="twelve columns">
             <h4>Numerological Combat</h4>
-            <p>Statistically speaking, the majority of your deck is Number cards.
+            <p>Statistically speaking, the majority of the deck is Number cards.
               Think of them as your rank-and-file troops. All they know is combat.
                <br><br>
 
@@ -169,12 +176,18 @@
               <u>If the Opposing card is a Number and:</u></p>
             <ul>
               <li>you have the <u>higher</u> Number, you capture the Opposing card!</li>
-              <li>you have the <u>lower</u> Number, the opponent captures your card.</li></ul>
+              <li>you have the <u>lower</u> Number, the opponent captures your card.</li>
+              <li>the numbers are <u>tied</u>, both cards remain face-up on the board.</li> </ul>
             <p>If the Opposing card is revealed to be a Face Card, it may not use
               its special ability (unless it can be turned facedown again).
-              However, <strong>Face cards can only be captured by Numbers 2 or 10.</strong>
-              If a Number between 3 to 9 attacks a Face, neither card is captured.
-              Both cards remain face-up.</p>
+              However, <strong>Face cards can only be captured by <u>any Number 2</u>, or
+              any Number whose <u>suit matches the Face card.</u>.</strong>
+              If any other Number attacks a Face, neither card is captured.
+              Both cards remain face-up on the board.
+              <br><br>
+
+              The Number 2 has another unique trait: <strong>it is the only Number that
+              can capture a Number 10.</strong></p>
         </div></div>
 
         <div class="row">
@@ -187,21 +200,21 @@
       <div id="number-abilities" class="container"><h3>Suit Abilities</h3>
         <div class="row">
         <div class="twelve columns">
-          <p>Number cards have special abilities afforded by their suits. These do not apply to Face cards.</p>
+          <p>Number cards have special abilities afforded by their suits. <strong><u>These do not apply to Face cards.</strong></u></p>
         </div></div>
 
         <div class="row">
           <div class="one-half column">
             <h5>Spades</h5>
             <p class="fan-text">Spades number cards are like zealous fanatics, willing to die for
-              their cause. Once per turn, in addition to the card you flip, <strong>you may
-              capture any Spades card in your grid</strong>, face-up or facedown.</p>
+              their cause. Once per turn, before you flip a card, <strong>you may
+              capture any one Spades card in your grid</strong>, face-up or facedown.</p>
             <div id="spade_fan"> </div></div>
           <div class="one-half column">
             <h5>Diamonds</h5>
             <p class="fan-text">Diamonds are like merchants and thieves, using the chaos
               to gather wealth. <strong>When you count out Discard piles at the end of the game, each
-              Diamonds card counts as two cards.</strong> <em>This does not apply to Face cards.</em></p>
+              Diamonds card counts as two cards.</strong></p>
             <div id="diamond_fan"> </div></div></div>
 
         <div class="row">
@@ -213,9 +226,11 @@
             <div id="club_fan"> </div></div>
           <div class="one-half column">
             <h5>Hearts</h5>
-            <p class="fan-text">Hearts are like warriors who share a powerful bond. <strong>When a
-              Hearts card attacks, it can combine one adjacent
-              face-up Hearts' value with its own.</strong></p>
+            <p class="fan-text">Hearts are like warriors who share a powerful bond. <strong>When one
+              of your Hearts cards is attacked, if there is a facedown Hearts number card adjacent
+              to it, you may flip that Hearts face-up and add its value to that of the
+              defending Hearts card.</strong> If the combined value exceeds 10, an attacking
+              Number 10 may be captured in this way, even if a Number 2 is not involved.</p>
             <div id="heart_fan"> </div></div>
       </div></div>
 
@@ -224,7 +239,9 @@
         <div class="row">
         <div class="twelve columns">
           <p>Face cards represent the powerful, the connected, and the inevitable.
-            Flip a Face card face-up to activate its special ability.</p>
+            Flip a Face card face-up to activate its special ability.
+          <br><br>
+             After you resolve a Face card's ability, <strong>capture the Face card.</strong></p>
         </div></div>
 
         <div class="row">
@@ -233,46 +250,58 @@
           <img src="./images/jackClubs.png">
           <p><strong>When you flip a Jack</strong>, you get three chances to swap
             the positions of any two of your own cards. You may make fewer swaps,
-            swap any card up to three times, and/or swap the Jack. You may not turn any
-            cards face-up or facedown during this process.
+            swap one card up to three times, and/or swap the Jack. <u>You may not turn any
+            cards face-up or facedown during this process.</u>
           </p></div>
         <div class="one-half column">
           <h5>The Queen</h5>
           <img src="./images/queenHearts.png">
-          <p><strong>When you flip a Queen</strong>, turn two of your cards
-            facedown. This may include the Queen.</p>
+          <p><strong>When you flip a Queen</strong>, turn up to three of your cards
+            facedown.</p>
           </div></div>
 
         <div class="row">
         <div class="one-half column">
           <h5>The King</h5>
           <img src="./images/kingDiamonds.png">
-          <p><strong>When you flip a King</strong>, flip all of your
+          <p><strong>When you flip a King</strong>, flip all of your facedown
             Number cards face-up. Then, each card you flipped attacks its
-            Opposing card. <u>The King attacks as a <strong>7</strong>.</u> Number cards
-            that were already face-up do not attack.</p>
+            Opposing card <em>(Clubs numbers may use their ability)</em>.
+            Additionally, <u>The King attacks as a <strong>7</strong>.</u> Number cards
+            that were already face-up <u>do not attack.</u></p>
           </div>
         <div class="one-half column">
           <h5>The Ace</h5>
           <img src="./images/aceSpades_shadowless.png">
           <p><strong>When you flip an Ace</strong>, instantly capture
-              any face-up or facedown card in play, and the Ace.</p>
+              any face-up or facedown card on the board, or the top card of the Draw pile.</p>
         </div></div></div>
 
 <!-- Ending the Game -->
       <div id="ending" class="container"><h3>Ending the Game</h3>
         <div class="row">
         <div class="twelve columns">
-          <p>When the Draw pile runs out, continue taking turns until both
-            players agree there are no more actions worth taking.
-            Leave your remaining cards in the grid and count out your Discard pile.
-            The winner is the player with more cards in their Discard pile,
-            including doubled Diamonds.
+          <p>If, at any point, either player begins their turn with all of their
+            cards face-up, both players immediately capture all cards in their
+            grid, draw 9 cards from the Draw pile, and build their grid again, facedown.
             <br><br>
 
-            In the event that Discard piles are tied, or both players want to
-            continue the game, shuffle your Discard pile and your remaining
-            cards together - this is your new individual Draw pile.
+            When the Draw pile runs out, immediately flip all facedown cards face-up.
+            All Number cards attack their Opposing card. When these combats are
+            resolved, immediately capture all cards in your own grid. Face cards flipped
+            face-up at this time do not activate their abilities.
+            <br><br>
+
+            Count out the amount of cards in your Discard pile. Remember to count
+            Diamond numbers as two cards. Whosoever has captured the most cards,
+            wins!
+            <br><em>If you wish to keep track of the score as you play, consider
+            that the total number of points in a one-deck game is 60. If either player
+            reaches 31 points, the game is effectively decided.</em>
+            <br>
+
+            In the unlikely event that Discard piles are tied at 30, shuffle each
+            Discard pile separately - they are now your individual Draw piles.
             Deal yourself a new 3-by-3 grid and continue playing until one
             player's Draw pile runs out.</p></div></div>
 
@@ -308,10 +337,10 @@
             <p style="text-align:center"><a href="https://www.instagram.com/rileyadammmson/">
               @rileyadammmson</a></p>
             <p style="text-align:left">Doomcrop was designed by Riley Adamson.
-              You can call me Riles. I live in LA and (in pre-COVID times) organize files on some
+              You can call me Riles. I live in LA and organize files on some
               <a href="https://www.imdb.com/name/nm5863856/">good TV shows.</a>
-              I made all the art in After Effects and converted to SVG animations
-              with <a href="https://airbnb.design/lottie/">Lottie</a>, and yeah I know
+              I made all the Doomcrop art in After Effects and converted some to SVG animations
+              with <a href="https://airbnb.design/lottie/">Lottie</a>. I know
               that's kind of a roundabout way to get it done. I'm studying front-end design
               and functional programming at My Bedroom Late At Night University.
             </p></div></div>
@@ -322,6 +351,16 @@
               <ul>
                 <li style="text-decoration:line-through;">Replace all placeholder guys with new art</li>
                 <li>Thorough test of gameplay</li>
+                  <ul>Changelog 09/27/20 - Version 1.1
+                    <li>Added rules for cases where numbers are tied in combat</li>
+                    <li>Added rules for cases where all cards are face-up</li>
+                    <li>Added rules to determine which player goes first</li>
+                    <li>Updated rules for ending the game</li>
+                    <li>Rebalanced Face card rules to mitigate board stagnation</li>
+                    <li>Rebalanced Hearts suit ability to improve usefulness</li>
+                    <li>Clarified Spades suit ability</li>
+                    <li>Emphasized player's ability to always view their own cards</li>
+                    <li>Updated Optional Rules section</li></ul>
                 <li>Video explaining the rules of the game</li>
                 <li>Interactive web-based Doomcrop vs. AI and other players</li>
                 <li>Employ artists to make the cards look better</li>
@@ -368,19 +407,18 @@
           When playing Doomcrop with 3 or more players, determining Opposing cards
           is more complicated. You now have multiple axii of opposition. With 3
           players, you have an axis on both sides of your grid. With 4 players,
-          you also have original top row axis. <br><br>
+          you also have the original top row axis. <br><br>
 
-          With odd numbers of players, the official rule is that players may
-          only attack their opponents directly to their left and right.
-          With even numbers of players greater than 4, players may also attack
-          the opponent directly opposite them. It is recommended that players
-          amend this as a house rule if they wish to be able to skip players
-          when attacking.</p>
+          With odd numbers of players, players may only attack the opponents
+          directly to their left and right. With even numbers of players greater than 4,
+          players may also attack the opponent directly opposite them.
+          It is recommended that players amend this as a house rule if they wish
+          to be able to skip players when attacking.</p>
         </div></div>
         <div class='row'>
         <div class="twelve columns">
           <h4>Playing with Jokers</h4>
-          <p>Unlike the other face cards, the Joker can be captured by any Number card.<br><br>
+          <p>Unlike other Face cards, the Joker can be captured by any Number card.<br><br>
           When you flip a Joker face-up, or when you capture a Joker,
           roll a 6-sided die and obey the table below.</p>
           <ol>
@@ -394,17 +432,18 @@
         <div class='row'>
         <div class="twelve columns">
           <h4>Epic Techniques</h4>
-          <p>If you want to add Epic Tech to your game, observe the following
-          rules.</p>
+          <p>If you want to add Epic Tech to your game, observe the following rules.
+          Activate these techniques before you flip a card on your turn. The cards do
+          not need to be face-up to activate these techniques.</p>
           <ul>
             <li>If your grid contains 4 Hearts cards in a square, you may turn any
               amount of them facedown.</li>
             <li>If your grid contains 4 Diamonds cards in a square, you may flip
-             any amount of their Opposing cards face-up. No other abilities are activated. </li>
+             any amount of their Opposing cards face-up. No other abilities are activated.</li>
             <li>If your grid contains 4 Spades cards in a square, you may capture any
             amount of them.</li>
             <li>If your grid contains 4 Clubs cards in a square, you may flip any amount
-              of them face-up, and attack any cards they could normally hit.</li></ul>
+              of them face-up, and attack any cards they could normally attack.</li></ul>
         </div></div>
 
     </div>
@@ -416,9 +455,9 @@
     <div class="container">
       <div class="row">
       <nav class="eight columns offset-by-two" style="text-align:center;">
-        <button class="button videoLink">Video</button>
         <button class="button rulesLink">Rules</button>
         <button class="button optionalLink">Optional Rules</button>
+        <button class="button videoLink">Video</button>
         <button class="button aboutLink">About</button>
       </nav></div>
       <div class="row">
