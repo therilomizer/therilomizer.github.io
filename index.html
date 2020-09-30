@@ -127,7 +127,7 @@
             In the case of a tie, flip a coin.</p></div></div>
 
         <div class="row">
-        <div class="ten columns offset-by-one"><div style="display:flex;justify-content:center;align-items:center;">
+        <div class="eight columns offset-by-two"><div style="display:flex;justify-content:center;align-items:center;">
           <img src="images/oppoIllustration/lowerRes/layoutGuide.png" alt="Layout Guide" />
           </div></div></div>
 
@@ -178,12 +178,12 @@
               <li>you have the <u>higher</u> Number, you capture the Opposing card!</li>
               <li>you have the <u>lower</u> Number, the opponent captures your card.</li>
               <li>the numbers are <u>tied</u>, both cards remain face-up on the board.</li> </ul>
-            <p>If the Opposing card is revealed to be a Face Card, it may not use
-              its special ability (unless it can be turned facedown again).
-              However, <strong>Face cards can only be captured by <u>any Number 2</u>, or
-              any Number whose <u>suit matches the Face card.</u>.</strong>
-              If any other Number attacks a Face, neither card is captured.
-              Both cards remain face-up on the board.
+            <p>If the Opposing card is revealed to be a Face card, it may not use
+              its special ability (unless it is turned facedown again by a Queen).
+              <strong>Face cards can only be captured by <u>any Number 2</u>, or
+              any Number whose <u>suit matches the Face card.</u>.</strong> A Face
+              that is revealed by combat with any other Number must remain on the
+              board until it is captured by a capable Number or an Ace.
               <br><br>
 
               The Number 2 has another unique trait: <strong>it is the only Number that
@@ -227,10 +227,10 @@
           <div class="one-half column">
             <h5>Hearts</h5>
             <p class="fan-text">Hearts are like warriors who share a powerful bond. <strong>When one
-              of your Hearts cards is attacked, if there is a facedown Hearts number card adjacent
+              of your Hearts cards is attacked, if there is a <u>facedown</u> Hearts card adjacent
               to it, you may flip that Hearts face-up and add its value to that of the
-              defending Hearts card.</strong> If the combined value exceeds 10, an attacking
-              Number 10 may be captured in this way, even if a Number 2 is not involved.</p>
+              defending Hearts card.</strong> If their combined value exceeds 10, an attacking
+              Number 10 may be captured, even if a Number 2 is not involved.</p>
             <div id="heart_fan"> </div></div>
       </div></div>
 
@@ -248,10 +248,10 @@
         <div class="one-half column">
           <h5>The Jack</h5>
           <img src="./images/jackClubs.png">
-          <p><strong>When you flip a Jack</strong>, you get three chances to swap
-            the positions of any two of your own cards. You may make fewer swaps,
-            swap one card up to three times, and/or swap the Jack. <u>You may not turn any
-            cards face-up or facedown during this process.</u>
+          <p><strong>When you flip a Jack</strong>, you may swap the places of your own cards,
+            one-for-one, three times. You may make fewer swaps,
+            swap the same two cards up to three times, and/or swap the Jack.
+            <u>You may not turn any cards face-up or facedown during this process.</u>
           </p></div>
         <div class="one-half column">
           <h5>The Queen</h5>
@@ -264,50 +264,50 @@
         <div class="one-half column">
           <h5>The King</h5>
           <img src="./images/kingDiamonds.png">
-          <p><strong>When you flip a King</strong>, flip all of your facedown
-            Number cards face-up. Then, each card you flipped attacks its
-            Opposing card <em>(Clubs numbers may use their ability)</em>.
-            Additionally, <u>The King attacks as a <strong>7</strong>.</u> Number cards
-            that were already face-up <u>do not attack.</u></p>
+          <p><strong>When you flip a King</strong>, flip each of your facedown
+            Number cards face-up, one-by-one, and resolve Numerological Combat
+            with their Opposing cards accordingly. <em>Clubs numbers may use their ability</em>.
+            <u><strong>The King also attacks</strong> when activating this ability.
+            Consider the King a <strong>7</strong> if it's opposed to a Number.</u>
+            A King cannot capture another Face card this way.
+            Your number cards that were previously face-up do not attack.</p>
           </div>
         <div class="one-half column">
           <h5>The Ace</h5>
           <img src="./images/aceSpades_shadowless.png">
           <p><strong>When you flip an Ace</strong>, instantly capture
-              any face-up or facedown card on the board, or the top card of the Draw pile.</p>
+              <u>any</u> face-up or facedown card on the board, or the top card of the Draw pile.</p>
+        </div></div></div>
+
+<!-- What If? -->
+      <div id="ending" class="container"><h3>What if...</h3>
+        <div class="row">
+        <div class="twelve columns">
+            <h4>All of My Cards Are Face-up?</h4>
+            <p>In the unlikely event that either player begins their turn with all of their
+              own cards face-up, both players immediately capture all of their own cards,
+              draw 9 cards from the Draw pile, and build their grid again facedown.</p>
+            <h4>I Don't Have Any Good Moves?</h4>
+            <p>Due to the randomness of a shuffled deck, this situation will occur
+              from time to time. Look for a Spade you can sacrifice to refresh your grid.
+              If you have to let your opponent capture a card of yours, try to
+              avoid giving them a Diamond. If you have a King handy, the benefits you get from
+              drawing several new cards may outweigh the points you give your opponent.</p>
         </div></div></div>
 
 <!-- Ending the Game -->
       <div id="ending" class="container"><h3>Ending the Game</h3>
         <div class="row">
         <div class="twelve columns">
-          <p>If, at any point, either player begins their turn with all of their
-            cards face-up, both players immediately capture all cards in their
-            grid, draw 9 cards from the Draw pile, and build their grid again, facedown.
+          <p>When the Draw pile runs out, immediately capture all of your own Face cards,
+            both face-up and facedown. Then flip any remaining cards face-up and resolve
+            all Numerological Combats, including between cards that were already face-up.
+            If you have any cards left, you capture them.
             <br><br>
 
-            When the Draw pile runs out, immediately flip all facedown cards face-up.
-            All Number cards attack their Opposing card. When these combats are
-            resolved, immediately capture all cards in your own grid. Face cards flipped
-            face-up at this time do not activate their abilities.
-            <br><br>
-
-            Count out the amount of cards in your Discard pile. Remember to count
-            Diamond numbers as two cards. Whosoever has captured the most cards,
-            wins!</div></div></p>
-
-        <div class="row">
-        <div class="eight columns offset-by-two">
-          <p><em>If you wish to keep track of the score as you play, consider
-          that the total number of points in a one-deck game is 60. If either player
-          reaches 31 points, the game is effectively decided.</em></p></div></div>
-
-        <div class="row">
-        <div class="twelve columns">
-          <p>In the unlikely event that Discard piles are tied at 30, shuffle each
-          Discard pile separately - they are now your individual Draw piles.
-          Deal yourself a new 3-by-3 grid and continue playing until one
-          player's Draw pile runs out.</p></div></div>
+            Count out the amount of cards in your Discard pile. Card values do not
+            matter, but remember to count Diamond numbers as two cards. Whosoever
+            has captured the most cards, wins!</p></div></div></div>
 
         <div class="row">
           <div class="ten columns offset-by-one">
@@ -355,6 +355,11 @@
               <ul>
                 <li style="text-decoration:line-through;">Replace all placeholder guys with new art</li>
                 <li>Thorough test of gameplay</li>
+                  <ul><u>Changelog09/29/20 - Version 1.2</u>
+                    <li style="margin-bottom:.25rem">Clarified rules on Face cards in combat</li>
+                    <li style="margin-bottom:.25rem">Clarified the some Face card abilities</li>
+                    <li style="margin-bottom:.25rem">Added "What if?" section</li>
+                    <li style="margin-bottom:.25rem">Simplified rules for ending the game</li></ul>
                   <ul><u>Changelog 09/27/20 - Version 1.1</u>
                     <li style="margin-bottom:.25rem">Added rules for cases where numbers are tied in combat</li>
                     <li style="margin-bottom:.25rem">Added rules for cases where all cards are face-up</li>
