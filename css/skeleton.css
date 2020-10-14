@@ -182,7 +182,7 @@ section.active {display:initial;}
 
 .flipflop:hover {
   animation-name: flipFlop;
-  animation-duration: 1s;
+  animation-duration: .5s;
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
