@@ -181,8 +181,7 @@ section.active {display:initial;}
 }
 
 .flipflop {
-  transition-duration: .5s;
-  transition: all 1s ease;
+  transition: all .7s ease;
 }
 
 .flipflop:hover {
