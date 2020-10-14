@@ -180,13 +180,16 @@ section.active {display:initial;}
   to {transform:rotateZ(180deg)}
 }
 
+.flipflop {
+  animation-fill-mode: both;
+}
+
 .flipflop:hover {
   animation-name: flipFlop;
   animation-duration: .5s;
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
 }
 
 /* Typography
