@@ -199,6 +199,7 @@ section.active {display:initial;}
 .cardBackItem {
   transition: all .7s ease;
   max-width: 110px;
+  min-width: 110px;
   background: url('http://www.doomcrop.com/images/cardBack.png') no-repeat;
   background-size: contain;
 }
