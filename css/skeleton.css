@@ -181,15 +181,12 @@ section.active {display:initial;}
 }
 
 .flipflop {
-  animation-fill-mode: forwards;
+  transition-duration: .5s;
+  transition: all 1s ease;
 }
 
 .flipflop:hover {
-  animation-name: flipFlop;
-  animation-duration: .5s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+  rotateZ(180deg);
 }
 
 /* Typography
