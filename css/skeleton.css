@@ -181,7 +181,7 @@ section.active {display:initial;}
 }
 
 .flipflop {
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
 }
 
 .flipflop:hover {
