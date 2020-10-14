@@ -186,6 +186,7 @@ section.active {display:initial;}
   animation-iteration-count: 1;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 /* Typography
