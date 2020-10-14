@@ -185,7 +185,7 @@ section.active {display:initial;}
 }
 
 .flipflop:hover {
-  rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 
 /* Typography
