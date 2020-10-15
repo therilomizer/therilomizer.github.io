@@ -126,6 +126,7 @@ section.active {display:initial;}
   perspective: 900px;
   margin:auto;
 }
+
 .footer__scene {
   width: 45px;
   height: 45px;
@@ -188,26 +189,60 @@ section.active {display:initial;}
   transform: rotateZ(180deg);
 }
 
+.rippleScene {
+  width: 300px;
+  height: 300px;
+  perspective: 900px;
+  margin:auto;
+}
+
 .cardBackBox {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  max-width: 350px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 32rem;
+  margin-top: 1.7rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .cardBackBox {
+        padding-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cardBackBox {
+        padding-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardBackBox {
+        padding-right: 7rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .cardBackBox {
+        padding-right: 0rem;
+  }
 }
 
 .cardBackItem {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transition: all .7s ease;
-  max-width: 110px;
-  background: url('http://www.doomcrop.com/images/cardBack.png') no-repeat;
-  background-size: contain;
+  height: auto;
+  width: 10rem;
+  transition: all .3s ease;
+  margin: auto -1.5rem auto;
+}
+
+.break {
+  flex-basis:100%;
+  height: 0;
 }
 
 .cardBackItem:hover {
-  transform: scale(110%);
+  transform: scale(1.2, 1.2);
 }
 
 /* Typography
