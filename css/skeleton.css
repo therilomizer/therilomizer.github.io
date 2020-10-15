@@ -189,11 +189,12 @@ section.active {display:initial;}
   transform: rotateZ(180deg);
 }
 
-.rippleScene {
-  width: 300px;
-  height: 300px;
-  perspective: 900px;
-  margin:auto;
+.flopflip {
+  transition: all .7s ease;
+}
+
+.flopflip:hover {
+  transform: rotateZ(-180deg);
 }
 
 .cardBackBox {
