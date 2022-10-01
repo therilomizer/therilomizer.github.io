@@ -22,8 +22,7 @@ body {
 
 .pitch {
     font-size: x-large;
-    text-align: justify;
-    text-align-last: center;
+    text-align: center;
     padding: 1% 10%;
 }
 
