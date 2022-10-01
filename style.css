@@ -1,0 +1,37 @@
+#header {
+    font-size: 2vw;
+    margin: auto;
+}
+
+pre {
+    text-align: center;
+    padding: 2%;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+    font-size: large;
+  }
+
+.rules {
+    text-align: left;
+    padding: 2% 8%;
+    
+}
+
+.pitch {
+    font-size: x-large;
+    text-align: justify;
+    text-align-last: center;
+    padding: 1% 20%;
+}
+
+.or {
+    position: relative;
+    left: 10%;
+}
+
+p:hover {
+    box-shadow: 1px 1px 5px grey;
+}

@@ -1,504 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177337131-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177337131-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-177337131-1');
-  </script>
-
-  <!-- Basic Page Needs -->
-  <meta charset="utf-8">
-  <title>Doomcrop, a Card Game</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href='http://www.doomcrop.com/images/cardBack.png'>
-
+        gtag('config', 'UA-177337131-1');
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script id="data">
+        const headerOptions = [
+"PHByZT4NCi4tLS0tLS0uLi0tLS0tLS4uLS0tLS0tLi4tLS0tLS0uLi0tLS0tLS4uLS0tLS0tLi4tLS0tLS0uLi0tLS0tLS4NCnxELi0tLiB8fE8uLS0uIHx8Ty4tLS4gfHxNLi0tLiB8fEMuLS0uIHx8Ui4tLS4gfHxPLi0tLiB8fFAuLS0uIHwNCnwgOi9cOiB8fCA6L1w6IHx8IDovXDogfHwgKFwvKSB8fCA6L1w6IHx8IDooKTogfHwgOi9cOiB8fCA6L1w6IHwNCnwgKF9fKSB8fCA6XC86IHx8IDpcLzogfHwgOlwvOiB8fCA6XC86IHx8ICgpKCkgfHwgOlwvOiB8fCAoX18pIHwNCnwgJy0tJ0R8fCAnLS0nT3x8ICctLSdPfHwgJy0tJ018fCAnLS0nQ3x8ICctLSdSfHwgJy0tJ098fCAnLS0nUHwNCmAtLS0tLS0nYC0tLS0tLSdgLS0tLS0tJ2AtLS0tLS0nYC0tLS0tLSdgLS0tLS0tJ2AtLS0tLS0nYC0tLS0tLScNCjwvcHJlPg==",
+"PHByZSBzdHlsZT0iZm9udC1zaXplOjJ2dyI+DQogKCAgICAgICAgICkgICAgICApICAgICAqICAgICAgICAgICAgKCAgICAgICAgKSAgICggICAgIA0KIClcICkgICAoIC8oICAgKCAvKCAgICggIGAgICAgICAoICAgIClcICkgICggLyggICApXCApICANCigoKS8oICAgKVwoKSkgIClcKCkpICApXCkpKCAgICAgKVwgICgoKS8oICApXCgpKSAoKCkvKCAgDQogLyhfKSkgKChfKVwgICgoXylcICAoKF8pKClcICAoKChfKSAgLyhfKSkoKF8pXCAgIC8oXykpIA0KKF8pKV8gICAgKChfKSAgICgoXykgKF8oKSgoXykgKVxfX18gKF8pKSAgICAoKF8pIChfKSkgICANCiB8ICAgXCAgLyBfIFwgIC8gXyBcIHwgIFwvICB8KCgvIF9ffHwgXyBcICAvIF8gXCB8IF8gXCAgDQogfCB8KSB8fCAoXykgfHwgKF8pIHx8IHxcL3wgfCB8IChfXyB8ICAgLyB8IChfKSB8fCAgXy8gIA0KIHxfX18vICBcX19fLyAgXF9fXy8gfF98ICB8X3wgIFxfX198fF98X1wgIFxfX18vIHxffCAgICANCjwvcHJlPg==",
+"PHByZSBzdHlsZT0iZm9udC1zaXplOjF2dyI+DQpfXy9cXFxcXFxcXFxcXFxfX19fX19fX19fL1xcXFxcX19fX19fX19fX19fL1xcXFxcX19fX19fXy9cXFxcX19fX19fX19fX19fL1xcXFxfX19fX19fXy9cXFxcXFxcXFxfX19fL1xcXFxcXFxcXF9fX19fX19fX19fL1xcXFxcX19fX19fXy9cXFxcXFxcXFxcXFxcX19fICAgICAgICANCiBfXC9cXFwvLy8vLy8vL1xcXF9fX19fXy9cXFwvLy9cXFxfX19fX19fXy9cXFwvLy9cXFxfX19fXC9cXFxcXFxfX19fX19fXy9cXFxcXFxfX19fXy9cXFwvLy8vLy8vL19fXy9cXFwvLy8vLy8vXFxcX19fX19fXy9cXFwvLy9cXFxfX19fXC9cXFwvLy8vLy8vLy9cXFxfICAgICAgIA0KICBfXC9cXFxfX19fX19cLy9cXFxfX18vXFxcL19fXC8vL1xcXF9fX18vXFxcL19fXC8vL1xcXF9fXC9cXFwvL1xcXF9fX18vXFxcLy9cXFxfX18vXFxcL19fX19fX19fX19fXC9cXFxfX19fX1wvXFxcX19fX18vXFxcL19fXC8vL1xcXF9fXC9cXFxfX19fX19fXC9cXFxfICAgICAgDQogICBfXC9cXFxfX19fX19fXC9cXFxfXy9cXFxfX19fX19cLy9cXFxfXy9cXFxfX19fX19cLy9cXFxfXC9cXFxcLy8vXFxcL1xcXC9fXC9cXFxfXy9cXFxfX19fX19fX19fX19fXC9cXFxcXFxcXFxcXC9fX19fXy9cXFxfX19fX19cLy9cXFxfXC9cXFxcXFxcXFxcXFxcL19fICAgICANCiAgICBfXC9cXFxfX19fX19fXC9cXFxfXC9cXFxfX19fX19fXC9cXFxfXC9cXFxfX19fX19fXC9cXFxfXC9cXFxfX1wvLy9cXFwvX19fXC9cXFxfXC9cXFxfX19fX19fX19fX19fXC9cXFwvLy8vLy9cXFxfX19fXC9cXFxfX19fX19fXC9cXFxfXC9cXFwvLy8vLy8vLy9fX19fICAgIA0KICAgICBfXC9cXFxfX19fX19fXC9cXFxfXC8vXFxcX19fX19fL1xcXF9fXC8vXFxcX19fX19fL1xcXF9fXC9cXFxfX19fXC8vL19fX19fXC9cXFxfXC8vXFxcX19fX19fX19fX19fXC9cXFxfX19fXC8vXFxcX19fXC8vXFxcX19fX19fL1xcXF9fXC9cXFxfX19fX19fX19fX19fICAgDQogICAgICBfXC9cXFxfX19fX19fL1xcXF9fX1wvLy9cXFxfXy9cXFxfX19fX1wvLy9cXFxfXy9cXFxfX19fXC9cXFxfX19fX19fX19fX19fXC9cXFxfX1wvLy9cXFxfX19fX19fX19fXC9cXFxfX19fX1wvL1xcXF9fX1wvLy9cXFxfXy9cXFxfX19fXC9cXFxfX19fX19fX19fX19fICANCiAgICAgICBfXC9cXFxcXFxcXFxcXFwvX19fX19fXC8vL1xcXFxcL19fX19fX19fXC8vL1xcXFxcL19fX19fXC9cXFxfX19fX19fX19fX19fXC9cXFxfX19fXC8vLy9cXFxcXFxcXFxfXC9cXFxfX19fX19cLy9cXFxfX19fXC8vL1xcXFxcL19fX19fXC9cXFxfX19fX19fX19fX19fIA0KICAgICAgICBfXC8vLy8vLy8vLy8vL19fX19fX19fX19cLy8vLy9fX19fX19fX19fX19cLy8vLy9fX19fX19fXC8vL19fX19fX19fX19fX19fXC8vL19fX19fX19fXC8vLy8vLy8vL19fXC8vL19fX19fX19fXC8vL19fX19fX19cLy8vLy9fX19fX19fXC8vL19fX19fX19fX19fX19fDQo8L3ByZT4=",
+"PHByZSBzdHlsZT0iZm9udC1zaXplOjEuOHZ3Ij4NCg0KOjo6Ojo6Ojo6ICAgOjo6Ojo6OjogICA6Ojo6Ojo6OiAgOjo6OiAgICA6Ojo6ICAgOjo6Ojo6OjogIDo6Ojo6Ojo6OiAgIDo6Ojo6Ojo6ICA6Ojo6Ojo6OjogIA0KOis6ICAgIDorOiA6KzogICAgOis6IDorOiAgICA6KzogKzorOis6IDorOis6KyA6KzogICAgOis6IDorOiAgICA6KzogOis6ICAgIDorOiA6KzogICAgOis6IA0KKzorICAgICs6KyArOisgICAgKzorICs6KyAgICArOisgKzorICs6KzorICs6KyArOisgICAgICAgICs6KyAgICArOisgKzorICAgICs6KyArOisgICAgKzorIA0KKyMrICAgICs6KyArIysgICAgKzorICsjKyAgICArOisgKyMrICArOisgICsjKyArIysgICAgICAgICsjKys6KysjOiAgKyMrICAgICs6KyArIysrOisrIysgIA0KKyMrICAgICsjKyArIysgICAgKyMrICsjKyAgICArIysgKyMrICAgICAgICsjKyArIysgICAgICAgICsjKyAgICArIysgKyMrICAgICsjKyArIysgICAgICAgIA0KIysjICAgICMrIyAjKyMgICAgIysjICMrIyAgICAjKyMgIysjICAgICAgICMrIyAjKyMgICAgIysjICMrIyAgICAjKyMgIysjICAgICMrIyAjKyMgICAgICAgIA0KIyMjIyMjIyMjICAgIyMjIyMjIyMgICAjIyMjIyMjIyAgIyMjICAgICAgICMjIyAgIyMjIyMjIyMgICMjIyAgICAjIyMgICMjIyMjIyMjICAjIyMgICAgICAgIA0KPC9wcmU+",
+"PHByZSBzdHlsZT0iZm9udC1zaXplOjF2dztmb250LXdlaWdodDpib2xkOyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgIyMjIyMgIyMgICAgICAgICAgIyAjIyMgICAgICAgICAgIyAjIyMgICAgICAgICMjIyMjICAgIyMgICAgIyMgICAgICAjICMjIyAgICAgICAjIyMjIyAvIyMgICAgICAgIyAjIyMgICAgICAgICAjIyMjIyAjIyAgICANCiAgIC8jIyMjIyAgLyMjICAgICAgICAvICAvIyMjICAgICAgICAvICAvIyMjICAgICAjIyMjIyMgIC8jIyMjICMjIyMjICAgIC8gIC8jIyMgIC8gIyMjIyMjICAvICMjICAgICAvICAvIyMjICAgICAgIyMjIyMjICAvIyMjICAgDQogLy8gICAgLyAgLyAjIyMgICAgICAvICAvICAjIyMgICAgICAvICAvICAjIyMgICAvIyAgIC8gIC8gICMjIyMjICMjIyMjIC8gIC8gICMjIy8gLyMgICAvICAvICAjIyAgICAvICAvICAjIyMgICAgLyMgICAvICAvICAjIyMgIA0KLyAgICAgLyAgLyAgICMjIyAgICAvICAjIyAgICMjIyAgICAvICAjIyAgICMjIyAvICAgIC8gIC8gICAjICMjICAjICMjIC8gICMjICAgIyMgLyAgICAvICAvICAgIyMgICAvICAjIyAgICMjIyAgLyAgICAvICAvICAgICMjIyANCiAgICAgLyAgLyAgICAgIyMjICAvICAjIyMgICAgIyMjICAvICAjIyMgICAgIyMjICAgIC8gIC8gICAgIyAgICAgIyAgIC8gICMjIyAgICAgICAgICAvICAvICAgIC8gICAvICAjIyMgICAgIyMjICAgICAvICAvICAgICAgIyMgDQogICAgIyMgIyMgICAgICAjIyAjIyAgICMjICAgICAjIyAjIyAgICMjICAgICAjIyAgICMjICMjICAgICMgICAgICMgICMjICAgIyMgICAgICAgICAjIyAjIyAgIC8gICAjIyAgICMjICAgICAjIyAgICAjIyAjIyAgICAgICMjIA0KICAgICMjICMjICAgICAgIyMgIyMgICAjIyAgICAgIyMgIyMgICAjIyAgICAgIyMgICAjIyAjIyAgICAjICAgICAjICAjIyAgICMjICAgICAgICAgIyMgIyMgIC8gICAgIyMgICAjIyAgICAgIyMgICAgIyMgIyMgICAgICAjIyANCiAgICAjIyAjIyAgICAgICMjICMjICAgIyMgICAgICMjICMjICAgIyMgICAgICMjICAgIyMgIyMgICAgIyAgICAgIyAgIyMgICAjIyAgICAgICAgICMjICMjIy8gICAgICMjICAgIyMgICAgICMjICAvIyMjICMjICAgICAgLyAgDQogICAgIyMgIyMgICAgICAjIyAjIyAgICMjICAgICAjIyAjIyAgICMjICAgICAjIyAgICMjICMjICAgICMgICAgICMgICMjICAgIyMgICAgICAgICAjIyAjIyAgIyMjICAjIyAgICMjICAgICAjIyAvICMjIyAjIyAgICAgLyAgIA0KICAgICMjICMjICAgICAgIyMgIyMgICAjIyAgICAgIyMgIyMgICAjIyAgICAgIyMgICAjIyAjIyAgICAjICAgICAjIyAjIyAgICMjICAgICAgICAgIyMgIyMgICAgIyMgIyMgICAjIyAgICAgIyMgICAgIyMgIyMjIyMjLyAgICANCiAgICAjICAjIyAgICAgICMjICAjIyAgIyMgICAgICMjICAjIyAgIyMgICAgICMjICAgIyAgIyMgICAgIyAgICAgIyMgICMjICAjIyAgICAgICAgICMgICMjICAgICMjICAjIyAgIyMgICAgICMjICAgICMjICMjIyMjIyAgICAgDQogICAgICAgLyAgICAgICAvICAgICMjICMgICAgICAvICAgICMjICMgICAgICAvICAgICAgIC8gICAgICMgICAgICAjIyAgIyMgIyAgICAgIC8gICAgICAvICAgICAjIyAgICMjICMgICAgICAvICAgICAjIyAjIyAgICAgICAgIA0KICAvIyMjLyAgICAgICAvICAgICAgIyMjICAgICAvICAgICAgIyMjICAgICAvICAgIC8jIy8gICAgICAjICAgICAgIyMgICAjIyMgICAgIC8gICAvIyMvICAgICAgIyMjICAgIyMjICAgICAvICAgICAgIyMgIyMgICAgICAgICANCiAvICAgIyMjIyMjIyMvICAgICAgICAjIyMjIyMvICAgICAgICAjIyMjIyMvICAgIC8gICMjIyMjICAgICAgICAgICAjIyAgICMjIyMjIy8gICAvICAjIyMjICAgICMjICAgICAjIyMjIyMvICAgICAgICMjICMjICAgICAgICAgDQovICAgICAgICMjIyMgICAgICAgICAgICAjIyMgICAgICAgICAgICAjIyMgICAgIC8gICAgICMjICAgICAgICAgICAgICAgICAgICMjIyAgICAvICAgICMjICAgICAjICAgICAgICAjIyMgICAgIyMgICAjIyAjIyAgICAgICAgIA0KIyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyAgICAgICAgICAgICAgICAgICAgICAgICAgIyMjICAgIyAgLyAgICAgICAgICANCiAjIyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMjICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIyAgICAgICAgICAgICAgICAgICAgICAgICAjIyMgICAgLyAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMjIyMjLyAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMjIyAgICAgICAgICAgICANCg0KPC9wcmU+",
+"PHByZSBzdHlsZT0iZm9udC1zaXplOjF2dzsiPg0KODg4ODg4OGIuICAgLmQ4ODg4OGIuICAgLmQ4ODg4OGIuICA4ODhiICAgICBkODg4ICAuZDg4ODhiLiAgODg4ODg4OGIuICAgLmQ4ODg4OGIuICA4ODg4ODg4Yi4gIA0KODg4ICAiWTg4YiBkODhQIiAiWTg4YiBkODhQIiAiWTg4YiA4ODg4YiAgIGQ4ODg4IGQ4OFAgIFk4OGIgODg4ICAgWTg4YiBkODhQIiAiWTg4YiA4ODggICBZODhiIA0KODg4ICAgIDg4OCA4ODggICAgIDg4OCA4ODggICAgIDg4OCA4ODg4OGIuZDg4ODg4IDg4OCAgICA4ODggODg4ICAgIDg4OCA4ODggICAgIDg4OCA4ODggICAgODg4IA0KODg4ICAgIDg4OCA4ODggICAgIDg4OCA4ODggICAgIDg4OCA4ODhZODg4ODhQODg4IDg4OCAgICAgICAgODg4ICAgZDg4UCA4ODggICAgIDg4OCA4ODggICBkODhQIA0KODg4ICAgIDg4OCA4ODggICAgIDg4OCA4ODggICAgIDg4OCA4ODggWTg4OFAgODg4IDg4OCAgICAgICAgODg4ODg4OFAiICA4ODggICAgIDg4OCA4ODg4ODg4UCIgIA0KODg4ICAgIDg4OCA4ODggICAgIDg4OCA4ODggICAgIDg4OCA4ODggIFk4UCAgODg4IDg4OCAgICA4ODggODg4IFQ4OGIgICA4ODggICAgIDg4OCA4ODggICAgICAgIA0KODg4ICAuZDg4UCBZODhiLiAuZDg4UCBZODhiLiAuZDg4UCA4ODggICAiICAgODg4IFk4OGIgIGQ4OFAgODg4ICBUODhiICBZODhiLiAuZDg4UCA4ODggICAgICAgIA0KODg4ODg4OFAiICAgIlk4ODg4OFAiICAgIlk4ODg4OFAiICA4ODggICAgICAgODg4ICAiWTg4ODhQIiAgODg4ICAgVDg4YiAgIlk4ODg4OFAiICA4ODggICAgICAgIA0KPC9wcmU+" 
+        ];
+        function headerChoice() {
+            var choice = headerOptions[Math.floor(Math.random() * headerOptions.length)];
+            return atob(choice)
+        };
+    </script>
+    <title>DOOMCROP: the Card Game</title>
+    <meta charset="ASCII">
+    <meta name="keywords" content="doomcrop, board game, card game, rules, instructions">
+    <meta name="description" content="A free barebones ruleset for playing the Doomcrop card game">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<!-- Header Area -->
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="twelve columns">
-          <div class="scene">
-            <div class="card">
-              <div class="card__face card__face--front"> </div>
-              <div class="card__face card__face--back"> </div>
-            </div></div></div>
-        <div class="twelve columns">
-          <h1>Doomcrop: a Strategy Game</h1>
-          <p style="text-align:center;">
-            Ye what sows the corrupted seed<br>
-            E'er shall reap of a doomed crop
-          </p></div></div></div>
-  </header>
-
-<!-- Nav Buttons -->
-  <nav class="container">
-    <div class="row">
-      <div class="twelve columns" style="text-align:center;">
-        <button class="button rulesLink">Rules</button>
-        <button class="button optionalLink">Optional Rules</button>
-        <button class="button videoLink">Video</button>
-        <button class="button aboutLink">About</button>
-      </div></div></nav>
-
-<!-- Breathing room -->
-  <div class="container"><br></div>
-
-<!-- Main presentation area -->
-  <main role="main">
-
-<!-- Rules section -->
-    <section id="rules" class="active">
-
-<!-- What is the Meaning of This? -->
-      <div class="container"><h3>What is the Meaning of This?</h3>
-        <div class="row">
-        <div class="three columns" style="display:flex;justify-content:center;">
-          <!-- <div id="card_ripple" style="max-width:22rem;"> </div> -->
-            <div class="cardBackBox">
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" />
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" />
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" /><div class="break"></div>
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" />
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" />
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" /><div class="break"></div>
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" />
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" />
-              <img class="cardBackItem" src="./images/cardBack_shadowless.png" />
-            </div></div>
-        <div class="nine columns">
-          <p>Doomcrop is a game for 2+ players that can be played with a regular deck
-            of playing cards. All that is required is enough table space to lay out
-            around 20 cards.
-            <br><br>
-
-            Although luck is a component of play, sound strategy is a necessity.
-            You must think of yourself as the commander of a ramshackle army,
-            giving orders while a battle rages. Your number cards will engage your
-            opponents in combat, while your face cards will use their courtly
-            powers to influence the tides of war.
-            <br><br>
-
-            Your goal is capture your opponent's cards, while protecting your own
-            cards from capture. Whosoever has captured the most cards by the time
-            the Draw Pile runs out, wins!
-        </p></div></div></div>
-
-<!-- Game Setup -->
-      <div id="game-setup" class="container"><h3>Game Setup</h3>
-        <div class="row">
-        <div class="twelve columns">
-          <p>The standard 2-player Doomcrop game uses one deck of playing cards
-            with the Jokers removed.
-            <br><em>(Please see the Optional Rules section
-            to play with more players, more decks, or more Jokers.)</em>
-            <br><br>
-
-            Shuffle the deck and deal 10 cards to each player, facedown.
-            <br><br>
-
-            Look at your cards arrange 9 of them into a 3-by-3 grid.
-            <strong><u>You may look at your own facedown cards at any time.</u></strong>
-            <br><br>
-
-            Take the 10th card and start your Discard pile, face-up. It should be
-            <u>separate</u> from your opponent's Discard pile. Cards in your Discard pile
-            cannot return to play, so choose your 10th card carefully.
-            <br><br>
-
-            Place the rest of the shuffled deck facedown between players.
-            This is the <em>shared</em> <strong>Draw pile.</strong>
-            <br><br>
-
-            Whichever player discarded the card with the lowest value goes first.
-            For this, Face cards have a higher value than all Numbers, and Diamond
-            Numbers are more valuable than equal Numbers that are non-Diamonds.
-            In the case of a tie, flip a coin.</p></div></div>
-
-        <div class="row">
-        <div class="eight columns offset-by-two"><div style="display:flex;justify-content:center;align-items:center;">
-          <img src="images/layoutGuide.png" alt="Layout Guide" />
-          </div></div></div>
-
-        <div class="row">
-        <div class="twelve columns">
-          <h4>Turn Order</h4>
-            <p>On your turn, choose a card in your grid to flip face-up. If it's a Number, you attack.
-            If it's a Face card, you activate its ability. If you capture a card,
-            put it in your Discard pile face-up and immediately replace it with a facedown card
-            from the top of the Draw pile.
-            <br><br>
-
-            After all captured cards have been replaced, pass the turn to your opponent.
-        </p></div></div></div>
-
-<!-- Numbers Attack! -->
-      <div id="numbers" class="container"><h3>Number Cards</h3>
-        <div class="row">
-          <div class="twelve columns">
-            <h4>Opposition</h4>
-            <p>Each card in your grid has its opposite in your opponent's grid.
-            To oppose each other, the two cards must be equally close to the Line of Opposition
-            between the two grids, and they must be directly aligned with each other.
-            Each card is the mirror of its opposite.
-            <br><br>
-
-            Most Number cards may only attack their Opposing card. Clubs Numbers
-            have extended range (see below).
-          </p></div></div>
-
-        <div class="row">
-          <div class="eight columns offset-by-two">
-              <div style="display:flex;justify-content:center;align-items:center;">
-                <img src="images/oppoIllustration.png" alt="The line of opposition and example opposed cards." />
-          </div></div></div>
-
-        <div class="row">
-          <div class="twelve columns">
-            <h4>Numerological Combat</h4>
-            <p>Statistically speaking, the majority of the deck is Number cards.
-              Think of them as your rank-and-file troops. All they know is combat.
-               <br><br>
-
-              Flip a Number card face-up to attack its Opposing card.
-              If its Opposing card is facedown, flip it face-up as well. <br>
-              <u>If the Opposing card is a Number and:</u></p>
-            <ul>
-              <li>you have the <u>higher</u> Number, you capture the Opposing card!</li>
-              <li>you have the <u>lower</u> Number, the opponent captures your card.</li>
-              <li>the numbers are <u>tied</u>, both cards remain face-up on the board.</li> </ul>
-            <p>If the Opposing card is revealed to be a Face card, it may not use
-              its special ability (unless it is turned facedown again by a Queen).
-              <strong>Face cards can only be captured by <u>any Number 2</u>, or
-              any Number whose <u>suit matches the Face card.</u></strong> A Face
-              that is attacked by any other Number must remain on the
-              board until it is captured by a capable Number or an Ace.
-              <br><br>
-
-              The Number 2 has another unique trait: <strong>it is the only Number that
-              can capture a Number 10.</strong></p>
-        </div></div>
-
-        <div class="row">
-          <div class="eight columns offset-by-two"><div style="display:flex;justify-content:center;align-items:center;">
-            <img src="images/numericalCombat.png" alt="The cards engage in combat." /></div>
-          <p style="text-align:center;"><br><em>Hearts win.</em></p>
-        </div></div></div>
-
-<!-- Suit Abilities -->
-      <div id="number-abilities" class="container"><h3>Suit Abilities</h3>
-        <div class="row">
-        <div class="twelve columns">
-          <p>Number cards have special abilities afforded by their suits.
-          <strong><u>Suit abilities do not apply to Face cards.</strong></u></p>
-        </div></div>
-
-        <div class="row">
-          <div class="one-half column">
-            <h5>Spades</h5>
-            <p class="fan-text">Spades number cards are like zealous fanatics, willing to die for
-              their cause. Once per turn, before you flip a card, <strong>you may
-              capture any one Spades card in your grid</strong>, face-up or facedown.</p>
-            <div id="spade_fan"> </div></div>
-          <div class="one-half column">
-            <h5>Clubs</h5>
-            <p class="fan-text">Clubs are like archers and bottle-throwers, attacking
-              from a distance. <strong>When a Clubs card attacks, you may choose to attack any
-                card it is directly aligned with, instead of its Opposing card.</strong></p>
-            <div id="club_fan"> </div></div>
-          </div>
-
-        <div class="row">
-          <div class="one-half column">
-            <h5>Diamonds</h5>
-            <p class="fan-text">Diamonds are like merchants and thieves, using the chaos
-              to gather wealth. <strong>When you count out Discard piles at the end of the game, each
-              Diamonds card counts as two cards.</strong></p>
-            <div id="diamond_fan"> </div></div>
-          <div class="one-half column">
-            <h5>Hearts</h5>
-            <p class="fan-text">Hearts are like warriors who share a powerful bond. <strong>When one
-              of your Hearts cards is attacked, if there is a <u>facedown</u> Hearts card adjacent
-              to it, you may flip that Hearts face-up and add its value to that of the
-              defending Hearts card.</strong> If their combined value exceeds 10, an attacking
-              Number 10 may be captured, even if a Number 2 is not involved.</p>
-            <div id="heart_fan"> </div></div>
-      </div></div>
-
-<!-- Face Card Abilities -->
-      <div id="face-cards" class="container"><h3>Face Card Abilities</h3>
-        <div class="row">
-        <div class="twelve columns">
-          <p>Face cards represent the powerful, the connected, and the inevitable.
-            Flip a Face card face-up to activate its special ability.
-          <br><br>
-             After you resolve a Face card's ability, <strong>capture the Face card.</strong></p>
-        </div></div>
-
-        <div class="row">
-        <div class="one-half column">
-          <h5>The Jack</h5>
-          <img class="flipflop" src="./images/JackClubs_flipFlop.png">
-          <p><strong>When you flip a Jack</strong>, you may swap the places of your own cards,
-            one-for-one, three times. You may make fewer swaps,
-            swap the same two cards up to three times, and/or swap the Jack.
-            <u>You may not turn any cards face-up or facedown during this process.</u>
-          </p></div>
-        <div class="one-half column">
-          <h5>The Queen</h5>
-          <img class="flopflip" src="./images/QueenHearts_flipFlop.png">
-          <p><strong>When you flip a Queen</strong>, turn up to three of your cards
-            facedown.</p>
-          </div></div>
-
-        <div class="row">
-        <div class="one-half column">
-          <h5>The King</h5>
-          <img class="flipflop" src="./images/KingDiamonds_flipFlop.png">
-          <p><strong>When you flip a King</strong>, flip each of your facedown
-            Number cards face-up, one-by-one, and resolve Numerological Combat
-            with their Opposing cards accordingly. <em>Clubs numbers may use their ability</em>.
-            <u><strong>The King also attacks</strong> when activating this ability.
-            Consider the King a <strong>7</strong> if it's opposed to a Number.</u>
-            A King cannot capture another Face card this way.
-            Your number cards that were previously face-up do not attack.</p>
-          </div>
-        <div class="one-half column">
-          <h5>The Ace</h5>
-          <img class="flopflip" src="./images/AceSpades_flipFlop.png">
-          <p><strong>When you flip an Ace</strong>, instantly capture
-              <u>any</u> face-up or facedown card on the board, or the top card of the Draw pile.</p>
-        </div></div></div>
-
-<!-- What If? -->
-      <div id="ending" class="container"><h3>What if...</h3>
-        <div class="row">
-        <div class="twelve columns">
-            <h4>All of My Cards Are Face-up?</h4>
-            <p>In the unlikely event that either player begins their turn with all of their
-              own cards face-up, both players immediately capture all of their own cards,
-              draw 9 cards from the Draw pile, and build their grid again facedown.</p>
-            <h4>I Don't Have Any Good Moves?</h4>
-            <p>Due to the randomness of a shuffled deck, this situation will occur
-              from time to time. Look for a Spade you can sacrifice to refresh your grid.
-              If you have to let your opponent capture a card of yours, try to
-              avoid giving them a Diamond. If you have a King handy, the benefits you get from
-              drawing several new cards may outweigh the points you give your opponent.</p>
-        </div></div></div>
-
-<!-- Ending the Game -->
-      <div id="ending" class="container"><h3>Ending the Game</h3>
-        <div class="row">
-        <div class="twelve columns">
-          <p>When the Draw pile runs out, immediately capture all of your own Face cards,
-            both face-up and facedown. Then flip any remaining cards face-up and resolve
-            all Numerological Combats, including between cards that were already face-up.
-            If you have any cards left, you capture them.
-            <br><br>
-
-            Count out the amount of cards in your Discard pile. Card values do not
-            matter, but remember to count Diamond numbers as two cards. Whosoever
-            has captured the most cards, wins!</p></div></div>
-
-        <div class="row">
-          <div class="ten columns offset-by-one">
-          <img src="images/maleGamers.png"
-                alt="The gamers enjoyed the game" /></div></div>
-
-        <div class="row">
-          <div class="remark" style="text-align:center;">
-          <h3>Congratulations<br>You played Doomcrop</h3></div></div>
-      </div>
-
-    </section><!-- Rules Section ends here -->
-
-<!-- Video section (hidden at load) -->
-    <section id="video">
-      <div class="container">
-        <h1>Coming Later</h1>
-        <img src="./images/underConstruction.gif" style="margin-left:auto;margin-right:auto;">
-        <!-- ###### Expertly edited video goes here -->
-      </div>
-    </section>
-
-<!-- About section (hidden at load) -->
-    <section id="about">
-      <div class="container">
-        <p style="text-align:center">Greetings traveler</p>
-        <div style="display:flex;justify-content:center;align-items:center;">
-        <img src="./images/riley.jpg" style="border-radius:50%;max-width:275px;" /></div>
-        <div class="row">
-          <div class="eight columns offset-by-two">
-            <p style="text-align:center"><a href="https://www.instagram.com/rileyadammmson/">
-              @rileyadammmson</a></p>
-            <p style="text-align:left">Doomcrop was designed by Riley Adamson.
-              You can call me Riles. I live in LA and organize files on some
-              <a href="https://www.imdb.com/name/nm5863856/">good TV shows.</a>
-              I made all the Doomcrop art in After Effects and converted some to SVG animations
-              with <a href="https://airbnb.design/lottie/">Lottie</a>. I know
-              that's kind of a roundabout way to get it done. I'm studying front-end design
-              and functional programming at My Bedroom Late At Night University.
-            </p></div></div>
-
-        <div class="row">
-          <div class="eight columns offset-by-two">
-            <h4>Doomcrop To-Do List</h4>
-              <ul>
-                <li style="text-decoration:line-through;">Replace all placeholder guys with new art</li>
-                <li>Thorough test of gameplay</li>
-                  <ul><u>Changelog 09/29/20 - Version 1.2</u>
-                    <li>Clarified rules on Face cards in combat</li>
-                    <li>Clarified the some Face card abilities</li>
-                    <li>Added "What if?" section</li>
-                    <li>Simplified rules for ending the game</li></ul>
-                  <ul><u>Changelog 09/27/20 - Version 1.1</u>
-                    <li>Added rules for cases where numbers are tied in combat</li>
-                    <li>Added rules for cases where all cards are face-up</li>
-                    <li>Added rules to determine which player goes first</li>
-                    <li>Updated rules for ending the game</li>
-                    <li>Rebalanced Face card rules to mitigate board stagnation</li>
-                    <li>Rebalanced Hearts suit ability to improve usefulness</li>
-                    <li>Clarified Spades suit ability</li>
-                    <li>Emphasized player's ability to always view their own cards</li>
-                    <li>Updated Optional Rules section</li></ul>
-                <li>Video explaining the rules of the game</li>
-                <li>Interactive web-based Doomcrop vs. AI and other players</li>
-                <li>Employ artists to make the cards look better</li>
-                <li>Secret plans go here...</li>
-              </ul>
-          </div></div>
-
-        <div class="row">
-          <div class="eight columns offset-by-two" style="text-align:center;">
-            <h4>You Can Support Doomcrop</h4>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_donations" />
-              <input type="hidden" name="business" value="KU8DJK9FPQRCN" />
-              <input type="hidden" name="item_name" value="support Doomcrop" />
-              <input type="hidden" name="currency_code" value="USD" />
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-            </form>
-        </div></div></div>
-    </section>
-
-<!-- Optional Rules (hidden at load) -->
-    <section id="optional">
-      <div class="container">
-        <div class='row'>
-        <div class="twelve columns">
-          <h4>Playing with Multiple Decks</h4>
-          <p>Doomcrop can be played with more than one deck of cards.</p>
-          <ul>
-            <li>Players may shuffle multiple decks together to form the Draw pile.
-            This is workable even if the decks' back-face art doesn't match.</li>
-            <li>If players want their own individual Draw piles, these can be
-            dealt out evenly from the shared Draw pile at the start of the game.</li>
-            <li>Players may use multiple decks to form individual Draw piles, as
-            long as each player has an equal amount of cards at the start of the
-            game.</li></ul>
-        </div></div>
-        <div class='row'>
-        <div class="twelve columns">
-          <h4>Playing with 3+ Players</h4>
-          <p><em>With more than 2 players, it is recommended to use multiple
-          decks as outlined above.</em><br><br>
-
-          When playing Doomcrop with 3 or more players, determining Opposing cards
-          is more complicated. You now have multiple axii of opposition. With 3
-          players, you have an axis on both sides of your grid. With 4 players,
-          you also have the original top row axis. <br><br>
-
-          With odd numbers of players, players may only attack the opponents
-          directly to their left and right. With even numbers of players greater than 4,
-          players may also attack the opponent directly opposite them.
-          It is recommended that players amend this as a house rule if they wish
-          to be able to skip players when attacking.</p>
-        </div></div>
-        <div class='row'>
-        <div class="twelve columns">
-          <h4>Playing with Jokers</h4>
-          <p>Unlike other Face cards, the Joker can be captured by any Number card.<br><br>
-          When you flip a Joker face-up, or when you capture a Joker,
-          roll a 6-sided die and obey the table below.</p>
-          <ol>
-            <li>Players swap sides of the board.</li>
-            <li>Players swap Discard piles.</li>
-            <li>Each player captures all of their own cards and deals a new 3-by-3 square.</li>
-            <li>All face cards are activated, including face-up ones.</li>
-            <li>Each player shuffles their own cards together and deals their 3-by-3 square randomly, facedown.</li>
-            <li>For the rest of the game, play with the top card of the Draw pile face-up.</li></ol>
-      </div></div>
-        <div class='row'>
-        <div class="twelve columns">
-          <h4>Epic Techniques</h4>
-          <p>If you want to add Epic Tech to your game, observe the following rules.
-          Activate these techniques before you flip a card on your turn. The cards do
-          not need to be face-up to activate these techniques.</p>
-          <ul>
-            <li>If your grid contains 4 Hearts cards in a square, you may turn any
-              amount of them facedown.</li>
-            <li>If your grid contains 4 Diamonds cards in a square, you may flip
-             any amount of their Opposing cards face-up. No other abilities are activated.</li>
-            <li>If your grid contains 4 Spades cards in a square, you may capture any
-            amount of them.</li>
-            <li>If your grid contains 4 Clubs cards in a square, you may flip any amount
-              of them face-up, and attack any cards they could normally attack.</li></ul>
-        </div></div>
-
+    <div id="header"></div>
+    <div class="pitch"><strong>Doomcrop</strong> is a game for two players. Strategize, 
+        use powerful abilities, and capture your opponent's cards - before they capture yours.
+        <br>You will need a standard deck of playing cards, Jokers removed.</div>
+    <div class="rules">
+        <h1>How to Play</h1>
+            <h2>Setup</h2>
+                <p>1. Shuffle the deck and deal each player 10 cards facedown.</p>
+                <p>2. Look at your own cards, but do not reveal them. Choose 9 of your 
+                cards and arrange them facedown in a 3-by-3 square. This is your Grid.</p>
+                <p>3. Set aside your 10th card. When both players are finished building out 
+                their Grid, reveal the card you set aside. Whichever player's revealed card 
+                has the lowest value, goes first. In case of uncertainty, flip a coin.</p>
+                <p>4. Keep your revealed card in its own area; as you capture cards throughout the 
+                game, you will place them on top of it to form your Discard Pile.</p>
+                <p>5. Place the remainder of the deck facedown between players. Both players will
+                replenish their Grid from this shared deck throughout the game.</p>
+            <h2>Actions</h2>
+                <p>Each player has one Action they may take on their turn. Choose one:</p>
+                <p><strong>Reveal:</strong> Flip one card in your Grid face-up. <br><i class="or">or</i>
+                <br><strong>Sacrifice:</strong> Choose one of your own face-up cards, place it 
+                in your Discard Pile, and replenish it from the top of the deck.</p>
+                <p>After you take one of these actions, your turn is over.</p>
+            <h2>Reveal</h2>
+                <p><strong>When you Reveal a number card,</strong> your opponent must reveal the card in 
+                their Grid that is directly opposed to it (as if the two Grids mirror
+                each other).<br>
+                <strong>If the opposing card is also a number,</strong> compare their values. 
+                With some exceptions, the higher number wins this combat. The winning card remains face-up 
+                in its Grid. The losing card is captured to the winning player's Discard Pile. In case 
+                of a tie, both cards remain face-up in their Grid.<br>
+                <strong>If the opposing card is a face,</strong> combat does not occur. With some exceptions,
+                both cards remain face-up in their Grids.<br>
+                <strong>Combat Exceptions:</strong> a #2 always beats a #10 or any face card. If either number card 
+                in combat is a Heart, check if the Hearts Suit Power can be activated. Any number card may capture
+                a face card in combat if they having matching suits.</p>
+                <p><strong>When you Reveal a face card,</strong> activate the Ability associated with its
+                face. After this Face Ability is completed, you must Sacrifice the face card to your own 
+                Discard Pile.</p>
+            <h2>Winning the Game</h2>
+                <p>When the deck runs out, immediately capture all of your own Face cards, both face-up and facedown. 
+                Then reveal all your remaining cards, and resolve combat between all opposing cards (including ones 
+                that were already face-up). If you have any cards left after this mass combat, capture your own.</p>
+                <p>Count out the amount of cards in your Discard pile. Card values do not matter, but remember to 
+                count Diamonds as two cards. Whosoever has captured the most cards, wins!</p>
+            <h2>Suit Powers</h2>
+                <p><strong>Spades: </strong>Once per turn, before you take your action, you may capture any 
+                one Spades card in your Grid, face-up or facedown.</p>
+                <p><strong>Clubs: </strong>When you reveal a Clubs number, you may choose any card any card
+                adjacent to its opposing card to do combat with, instead of its directly opposing card.</p>
+                <p><strong>Hearts: </strong>When you have a Hearts card in combat, you may reveal one 
+                facedown Hearts number that is adjacent to the combat card, and add its value to the combat 
+                card to determite the winner.</p>
+                <p><strong>Diamonds: </strong>When you count out Discard Piles at the end of the game, 
+                the Diamonds cards you captured each count as two cards.</p>
+            <h2>Face Abilities</h2>
+                <p><strong>Jack: </strong>Rearrange your Grid however you like. You may not turn any cards 
+                face-up or facedown during this process.</p>
+                <p><strong>Queen: </strong>flip up to three of your face-up cards facedown.</p>
+                <p><strong>King: </strong>Mark each of your facedown numbers with a token. In whatever order you 
+                choose, reveal each marked card, and resolve combat with their opposing cards, one-by-one. Spades 
+                and Hearts may use their Suit Powers where appropriate. Capture accordingly and replenish as you go.</p>
+                <p><strong>Ace: </strong>Capture any other card in either grid, or the top card of the deck.</p>
+                <p><i>Remember that a face card must always be sacrificed after its ability is used.</i></p>
+        <h1>Additional Rules</h1>
+            <h2>Modifying the Game</h2>
+                <p>To play a longer game of Doomcrop, use 2 or more decks. Shuffle them together, or give each player
+                their own separate Draw Pile.</p>
+                <p>To play with more than 2 players, it's best to use multiple decks. When you reveal a number, 
+                you may choose which opponent's Grid in which you'll find its opposing card.</p>
+            <h2>Jokers</h2>
+                <p>When you reveal, sacrifice, or capture a Joker, roll a 6-sided die and obey the table below:</p>
+                <p>1. Players swap Grids (or seats).<br>
+                2. Activate the Face Ability of every face card in play, including facedown ones.<br>
+                3. Each player sacrifices all of their own cards. Deal new Grids from the deck.<br>
+                4. Each player collects their Grid, shuffles it, and deals it facedown randomly.<br>
+                5. Players swap Discard Piles.<br>
+                6. Flip the deck over. If it was facedown, now it is face-up, and vice-versa.</p>
+            <h2>Deadly Techniques</h2>
+                <p>Include these Techniques in your game only if you truly believe you can withstand their power. Once per turn, 
+                before you take your action, you may reveal cards in your Grid to prove that one of the following 
+                conditions is true. If any of those cards were facedown, return them that way after activating your technique. 
+                Then, proceed with your turn as normal.</p>
+                <p><strong>4 Hearts in a square:</strong> you may turn one of them facedown.<br>
+                <strong>4 Diamonds in a square (or diamond):</strong> reveal any amount of their opposing cards.<br>
+                <strong>4 Spades in a square:</strong> sacrifice any amount of them.<br>
+                <strong>4 Clubs in a square:</strong> reveal any amount of them and attack their opposing cards.<br>
+                <strong>Straight among adjacent cards:</strong> sacrifice them, capture the top card of the deck, and capture one of 
+                your opponent's cards.<br>
+                <strong>Royal Flush:</strong> sacrifice them, and capture all cards of the matching suit in both Grids.<br>
+                <strong>Exactly one of each number (#2-10) in any suits:</strong> you instantly win the game.
+            </p>
+        <h1>Credits</h1>
+            <p><strong>Doomcrop</strong> was designed by Riley Adamson. This barebones version of the rules will remain available indefinitely. 
+            All rights reserved.</p>
+            <p>A physical version of the game, with weird sci-fi theming, over 25 illustrations, and very fine print quality, 
+            will be available for purchase beginning in Q4 2022.</p>
+            <p><strong>Doomcrop</strong> is a <i>Dead Castle</i> game.</p>
     </div>
-    </section>
-  </main>
-
-<!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-      <nav class="eight columns offset-by-two" style="text-align:center;">
-        <button class="button rulesLink">Rules</button>
-        <button class="button optionalLink">Optional Rules</button>
-        <button class="button videoLink">Video</button>
-        <button class="button aboutLink">About</button>
-      </nav></div>
-      <div class="row">
-      <div class="one column offset-by-four">
-        <div class="footer__scene">
-          <div class="card">
-            <div class="card__face card__face--front"> </div>
-            <div class="card__face card__face--back"> </div>
-          </div></div></div>
-      <div class="three columns">
-        <p>&copy; 2020. Riley Adamson. All Rights Reserved.</p>
-      </div></div></div>
-  </footer>
-
-<!-- Lottie Animation Scripting -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js"></script>
-<script src="js/animations.js"></script>
-
-<!-- Button Link Scripting -->
-<script src="js/linkButtons.js"></script>
 
 </body>
+<script>
+    document.getElementById("header").innerHTML = headerChoice();
+</script>
 </html>
