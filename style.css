@@ -41,11 +41,7 @@ video {
     margin: 0 auto;
 }
 
-a.ntwrkLink:link {
-    color:blue;
-}
-
-a.ntwrkLink:visited {
+a.ntwrkLink:link, a.ntwrkLink:visited {
     color:blue;
 }
 
