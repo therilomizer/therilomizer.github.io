@@ -26,6 +26,29 @@ body {
     padding: 1% 10%;
 }
 
+.sale {
+    display:block;
+    font-family: monospace;
+    font-size: x-large;
+    text-decoration: none;
+    text-align: center;
+    color: pink;
+    background-color: black;
+}
+
+video {
+    display:block;
+    margin: 0 auto;
+}
+
+a.ntwrkLink:link {
+    color:blue;
+}
+
+a.ntwrkLink:visited {
+    color:blue;
+}
+
 .or {
     position: relative;
     left: 10%;
