@@ -11,13 +11,12 @@ pre {
 body {
     background-color: whitesmoke;
     font-family: monospace;
-    font-size: large;
   }
 
 .rules {
     text-align: left;
+    font-size: large;
     padding: 2% 8%;
-    
 }
 
 .pitch {
@@ -27,13 +26,21 @@ body {
 }
 
 .sale {
-    display:block;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     font-family: monospace;
-    font-size: x-large;
+    font-size: 2.5vw;
     text-decoration: none;
     text-align: center;
-    color: pink;
-    background-color: black;
+    color: black;
+    padding: 2% 8%;
+}
+
+.alpha {
+    max-width: 90%;
+    height: auto;
 }
 
 video {
