@@ -52,6 +52,12 @@ a.ntwrkLink:link, a.ntwrkLink:visited {
     color:blue;
 }
 
+span.saleLink a {
+    color:#efc136;
+    text-decoration: underline;
+}
+
+
 .or {
     position: relative;
     left: 10%;
