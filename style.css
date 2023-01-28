@@ -50,6 +50,7 @@ video {
 
 a.ntwrkLink:link, a.ntwrkLink:visited {
     color:blue;
+    font-weight: bold;
 }
 
 span.saleLink a {
@@ -65,4 +66,31 @@ span.saleLink a {
 
 p:hover {
     box-shadow: 1px 1px 5px grey;
+}
+
+.tagLine {
+    position: relative;
+    left: 40px;
+    max-width:fit-content;
+}
+
+.tagLine:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+@print {
+    .sale {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: monospace;
+        font-size: 2.5vw;
+        text-decoration: none;
+        text-align: center;
+        padding: 2% 8%;
+    }
+    .alpha {
+        display:none;
+    }
 }
