@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-            <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HSBGRE4TL"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7HSBGRE4TL');
-    </script>
-    <link rel="stylesheet" href="style.css">
     <script id="data">
         const headerOptions = [
 "PHByZT4NCi4tLS0tLS0uLi0tLS0tLS4uLS0tLS0tLi4tLS0tLS0uLi0tLS0tLS4uLS0tLS0tLi4tLS0tLS0uLi0tLS0tLS4NCnxELi0tLiB8fE8uLS0uIHx8Ty4tLS4gfHxNLi0tLiB8fEMuLS0uIHx8Ui4tLS4gfHxPLi0tLiB8fFAuLS0uIHwNCnwgOi9cOiB8fCA6L1w6IHx8IDovXDogfHwgKFwvKSB8fCA6L1w6IHx8IDooKTogfHwgOi9cOiB8fCA6L1w6IHwNCnwgKF9fKSB8fCA6XC86IHx8IDpcLzogfHwgOlwvOiB8fCA6XC86IHx8ICgpKCkgfHwgOlwvOiB8fCAoX18pIHwNCnwgJy0tJ0R8fCAnLS0nT3x8ICctLSdPfHwgJy0tJ018fCAnLS0nQ3x8ICctLSdSfHwgJy0tJ098fCAnLS0nUHwNCmAtLS0tLS0nYC0tLS0tLSdgLS0tLS0tJ2AtLS0tLS0nYC0tLS0tLSdgLS0tLS0tJ2AtLS0tLS0nYC0tLS0tLScNCjwvcHJlPg==",
@@ -25,11 +15,106 @@
             return atob(choice)
         };
     </script>
+    <style>
+        #header {
+            font-size: 2vw;
+            margin: auto;
+        }
+
+        pre {
+            text-align: center;
+            padding: 2%;
+        }
+
+        body {
+            background-color: whitesmoke;
+            font-family: monospace;
+        }
+
+        .rules {
+            text-align: left;
+            font-size: large;
+            padding: 2% 8%;
+        }
+
+        .pitch {
+            font-size: x-large;
+            text-align: center;
+            padding: 1% 10%;
+        }
+
+        .sale {
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            font-family: monospace;
+            font-size: 2.5vw;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            padding: 2% 8%;
+        }
+
+        .alpha {
+            max-width: 90%;
+            height: auto;
+        }
+
+        video {
+            display:block;
+            margin: 0 auto;
+        }
+
+        a.ntwrkLink:link, a.ntwrkLink:visited {
+            color:blue;
+            font-weight: bold;
+        }
+
+        span.saleLink a {
+            color:#efc136;
+            text-decoration: underline;
+        }
+
+
+        .or {
+            position: relative;
+            left: 10%;
+        }
+
+        p:hover {
+            box-shadow: 1px 1px 5px grey;
+        }
+
+        .tagLine {
+            position: relative;
+            left: 40px;
+            max-width:fit-content;
+        }
+
+        .tagLine:hover {
+            box-shadow: 1px 1px 5px grey;
+        }
+
+        @print {
+            .sale {
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                font-family: monospace;
+                font-size: 2.5vw;
+                text-decoration: none;
+                text-align: center;
+                padding: 2% 8%;
+            }
+            .alpha {
+                display:none;
+            }
+        }
+    </style>
     <title>DOOM CROP: the Card Game</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <meta charset="ASCII">
-    <meta name="keywords" content="doom crop, board game, card game, rules, instructions">
-    <meta name="description" content="A free barebones ruleset for playing the Doom Crop card game">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -38,18 +123,8 @@
     <span class="saleLink">
     <a href="https://wearebraindead.com/products/doom-crop-trading-game-multi?variant=42959500116099" target="blank">
     <div class="sale">
-        <div style="flex:20%;">
-            <img src="./assets/box-front.png" alt="Doom Crop Box" height="629" width="462" class="alpha"></div>
         <div style="flex:60%;background-color:#3c322c;color:#edb6c8;">
-            ORIGINAL ILLUSTRATIONS<br>
-            TWISTED LORE<br>
-            ADDICTIVE GAMEPLAY<br>
-            DOOM CROP ALPHA EDITION<br>
-            AVAILABLE NOW<BR>
-            $30 via BRAIN DEAD<br>
-            CLICK HERE</div>
-        <div style="flex:20%;" class="alpha">
-            <img src="./assets/box-back.png" alt="Doom Crop box back" height="635" weight="469" class="alpha"></div>
+            Purchase the physical edition of Doom Crop Alpha from Brain Dead. $30+shipping</div>
     </div></a></span>
     <div class="rules">
         <h1>How to Play</h1>
@@ -155,7 +230,7 @@
             <p><strong>Doom Crop</strong> is a <i>Dead Castle</i> game.</p>
     </div>
 <footer style="text-align:center;">
-    © 2022 Riley Adamson
+    © 2023 Riley Adamson
 </footer>
 </body>
 <script>
