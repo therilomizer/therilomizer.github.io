@@ -26,12 +26,12 @@ body {
 }
 
 .sale {
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     font-family: monospace;
-    font-size: 2.5vw;
+    font-size: 1vw;
     text-decoration: none;
     text-align: center;
     color: black;
@@ -39,7 +39,7 @@ body {
 }
 
 .alpha {
-    max-width: 90%;
+    max-width: 30%;
     height: auto;
 }
 
